@@ -6,7 +6,7 @@
 
 Urav Advanced Learning Systems Pvt Ltd.
 
-TaipeiSignRAG is the Taipei Main Station whole-photograph annotation POC and bilingual evidence-search demo. Expert review is pending. It does not establish precise positioning, current facilities or accessible routes.
+TaipeiSignRAG is the Taipei Main Station whole-photograph annotation POC and bilingual evidence-search demo. Human review is pending. It does not establish precise positioning, current facilities or accessible routes.
 
 ## Whole-scene pilot and local demo
 
@@ -36,7 +36,7 @@ C:/Python313/python.exe scripts/scene_rag_demo.py serve --port 8766
 
 Open http://127.0.0.1:8766 . Try `置物櫃`, `廁所`, `stairs`, `gates`, `map`, or `Airport MRT`; compare “Physically visible” with “Mentioned on signs.” `/api/search?q=...` returns evidence and instructions ready for the app's LLM. **No live LLM or positioning engine is connected to this demo.** Retrieval is local lexical matching with bilingual aliases, not a trained embedding model.
 
-Records: [scene annotations](release/huggingface/scene_annotations.jsonl). [Schema and review policy](docs/WHOLE_SCENE_ANNOTATION.md). Progress: [annotation counts](annotations/progress.json). This is an thirty-two-scene pilot, not the completed 8,971-entry annotation collection. All records are assistant-checked; expert review is pending.
+Records: [scene annotations](release/huggingface/scene_annotations.jsonl). [Schema and review policy](docs/WHOLE_SCENE_ANNOTATION.md). Progress: [annotation counts](annotations/progress.json). This is a thirty-two-scene pilot, not the completed 8,971-entry annotation collection. All records are assistant-checked; expert review is pending.
 
 **Team:** PHIT 2026 Finalist Team: 3rdEye4All, Urav Advanced Learning Systems Pvt Ltd.
 

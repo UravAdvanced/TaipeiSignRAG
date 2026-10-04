@@ -24,7 +24,7 @@ Taipei Main Station presents a useful setting for studying sign-based indoor ass
 
 Our immediate objective is narrower: transform existing image exports into an evidence-linked knowledge base that an assistant can query before any task-specific model training. A useful record should explain what is visible, which arrow belongs to which destination, what amenities appear in the scene, and which source image supports each statement. It should also distinguish observations from inferred translations and unknown physical locations. The intended application is the existing 3rDi4All indoor-navigation app, whose mapping and spatial alignment components are separate from the proposed semantic knowledge base.
 
-The intended contribution comprises a unified provenance-preserving representation of three source exports; cross-image relationships that distinguish crops, similar layouts and verified physical identities; and a retrieval workflow that can supply grounded sign and amenity information. At this stage, source auditing, an thirty-two-scene annotation pilot, two locker-evidence observations and a local retrieval prototype have been completed. Full annotation, live LLM integration and field use remain planned.
+The intended contribution comprises a unified provenance-preserving representation of three source exports; cross-image relationships that distinguish crops, similar layouts and verified physical identities; and a retrieval workflow that can supply grounded sign and amenity information. At this stage, source auditing, a thirty-two-scene annotation pilot, two locker-evidence observations and a local retrieval prototype have been completed. Full annotation, live LLM integration and field use remain planned.
 
 ## 2. Related Work
 
