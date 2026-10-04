@@ -26,8 +26,7 @@ python scripts/build_pages_site.py
 python -m http.server 8767 --bind 127.0.0.1 --directory _site
 ```
 
-Open http://127.0.0.1:8767 . For publication, the manually triggered Pages workflow stages only the demo, generated search data, attributed records and masked evidence images. See [Pages setup](docs/GITHUB_PAGES.md). Pages has not been deployed in this iteration.
-
+Open http://127.0.0.1:8767 . For publication, the manually triggered Pages workflow stages only the demo, generated search data, attributed records and masked evidence images. See [Pages setup](docs/GITHUB_PAGES.md). 
 Run the evidence-search demo locally:
 
 ```powershell
