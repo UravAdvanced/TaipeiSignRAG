@@ -14,7 +14,7 @@ Eleven whole-photograph annotations now cover readable signs **and** surrounding
 
 **Airport buses / 機場巴士, Taoyuan Airport MRT / 桃園機場捷運, and Taipei Bus Station / 臺北轉運站 are separate destinations.** Scene 011 shows different arrows for Taipei Bus Station and airport buses on the same board. The printed English “Airport Express” on these bus panels is preserved as text, not treated as an MRT identity.
 
-## Browser search and GitHub Pages
+## Browser search of Annotations and Photographs (GitHub Pages)
 
 The [demo](demo/index.html) searches Chinese and English in the browser, with no backend, API key or live LLM. It uses lexical matching and bilingual aliases. Asset paths support the `/TaipeiSignRAG/` GitHub Pages prefix. To preview the exact curated Pages package locally:
 
