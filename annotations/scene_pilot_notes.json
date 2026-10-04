@@ -6071,5 +6071,2445 @@
     ],
     "visual_review_passes": 1,
     "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-091",
+    "review_date": "2026-10-05",
+    "summary_en": "A long suspended directional board crosses an exposed dark ceiling with pipes and rectangular lighting. The tiled corridor continues left of a broad right-hand wall with a large blue advertisement. A pale column crops the right edge; smaller lit panels line the left wall.",
+    "summary_zh": "長形懸掛指標位於外露管線與長方燈具下方。磁磚通道向前延伸，右側寬牆設大型藍色廣告，畫面右緣為淺色柱，左牆有較小發光看板。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": null,
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up_left",
+        "panel": "far left, upper label"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": null,
+        "label_en": "airport bus",
+        "direction": "up_left",
+        "panel": "far left, lower label",
+        "symbols": [
+          "bus"
+        ],
+        "note": "Chinese wording identifies airport buses; small English wording is not transcribed."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": null,
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          355,
+          178,
+          458,
+          223
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          478,
+          156,
+          512,
+          288
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-092",
+    "review_date": "2026-10-05",
+    "summary_en": "The overhead board has left-up arrows beside the left destinations and a right arrow beside the blue line panel. Long dark strips cross the pale floor. A blue wall advertisement and a small dark display are visible on the right; left wall posters remain partly visible.",
+    "summary_zh": "上方指標的左側目的地旁有左上箭頭，藍色路線面板旁有右箭頭。淺色地面有長條深色帶；右牆可見藍色廣告與小型深色顯示板，左牆海報部分可見。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": null,
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up_left",
+        "panel": "far left, upper label"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": null,
+        "label_en": "airport bus",
+        "direction": "up_left",
+        "panel": "far left, lower label",
+        "symbols": [
+          "bus"
+        ],
+        "note": "Chinese wording identifies airport buses; small English wording is not transcribed."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": "Zhongshan Metro Mall",
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          373,
+          178,
+          480,
+          219
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          495,
+          160,
+          512,
+          288
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-093",
+    "review_date": "2026-10-05",
+    "summary_en": "The oblique board hangs above a broad tiled passage. A large illuminated blue advertisement occupies the right wall, with a smaller dark rectangular panel to its left. Exposed ducts, cables and suspended lighting fill the upper frame; foreground masking hides parts of the passage.",
+    "summary_zh": "斜向指標懸掛於寬闊磁磚通道上方。右牆有大型發光藍色廣告，左旁有較小深色長方形面板。上方可見外露管道、線路及吊燈；前景遮蔽部分通道。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": null,
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up_left",
+        "panel": "far left, upper label"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": null,
+        "label_en": "airport bus",
+        "direction": "up_left",
+        "panel": "far left, lower label",
+        "symbols": [
+          "bus"
+        ],
+        "note": "Chinese wording identifies airport buses; small English wording is not transcribed."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": "Zhongshan Metro Mall",
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          370,
+          185,
+          480,
+          232
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          493,
+          166,
+          512,
+          288
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-094",
+    "review_date": "2026-10-05",
+    "summary_en": "The board spans a corridor beneath a prominent rectangular ceiling light. Wall advertisements line the left side, including a partly cropped bright panel. A pale support column with a dark display separates the distant passage from the blue advertising wall on the right.",
+    "summary_zh": "指標橫跨通道，上方有顯眼長方燈具。左牆排列廣告，包含部分出框的明亮看板。設深色顯示板的淺色柱將遠處通道與右側藍色廣告牆分開。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": null,
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up_left",
+        "panel": "far left, upper label"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": null,
+        "label_en": "airport bus",
+        "direction": "up_left",
+        "panel": "far left, lower label",
+        "symbols": [
+          "bus"
+        ],
+        "note": "Chinese wording identifies airport buses; small English wording is not transcribed."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": "Zhongshan Metro Mall",
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          416,
+          182,
+          512,
+          226
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          301,
+          182,
+          338,
+          255
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-095",
+    "review_date": "2026-10-05",
+    "summary_en": "A nearly frontal hanging board shows two diagonal left-up arrows and right-pointing arrows. The left wall has a cropped red-and-yellow advertisement and a narrow lit poster. A pale rectangular column stands right of the passage beneath exposed pipes and circular ceiling fixtures.",
+    "summary_zh": "近乎正面的懸掛指標可見兩個左上箭頭及向右箭頭。左牆有出框的紅黃廣告與窄幅發光海報。通道右側有淺色長方柱，上方為外露管線與圓形天花設備。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": null,
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up_left",
+        "panel": "far left, upper label"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": null,
+        "label_en": "airport bus",
+        "direction": "up_left",
+        "panel": "far left, lower label",
+        "symbols": [
+          "bus"
+        ],
+        "note": "Chinese wording identifies airport buses; small English wording is not transcribed."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          0,
+          198,
+          30,
+          282
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          315,
+          187,
+          355,
+          260
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-096",
+    "review_date": "2026-10-05",
+    "summary_en": "A wide expanse of pale floor with dark longitudinal bands lies below the directional sign. The right support column carries a small black display; a blue advertisement lies farther right. A red wall section and narrow illuminated posters frame the distant corridor at left.",
+    "summary_zh": "指標下方為寬闊淺色地面，帶有縱向深色條帶。右側柱設小型黑色顯示板，更右方有藍色廣告。左側遠處通道由紅色牆面及窄幅發光海報圍繞。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": null,
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up_left",
+        "panel": "far left, upper label"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": null,
+        "label_en": "airport bus",
+        "direction": "up_left",
+        "panel": "far left, lower label",
+        "symbols": [
+          "bus"
+        ],
+        "note": "Chinese wording identifies airport buses; small English wording is not transcribed."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": "Zhongshan Metro Mall",
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          430,
+          169,
+          512,
+          211
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          304,
+          169,
+          350,
+          236
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-097",
+    "review_date": "2026-10-05",
+    "summary_en": "The sign hangs under a long light and a circular ceiling fitting. A large red-and-yellow wall advertisement is cropped at left, followed by a smaller lit panel. On the right, a pale column and an illuminated blue advertisement border the open tiled floor.",
+    "summary_zh": "指標位於長燈與圓形天花設備下方。左側大型紅黃壁面廣告部分出框，後方有較小發光看板。右側淺色柱與發光藍色廣告鄰接開放磁磚地面。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": null,
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up_left",
+        "panel": "far left, upper label"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": null,
+        "label_en": "airport bus",
+        "direction": "up_left",
+        "panel": "far left, lower label",
+        "symbols": [
+          "bus"
+        ],
+        "note": "Chinese wording identifies airport buses; small English wording is not transcribed."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          0,
+          174,
+          50,
+          266
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          323,
+          176,
+          367,
+          242
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-098",
+    "review_date": "2026-10-05",
+    "summary_en": "The board is high over a broad corridor with left wall posters and a red wall section farther back. Two dark floor bands extend toward the background. The central white sign panel is blurred; the blue line panel at right and the mall name at left are clearer.",
+    "summary_zh": "指標高懸於寬闊通道，左牆有海報，更後方可見紅色牆面。兩條深色地面帶向背景延伸。中央白色指標文字模糊，右側藍色路線面板及左側地下街名稱較清楚。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": null,
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up_left",
+        "panel": "far left, upper label"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": null,
+        "label_en": "airport bus",
+        "direction": "up_left",
+        "panel": "far left, lower label",
+        "symbols": [
+          "bus"
+        ],
+        "note": "Chinese wording identifies airport buses; small English wording is not transcribed."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          446,
+          170,
+          512,
+          215
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          315,
+          172,
+          359,
+          238
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-099",
+    "review_date": "2026-10-05",
+    "summary_en": "A large rectangular ceiling light sits directly above the directional board. The left wall has a red-and-yellow advertisement and a narrow illuminated poster; a red rear wall borders a passage. A small display is mounted high on the right column, and a blue advertisement is cropped at the far right.",
+    "summary_zh": "大型長方燈具位於指標正上方。左牆有紅黃廣告及窄幅發光海報，後方紅牆鄰接通道。右柱高處設小型顯示板，最右側藍色廣告部分出框。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": null,
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up_left",
+        "panel": "far left, upper label"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": null,
+        "label_en": "airport bus",
+        "direction": "up_left",
+        "panel": "far left, lower label",
+        "symbols": [
+          "bus"
+        ],
+        "note": "Chinese wording identifies airport buses; small English wording is not transcribed."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": "Zhongshan Metro Mall",
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      },
+      {
+        "visible_zh": "停車場",
+        "visible_en": null,
+        "label_en": "parking",
+        "direction": "right",
+        "panel": "central white panel, lower label",
+        "symbols": [
+          "parking"
+        ],
+        "note": "Only the readable parking word is transcribed; adjacent qualifying text remains unresolved."
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          0,
+          192,
+          54,
+          286
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          342,
+          184,
+          387,
+          252
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-100",
+    "review_date": "2026-10-05",
+    "summary_en": "The right-hand Bannan Line panel is especially large in this closer view. A bright red-and-yellow advertisement occupies the left wall, followed by a lit narrow panel and a red recess. The corridor extends beneath repeated ceiling lights; the right foreground and part of the column are masked.",
+    "summary_zh": "此較近視角中，右侧板南線面板特別大。左牆有明亮紅黃廣告，後方接窄幅發光面板與紅色凹入區。通道沿連續天花燈延伸；右前景及部分柱面被遮蔽。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": null,
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up_left",
+        "panel": "far left, upper label"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": null,
+        "label_en": "airport bus",
+        "direction": "up_left",
+        "panel": "far left, lower label",
+        "symbols": [
+          "bus"
+        ],
+        "note": "Chinese wording identifies airport buses; small English wording is not transcribed."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          0,
+          178,
+          97,
+          277
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          398,
+          186,
+          454,
+          270
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-101",
+    "review_date": "2026-10-05",
+    "summary_en": "The long board is viewed farther down a straight corridor. A red-and-yellow left wall advertisement is partly hidden by a foreground mask. A narrow lit poster remains visible on that wall, while a small black display and blue-yellow advertisement panels appear to the right.",
+    "summary_zh": "長形指標位於筆直通道上方。左牆紅黃廣告部分被前景遮罩擋住，同牆仍可見窄幅發光海報；右側可見小型黑色顯示板與藍黃廣告面板。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": null,
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up_left",
+        "panel": "far left, upper label"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": null,
+        "label_en": "airport bus",
+        "direction": "up_left",
+        "panel": "far left, lower label",
+        "symbols": [
+          "bus"
+        ],
+        "note": "Chinese wording identifies airport buses; small English wording is not transcribed."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          3,
+          182,
+          140,
+          283
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          433,
+          182,
+          480,
+          244
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-102",
+    "review_date": "2026-10-05",
+    "summary_en": "A long clear strip of tiled floor recedes beneath the board, bounded by dark floor bands. The left wall has a large yellow advertisement with a red header and a smaller lit poster. A pale right column supports a dark display; a blue-yellow wall advertisement is visible behind it.",
+    "summary_zh": "指標下方可見長段磁磚地面，兩側有深色地面帶。左牆設紅色標頭的大型黃色廣告與較小發光海報。右側淺色柱設深色顯示板，後方可見藍黃壁面廣告。",
+    "signs": [
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          0,
+          179,
+          128,
+          274
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          419,
+          179,
+          468,
+          257
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility.",
+      "Far-left small destination labels are too blurred for a reliable complete transcript in this view; the diagonal upper-left arrow remains visible."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-103",
+    "review_date": "2026-10-05",
+    "summary_en": "The board appears oblique, with a large Bannan Line panel at right. The left yellow advertisement includes the readable number 0800-024-881, with other fine print unresolved. Smaller lit posters and a red wall section line the long passage; exposed ceiling cable runs remain visible.",
+    "summary_zh": "指標呈斜向，右側板南線面板較大。左側黃色廣告可讀到0800-024-881，其餘細字未確認。較小發光海報及紅色牆面沿長通道排列，上方可見外露天花線路。",
+    "signs": [
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": "Zhongshan Metro Mall",
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          0,
+          195,
+          136,
+          288
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          460,
+          194,
+          512,
+          263
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility.",
+      "Far-left small destination labels are too blurred for a reliable complete transcript in this view; the diagonal upper-left arrow remains visible."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-104",
+    "review_date": "2026-10-05",
+    "summary_en": "The sign is nearly horizontal above a passage with lit posters on both walls. A pale square column with a black display stands at right, beside a blue advertisement. Foreground masks hide much of the lower left and right; exposed ceiling pipes and the suspended light remain clear.",
+    "summary_zh": "指標近乎水平橫跨通道，兩側牆面有發光海報。右側淺色方柱設黑色顯示板，旁邊有藍色廣告。前景遮罩擋住左下與右下大部分區域；外露天花管線及吊燈清楚可見。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": null,
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up_left",
+        "panel": "far left, upper label"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": null,
+        "label_en": "airport bus",
+        "direction": "up_left",
+        "panel": "far left, lower label",
+        "symbols": [
+          "bus"
+        ],
+        "note": "Chinese wording identifies airport buses; small English wording is not transcribed."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": null,
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          455,
+          175,
+          512,
+          223
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          326,
+          177,
+          370,
+          246
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-105",
+    "review_date": "2026-10-05",
+    "summary_en": "A strongly oblique illuminated board hangs in a dark exposed ceiling. The right wall has a bright advertisement and a pale support column with a small dark display. The lower corridor is heavily masked; no destination entrance can be established from the remaining view.",
+    "summary_zh": "明亮指標以明顯斜角懸掛於深色外露天花下。右牆有明亮廣告及設小型深色顯示板的淺色支柱。下方通道大部分被遮蔽，無法由剩餘影像確認目的地入口。",
+    "signs": [
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": null,
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          331,
+          194,
+          429,
+          240
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          210,
+          200,
+          250,
+          273
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility.",
+      "Far-left small destination labels are too blurred for a reliable complete transcript in this view; the diagonal upper-left arrow remains visible."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-106",
+    "review_date": "2026-10-05",
+    "summary_en": "The bright board is seen from below, with a clear right-pointing Bannan Line panel. The corridor has a large yellow advertisement with a red header on the left, smaller wall posters, and a pale right column carrying a dark display. Some fine sign text is overexposed.",
+    "summary_zh": "由下方向上看明亮指標，板南線面板及右箭頭清楚可見。通道左側有紅色標頭的大型黃色廣告及較小壁面海報，右側淺色柱設深色顯示板。部分指標細字曝光過亮。",
+    "signs": [
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          0,
+          200,
+          116,
+          288
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          449,
+          206,
+          506,
+          288
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility.",
+      "Far-left small destination labels are too blurred for a reliable complete transcript in this view; the diagonal upper-left arrow remains visible."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-107",
+    "review_date": "2026-10-05",
+    "summary_en": "An oblique board slopes upward toward the larger Bannan Line panel at right. A prominent left wall advertisement shows 0800-024-881. The long corridor has a red wall section, smaller illuminated panels and repeated ceiling lights; distant signs remain unreadable.",
+    "summary_zh": "斜向指標朝右側較大的板南線面板上升。左牆顯眼廣告可讀到0800-024-881。長通道有紅色牆面、較小發光面板及連續天花燈，遠處指標仍無法讀取。",
+    "signs": [
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          0,
+          198,
+          161,
+          288
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility.",
+      "Far-left small destination labels are too blurred for a reliable complete transcript in this view; the diagonal upper-left arrow remains visible."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-108",
+    "review_date": "2026-10-05",
+    "summary_en": "The overhead board is farther away and its smaller text is blurred. A large illuminated yellow advertisement dominates the left wall. Dark strips run along the pale floor toward a red rear wall section; a dark display and blue poster are visible on the right.",
+    "summary_zh": "上方指標較遠，細小文字模糊。左牆大型發光黃色廣告十分顯眼。淺色地面的深色帶朝後方紅色牆面延伸；右側可見深色顯示板與藍色海報。",
+    "signs": [
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          25,
+          174,
+          161,
+          265
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          475,
+          187,
+          512,
+          278
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility.",
+      "Far-left small destination labels are too blurred for a reliable complete transcript in this view; the diagonal upper-left arrow remains visible."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-109",
+    "review_date": "2026-10-05",
+    "summary_en": "A smaller frontal board hangs over a long tiled corridor beneath exposed ceiling services. A yellow advertisement is partly visible at left. The right pale column carries a dark display, and illuminated blue panels line the background; foreground masks obscure much of the lower view.",
+    "summary_zh": "較小正面指標懸掛於長磁磚通道上方，天花設備外露。左側部分可見黃色廣告。右側淺色柱設深色顯示板，背景排列發光藍色面板；前景遮罩擋住下方大部分影像。",
+    "signs": [
+      {
+        "visible_zh": "板南線",
+        "visible_en": null,
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          0,
+          165,
+          96,
+          256
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          382,
+          172,
+          428,
+          252
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility.",
+      "Far-left small destination labels are too blurred for a reliable complete transcript in this view; the diagonal upper-left arrow remains visible.",
+      "The left white-panel destination is blurred and is not filled in from other photographs; its upper-left arrow is visible."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-110",
+    "review_date": "2026-10-05",
+    "summary_en": "A suspended direction board spans a corridor under exposed pipes and a long ceiling light. The left wall has a yellow advertisement with a red header. A small dark display is mounted on the right pale column; smaller lit posters run along the passage.",
+    "summary_zh": "懸掛指標横跨通道，上方為外露管線及長燈。左牆有紅色標頭的黃色廣告。右側淺色柱設小型深色顯示板，較小發光海報沿通道排列。",
+    "signs": [
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          0,
+          192,
+          104,
+          286
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          409,
+          188,
+          466,
+          276
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility.",
+      "Far-left small destination labels are too blurred for a reliable complete transcript in this view; the diagonal upper-left arrow remains visible."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-111",
+    "review_date": "2026-10-05",
+    "summary_en": "The direction board is nearly frontal beneath a rectangular light and round ceiling fixture. A cropped yellow wall advertisement remains at left and a red wall section is visible behind the foreground masks. The right wall has a blue-yellow lit poster and a column-mounted dark display.",
+    "summary_zh": "指標近乎正面，上方為長方燈具與圓形天花設備。左側有部分出框的黃色壁面廣告，前景遮罩後方可見紅色牆面。右牆有藍黃發光海報及柱上深色顯示板。",
+    "signs": [
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          0,
+          190,
+          78,
+          286
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          373,
+          188,
+          429,
+          277
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility.",
+      "Far-left small destination labels are too blurred for a reliable complete transcript in this view; the diagonal upper-left arrow remains visible."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-112",
+    "review_date": "2026-10-05",
+    "summary_en": "The board is close and strongly oblique, making the Zhongshan Metro Mall panel prominent. The upper frame contains a dark exposed ceiling and a cropped bright light. A pale column with a small dark display and a large right wall advertisement remain above the masked foreground.",
+    "summary_zh": "近距離斜向指標使中山地下街面板特別顯眼。上方為深色外露天花及部分出框的明亮燈具。前景遮蔽上方仍可見設小型深色顯示板的淺色柱與右牆大型廣告。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": null,
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up_left",
+        "panel": "far left, upper label"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": null,
+        "label_en": "airport bus",
+        "direction": "up_left",
+        "panel": "far left, lower label",
+        "symbols": [
+          "bus"
+        ],
+        "note": "Chinese wording identifies airport buses. Printed Airport Express, when readable, is retained without treating it as Airport MRT."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": "Zhongshan Metro Mall",
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": null,
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          347,
+          209,
+          460,
+          257
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          225,
+          217,
+          277,
+          286
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-113",
+    "review_date": "2026-10-05",
+    "summary_en": "The long board is above an open junction-like corridor area. A wide illuminated advertisement covers the right wall and a pale column crops the right edge. Small posters and a red wall section remain visible at left; foreground masking hides portions of the floor.",
+    "summary_zh": "長形指標位於通道開闊交接處上方。右牆有寬幅發光廣告，右緣為出框的淺色柱。左側仍可見小海報與紅色牆面，前景遮蔽部分地面。",
+    "signs": [
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": null,
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          361,
+          174,
+          465,
+          219
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          465,
+          145,
+          512,
+          288
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility.",
+      "Far-left small destination labels are too blurred for a reliable complete transcript in this view; the diagonal upper-left arrow remains visible."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-114",
+    "review_date": "2026-10-05",
+    "summary_en": "A large overhead board is viewed at a shallow angle below a bright ceiling light. The right wall advertisement is partly hidden by the foreground mask. A pale central-right support column carries a small dark display, and lit posters continue down the corridor at left.",
+    "summary_zh": "大型指標以淺斜角位於明亮天花燈下。右牆廣告部分被前景遮罩擋住。中央偏右淺色支柱設小型深色顯示板，左側通道沿線有發光海報。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": null,
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up_left",
+        "panel": "far left, upper label"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": null,
+        "label_en": "airport bus",
+        "direction": "up_left",
+        "panel": "far left, lower label",
+        "symbols": [
+          "bus"
+        ],
+        "note": "Chinese wording identifies airport buses. Printed Airport Express, when readable, is retained without treating it as Airport MRT."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": "Zhongshan Metro Mall",
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          398,
+          195,
+          512,
+          244
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          274,
+          202,
+          321,
+          277
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-115",
+    "review_date": "2026-10-05",
+    "summary_en": "The board is centred under a long suspended light. A narrow lit poster and a red wall section line the left passage; a blue-yellow poster and a column-mounted dark display sit on the right. Much of the foreground passage is masked.",
+    "summary_zh": "指標居中位於長形吊燈下。左側通道有窄幅發光海報與紅色牆面，右側有藍黃海報及柱上深色顯示板。通道前景大部分被遮蔽。",
+    "signs": [
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          264,
+          190,
+          289,
+          227
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          317,
+          185,
+          360,
+          254
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility.",
+      "Far-left small destination labels are too blurred for a reliable complete transcript in this view; the diagonal upper-left arrow remains visible."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-116",
+    "review_date": "2026-10-05",
+    "summary_en": "The sign fills much of the image width under a bright rectangular ceiling light. A narrow illuminated poster stands on the left wall beside a red recess. A blue-yellow poster and a small black display are visible at right above extensive foreground masking.",
+    "summary_zh": "指標佔據畫面大部分寬度，上方為明亮長方燈具。左牆紅色凹入區旁有窄幅發光海報。右側大片前景遮蔽上方可見藍黃海報及小型黑色顯示板。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": null,
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up_left",
+        "panel": "far left, upper label"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": null,
+        "label_en": "airport bus",
+        "direction": "up_left",
+        "panel": "far left, lower label",
+        "symbols": [
+          "bus"
+        ],
+        "note": "Chinese wording identifies airport buses. Printed Airport Express, when readable, is retained without treating it as Airport MRT."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": "Zhongshan Metro Mall",
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          96,
+          211,
+          123,
+          263
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          342,
+          195,
+          386,
+          254
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-117",
+    "review_date": "2026-10-05",
+    "summary_en": "A large frontal board spans a darker corridor. The left wall holds a cropped yellow advertisement and a smaller illuminated poster. A pale right support column with a black display is unobstructed; a blue-yellow poster is partly visible farther back.",
+    "summary_zh": "大型正面指標横跨較暗通道。左牆有出框的黃色廣告及較小發光海報。右側設黑色顯示板的淺色支柱未被遮擋，更後方部分可見藍黃海報。",
+    "signs": [
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": "Zhongshan Metro Mall",
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          0,
+          200,
+          87,
+          288
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          403,
+          199,
+          460,
+          286
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility.",
+      "Far-left small destination labels are too blurred for a reliable complete transcript in this view; the diagonal upper-left arrow remains visible."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-118",
+    "review_date": "2026-10-05",
+    "summary_en": "The more distant sign lies above a long open strip of tiled floor with dark bands. A yellow advertisement and narrow poster occupy the left wall, followed by a red wall section. The right support column carries a dark display and is adjacent to a blue-yellow advertisement.",
+    "summary_zh": "較遠指標下方為長段開放磁磚地面，帶有深色條帶。左牆有黃色廣告與窄幅海報，後方接紅色牆面。右側支柱設深色顯示板，鄰近藍黃廣告。",
+    "signs": [
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          0,
+          187,
+          81,
+          277
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          375,
+          178,
+          419,
+          250
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility.",
+      "Far-left small destination labels are too blurred for a reliable complete transcript in this view; the diagonal upper-left arrow remains visible."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-119",
+    "review_date": "2026-10-05",
+    "summary_en": "The oblique board hangs over a broad corridor with a yellow advertisement on the left. Repeating overhead lights lead toward a red wall section. A pale right column and a small dark display border the passage; fine destination text remains blurred.",
+    "summary_zh": "斜向指標位於寬闊通道上方，左牆有黃色廣告。連續天花燈朝紅色牆面延伸。右側淺色柱及小型深色顯示板鄰接通道，目的地細字仍模糊。",
+    "signs": [
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          0,
+          184,
+          133,
+          283
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          431,
+          180,
+          473,
+          265
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility.",
+      "Far-left small destination labels are too blurred for a reliable complete transcript in this view; the diagonal upper-left arrow remains visible."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-120",
+    "review_date": "2026-10-05",
+    "summary_en": "A close oblique board shows readable left transport labels beside a large diagonal arrow. The right wall contains a bright advertisement, with a pale central column and dark display to its left. A broad cropped column occupies the right edge and exposed ceiling pipes fill the top.",
+    "summary_zh": "近距離斜向指標的大型斜箭頭旁可讀左側交通標籤。右牆有明亮廣告，其左方為設深色顯示板的淺色柱。畫面右緣為寬大出框柱面，上方遍布外露天花管線。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up_left",
+        "panel": "far left, upper label"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_left",
+        "panel": "far left, lower label",
+        "symbols": [
+          "bus"
+        ],
+        "note": "Chinese wording identifies airport buses. Printed Airport Express, when readable, is retained without treating it as Airport MRT."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          301,
+          189,
+          400,
+          235
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          443,
+          167,
+          512,
+          288
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-121",
+    "review_date": "2026-10-05",
+    "summary_en": "The board is angled above a tiled hall. A blue-yellow wall poster remains visible at left of the central pale column, while a large bright advertisement occupies the right wall. The far-right column has faint printed markings that cannot be fully transcribed.",
+    "summary_zh": "指標斜掛於磁磚大廳上方。中央淺色柱左側仍可見藍黃壁面海報，右牆有大型明亮廣告。最右側柱面的淡色文字無法完整抄錄。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up_left",
+        "panel": "far left, upper label"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_left",
+        "panel": "far left, lower label",
+        "symbols": [
+          "bus"
+        ],
+        "note": "Chinese wording identifies airport buses. Printed Airport Express, when readable, is retained without treating it as Airport MRT."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          313,
+          178,
+          412,
+          220
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          455,
+          157,
+          512,
+          288
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-122",
+    "review_date": "2026-10-05",
+    "summary_en": "A broad direction board hangs beneath a large suspended light. The passage at left has a red wall section and a lit poster. A pale support column with a small display separates the blue-yellow rear poster from the large advertisement on the right.",
+    "summary_zh": "寬幅指標懸掛於大型吊燈下。左側通道有紅色牆面與發光海報。設小型顯示板的淺色柱將後方藍黃海報與右側大型廣告分開。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up_left",
+        "panel": "far left, upper label"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_left",
+        "panel": "far left, lower label",
+        "symbols": [
+          "bus"
+        ],
+        "note": "Chinese wording identifies airport buses. Printed Airport Express, when readable, is retained without treating it as Airport MRT."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": "Zhongshan Metro Mall",
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          423,
+          200,
+          512,
+          252
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          293,
+          202,
+          332,
+          280
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-123",
+    "review_date": "2026-10-05",
+    "summary_en": "The nearly frontal board is clear enough to read the mall and Bannan Line labels. A lit narrow poster stands on the left wall near a red recess. A blue-yellow advertisement and dark column display remain visible in gaps above the foreground masking.",
+    "summary_zh": "近乎正面的指標可讀地下街及板南線標籤。左牆紅色凹入區附近有窄幅發光海報。前景遮罩上方間隙仍可見藍黃廣告與柱上深色顯示板。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up_left",
+        "panel": "far left, upper label"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_left",
+        "panel": "far left, lower label",
+        "symbols": [
+          "bus"
+        ],
+        "note": "Chinese wording identifies airport buses. Printed Airport Express, when readable, is retained without treating it as Airport MRT."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": "Zhongshan Metro Mall",
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          254,
+          194,
+          281,
+          228
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          324,
+          183,
+          368,
+          257
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-124",
+    "review_date": "2026-10-05",
+    "summary_en": "The sign is frontal but parts of the white panel are washed out. A cropped yellow advertisement fills the left edge. At right a pale column with a dark display borders a broad wall; the tiled floor has a dark band receding toward the background.",
+    "summary_zh": "指標呈正面，但白色面板部分曝光過亮。左緣為出框黃色廣告。右側設深色顯示板的淺色柱鄰接寬牆；磁磚地面的深色帶朝背景延伸。",
+    "signs": [
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          0,
+          156,
+          66,
+          254
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          367,
+          165,
+          419,
+          246
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility.",
+      "Far-left small destination labels are too blurred for a reliable complete transcript in this view; the diagonal upper-left arrow remains visible.",
+      "The left white-panel destination is blurred and is not filled in from other photographs; its upper-left arrow is visible."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-125",
+    "review_date": "2026-10-05",
+    "summary_en": "The frontal board has a bright partly washed-out white panel and a clear Bannan Line label. A yellow advertisement and narrow lit poster line the left wall. A pale column and its small dark display stand beside the broad right wall; foreground masks obscure portions of the passage.",
+    "summary_zh": "正面指標的白色面板明亮且部分過曝，板南線標籤清楚。左牆有黃色廣告及窄幅發光海報。淺色柱及小型深色顯示板位於寬闊右牆旁，前景遮罩擋住部分通道。",
+    "signs": [
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          0,
+          184,
+          58,
+          284
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          392,
+          182,
+          445,
+          267
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility.",
+      "Far-left small destination labels are too blurred for a reliable complete transcript in this view; the diagonal upper-left arrow remains visible.",
+      "The left white-panel destination is blurred and is not filled in from other photographs; its upper-left arrow is visible."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-126",
+    "review_date": "2026-10-05",
+    "summary_en": "The long oblique board has a large Bannan Line panel at right. The left wall carries a yellow advertisement with red header and a smaller lit poster. A red rear wall section and repeated ceiling lights are visible above the foreground masks.",
+    "summary_zh": "長形斜向指標右側為大型板南線面板。左牆設紅色標頭的黃色廣告與較小發光海報。前景遮罩上方可見後方紅色牆面及連續天花燈。",
+    "signs": [
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": "Zhongshan Metro Mall",
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          0,
+          175,
+          140,
+          284
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility.",
+      "Far-left small destination labels are too blurred for a reliable complete transcript in this view; the diagonal upper-left arrow remains visible."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-127",
+    "review_date": "2026-10-05",
+    "summary_en": "The board is nearly frontal above a long corridor, with a clear Bannan Line name and right arrow. A large yellow advertisement dominates the left wall beside a narrow lit poster. The upper frame shows a rectangular ceiling light, circular fitting and exposed services.",
+    "summary_zh": "近乎正面的指標位於長通道上方，板南線名稱及右箭頭清楚可見。左牆大型黃色廣告旁有窄幅發光海報。上方可見長方天花燈、圓形設備及外露管線。",
+    "signs": [
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up_left",
+        "panel": "left white panel"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          0,
+          190,
+          144,
+          288
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "support_column",
+        "label_en": "pale support column; masked portions unassessable",
+        "label_zh": "淺色支柱，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          475,
+          204,
+          512,
+          288
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility.",
+      "Far-left small destination labels are too blurred for a reliable complete transcript in this view; the diagonal upper-left arrow remains visible."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-128",
+    "review_date": "2026-10-05",
+    "summary_en": "The right Bannan Line panel is enlarged by the oblique viewing angle, while smaller destination wording becomes difficult to read. The left wall has a prominent yellow advertisement displaying 0800-024-881 and a smaller lit poster. A red wall section borders the distant passage.",
+    "summary_zh": "斜向視角使右側板南線面板放大，較小目的地文字則難以辨識。左牆顯眼黃色廣告可讀到0800-024-881，旁有較小發光海報。紅色牆面鄰接遠處通道。",
+    "signs": [
+      {
+        "visible_zh": "板南線",
+        "visible_en": "Bannan Line",
+        "label_en": "Bannan Line",
+        "direction": "right",
+        "panel": "right blue-edged panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement; fine print unverified",
+        "label_zh": "發光壁面廣告，細字未確認",
+        "bbox_xyxy": [
+          36,
+          188,
+          208,
+          288
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The small central white-panel destination text is not fully transcribed; a printed P symbol and a right arrow are visible. No exact parking location is established.",
+      "Small background display text, advertisement fine print and business names remain unverified.",
+      "Masked and off-image regions are unassessable. Sign references do not establish physical platforms, boarding facilities, current routes or accessibility.",
+      "Far-left small destination labels are too blurred for a reliable complete transcript in this view; the diagonal upper-left arrow remains visible.",
+      "The left white-panel destination is blurred and is not filled in from other photographs; its upper-left arrow is visible."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
   }
 ]

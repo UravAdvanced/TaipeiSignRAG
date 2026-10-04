@@ -6,7 +6,7 @@ The user explicitly requested the entire photograph, including surrounding visua
 
 - `annotations/scene_pilot_notes.json`: authored observations from interactive visual inspection; the source of semantic content.
 - `release/huggingface/scene_manifest.jsonl`: original-image hashes, supplied sign boxes and local privacy masks.
-- `release/huggingface/scene_annotations.jsonl`: 90 enriched whole-scene records.
+- `release/huggingface/scene_annotations.jsonl`: 128 enriched whole-scene records.
 - `release/huggingface/scene_images/`: native-size full-frame views with conservative person masks.
 - `annotations/progress.json`: exact completed and remaining counts.
 - `scripts/build_scene_records.py`: combines notes and provenance; does not automatically invent annotations.
@@ -21,7 +21,7 @@ Scenes 009–011 add exact photographs A04N_HH_001, A06W_HH_001 and A07E_HH_001.
 
 `signs[].transport_id` has separate values `airport_bus`, `taoyuan_airport_mrt`, and `taipei_bus_station`. These are semantic destination categories, not physical landmark IDs. They are assigned from the authored sign labels in each exact photograph. “Airport Express” is retained in `visible_en` on bus panels; the Chinese text and bus pictogram support the bus category. No MRT platform, bus boarding bay or current route is inferred from these signs.
 
-There are 90 scene records plus two locker observations, covering 91 unique original source hashes. There are 8,880 source entries without new annotation. Zero records have independent expert review or physical anchor links. `build_scene_records.py` derives coverage counts from the records and source hashes rather than fixed pilot counts.
+There are 128 scene records plus two locker observations, covering 129 unique original source hashes. There are 8,842 source entries without new annotation. Zero records have independent expert review or physical anchor links. `build_scene_records.py` derives coverage counts from the records and source hashes rather than fixed pilot counts.
 
 ## Hotels, retail and other destinations
 

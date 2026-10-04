@@ -4,9 +4,9 @@
   "batch_size": 19,
   "push_interval_new_photos": 100,
   "starting_scene_count": 32,
-  "last_pushed_scene_count": 32,
+  "last_pushed_scene_count": 90,
   "last_deployed_scene_count": 32,
-  "last_documented_scene_count": 90,
+  "last_documented_scene_count": 128,
   "batches": [
     {
       "batch": 1,
@@ -34,9 +34,40 @@
       "photos": 19,
       "status": "checked_locally",
       "validation": "Single visual annotation and basic-masking pass per exact original. Automated source hashes, mask pixels, counts, 375 Python/JavaScript parity cases and routes passed."
+    },
+    {
+      "batch": 4,
+      "date": "2026-10-05",
+      "first_scene_id": "tps-scene-091",
+      "last_scene_id": "tps-scene-109",
+      "photos": 19,
+      "timing": {
+        "started_at_utc": "2026-10-04T21:51:11Z",
+        "validated_at_utc": "2026-10-04T22:03:52Z",
+        "elapsed_seconds": 761,
+        "scope": "Preparation, single visual annotation/basic masking per original, saving, exports, documentation and validation; includes Windows permission wait. Excludes push/deployment and final timing-entry write."
+      },
+      "status": "checked_locally",
+      "validation": "Single visual annotation and basic-masking pass per exact original. Automated source hashes, mask pixels, counts, 375 Python/JavaScript parity cases and routes passed."
+    },
+    {
+      "batch": 5,
+      "date": "2026-10-05",
+      "first_scene_id": "tps-scene-110",
+      "last_scene_id": "tps-scene-128",
+      "photos": 19,
+      "local_stage_seconds": {
+        "all_128_masked_views_and_previews": 16.902,
+        "record_browser_and_site_exports": 0.589,
+        "integrity_and_search_checks": 5.931,
+        "total": 23.422
+      },
+      "timing_scope": "Local script execution only; excludes inspection, transcription, mask-coordinate authoring, documentation, discussion and permission waits. Full batch wall time is not compared with batch 4 because resource/cost documentation and user discussion were interleaved.",
+      "status": "checked_locally",
+      "validation": "Single visual annotation and basic-masking pass per exact original. Automated source hashes, mask pixels, counts, 375 Python/JavaScript parity cases and routes passed."
     }
   ],
-  "next_push_scene_count": 132,
+  "next_push_scene_count": 190,
   "pending_scene_ids": [],
   "visual_review_passes_per_new_image": 1,
   "single_pass_from_scene": "tps-scene-072",

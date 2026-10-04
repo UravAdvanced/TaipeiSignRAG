@@ -9,6 +9,13 @@
   "tibame_cls": 8,
   "tibame_detection2": 9,
   "ccby": 10,
-  "arcore_pose": 11,
-  "cloud_anchors": 12
+  "codex": 11,
+  "foundry": 12,
+  "azure_models": 13,
+  "astra": 14,
+  "reasoning": 15,
+  "azure_pricing": 16,
+  "arcore_pose": 17,
+  "cloud_anchors": 18,
+  "startups": 19
 }
