@@ -1,0 +1,64 @@
+{
+  "authorization_date": "2026-10-05",
+  "authorization": "Continue 19-image batches. From scene 072 onward use one annotation/basic-masking pass, no second visual review. Keep double-checked scenes 053–071 first on the site. Save and run automated integrity checks per batch; commit/push/deploy around 100 new photos and for the requested site-order update.",
+  "batch_size": 19,
+  "push_interval_new_photos": 100,
+  "starting_scene_count": 32,
+  "last_pushed_scene_count": 32,
+  "last_deployed_scene_count": 32,
+  "last_documented_scene_count": 90,
+  "batches": [
+    {
+      "batch": 1,
+      "date": "2026-10-05",
+      "first_scene_id": "tps-scene-033",
+      "last_scene_id": "tps-scene-052",
+      "photos": 20,
+      "status": "checked_locally",
+      "validation": "Each original and masked full-frame view inspected; source hashes, mask pixels, coverage counts, 375 Python/JavaScript parity cases and local routes passed. Independent expert/privacy review pending."
+    },
+    {
+      "batch": 2,
+      "date": "2026-10-05",
+      "first_scene_id": "tps-scene-053",
+      "last_scene_id": "tps-scene-071",
+      "photos": 19,
+      "status": "checked_locally",
+      "validation": "Each original and masked full-frame view inspected; source hashes, mask pixels, coverage counts, 375 Python/JavaScript parity cases and local routes passed. Independent expert/privacy review pending."
+    },
+    {
+      "batch": 3,
+      "date": "2026-10-05",
+      "first_scene_id": "tps-scene-072",
+      "last_scene_id": "tps-scene-090",
+      "photos": 19,
+      "status": "checked_locally",
+      "validation": "Single visual annotation and basic-masking pass per exact original. Automated source hashes, mask pixels, counts, 375 Python/JavaScript parity cases and routes passed."
+    }
+  ],
+  "next_push_scene_count": 132,
+  "pending_scene_ids": [],
+  "visual_review_passes_per_new_image": 1,
+  "single_pass_from_scene": "tps-scene-072",
+  "first_page_scene_ids": [
+    "tps-scene-053",
+    "tps-scene-054",
+    "tps-scene-055",
+    "tps-scene-056",
+    "tps-scene-057",
+    "tps-scene-058",
+    "tps-scene-059",
+    "tps-scene-060",
+    "tps-scene-061",
+    "tps-scene-062",
+    "tps-scene-063",
+    "tps-scene-064",
+    "tps-scene-065",
+    "tps-scene-066",
+    "tps-scene-067",
+    "tps-scene-068",
+    "tps-scene-069",
+    "tps-scene-070",
+    "tps-scene-071"
+  ]
+}

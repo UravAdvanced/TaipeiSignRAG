@@ -1,195 +1,832 @@
 [
   {
-    "image_id":"tps-scene-001",
-    "summary_en":"A red-framed indoor passage beneath an exposed dark ceiling. A long overhead board points to the Tamsui-Xinyi Line and airport buses. A blue diagonal handrail and yellow gate-like equipment are visible deeper inside the passage; their exact function is not established.",
-    "summary_zh":"紅色框架的室內通道，上方可見外露管線與指標。指標提到淡水信義線及機場巴士。通道內可見藍色斜向扶手與黃色設備，但無法確認設備用途。",
-    "signs":[
-      {"visible_zh":"淡水信義線","visible_en":"Tamsui-Xinyi Line","label_en":"Tamsui-Xinyi Line","direction":"up","panel":"left"},
-      {"visible_zh":"機場巴士","visible_en":"Airport Express","label_en":"airport bus","direction":"up_right","panel":"right","note":"Bus pictogram and Chinese label identify a bus reference; do not equate this with Airport MRT."}
+    "image_id": "tps-scene-001",
+    "summary_en": "A red-framed indoor passage beneath an exposed dark ceiling. A long overhead board points to the Tamsui-Xinyi Line and airport buses. A blue diagonal handrail and yellow gate-like equipment are visible deeper inside the passage; their exact function is not established.",
+    "summary_zh": "紅色框架的室內通道，上方可見外露管線與指標。指標提到淡水信義線及機場巴士。通道內可見藍色斜向扶手與黃色設備，但無法確認設備用途。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "note": "Bus pictogram and Chinese label identify a bus reference; do not equate this with Airport MRT."
+      }
     ],
-    "objects":[
-      {"category":"passage_entrance","label_en":"red-framed passage entrance","label_zh":"紅框通道入口","region":"middle and lower image","bbox_xyxy":[23,164,511,288]},
-      {"category":"handrail","label_en":"blue diagonal handrail","label_zh":"藍色斜向扶手","region":"left side inside passage","bbox_xyxy":[181,231,236,280]}
+    "objects": [
+      {
+        "category": "passage_entrance",
+        "label_en": "red-framed passage entrance",
+        "label_zh": "紅框通道入口",
+        "region": "middle and lower image",
+        "bbox_xyxy": [
+          23,
+          164,
+          511,
+          288
+        ]
+      },
+      {
+        "category": "handrail",
+        "label_en": "blue diagonal handrail",
+        "label_zh": "藍色斜向扶手",
+        "region": "left side inside passage",
+        "bbox_xyxy": [
+          181,
+          231,
+          236,
+          280
+        ]
+      }
     ],
-    "uncertain":[{"category":"fare_gates_or_turnstiles","description":"Yellow equipment in the background could be gate-related; its function cannot be confirmed."}],
-    "unknowns":["Middle white sign panel is too small for a reliable transcription.","A diagonal rail does not alone establish stairs versus escalator or a step-free route."]
+    "uncertain": [
+      {
+        "category": "fare_gates_or_turnstiles",
+        "description": "Yellow equipment in the background could be gate-related; its function cannot be confirmed."
+      }
+    ],
+    "unknowns": [
+      "Middle white sign panel is too small for a reliable transcription.",
+      "A diagonal rail does not alone establish stairs versus escalator or a step-free route."
+    ]
   },
   {
-    "image_id":"tps-scene-002",
-    "summary_en":"An open indoor concourse with a patterned floor, striped ceiling, pillars and an overhead directional board. The main left panel refers to Kuo-Kuang airport buses. A distant row of equipment is visible, but a check-in counter, ticket counter or fare gate cannot be reliably identified from this view.",
-    "summary_zh":"室內大廳可見花紋地坪、條狀天花板、柱子及懸掛指標。左側主要指標指向國光客運站（機場巴士）。遠處設備用途不明，不能確認為報到櫃檯、售票櫃檯或驗票閘門。",
-    "signs":[{"visible_zh":"國光客運站（機場巴士）","visible_en":null,"label_en":"Kuo-Kuang Bus Station, airport buses","direction":"left","panel":"left","note":"Chinese transcription normalizes the bracket glyphs; English small text is not certified."}],
-    "objects":[{"category":"concourse","label_en":"open concourse with patterned floor and pillars","label_zh":"有花紋地坪與柱子的開放大廳","region":"foreground and middle background","bbox_xyxy":[0,162,512,288]}],
-    "uncertain":[{"category":"service_counter","description":"Distant equipment/counter-like forms have insufficient detail to identify their role."}],
-    "unknowns":["Small text in the central and right sign panels is not transcribed.","Parking and transit pictograms alone do not establish visible facilities."]
+    "image_id": "tps-scene-002",
+    "summary_en": "An open indoor concourse with a patterned floor, striped ceiling, pillars and an overhead directional board. The main left panel refers to Kuo-Kuang airport buses. A distant row of equipment is visible, but a check-in counter, ticket counter or fare gate cannot be reliably identified from this view.",
+    "summary_zh": "室內大廳可見花紋地坪、條狀天花板、柱子及懸掛指標。左側主要指標指向國光客運站（機場巴士）。遠處設備用途不明，不能確認為報到櫃檯、售票櫃檯或驗票閘門。",
+    "signs": [
+      {
+        "visible_zh": "國光客運站（機場巴士）",
+        "visible_en": null,
+        "label_en": "Kuo-Kuang Bus Station, airport buses",
+        "direction": "left",
+        "panel": "left",
+        "note": "Chinese transcription normalizes the bracket glyphs; English small text is not certified."
+      }
+    ],
+    "objects": [
+      {
+        "category": "concourse",
+        "label_en": "open concourse with patterned floor and pillars",
+        "label_zh": "有花紋地坪與柱子的開放大廳",
+        "region": "foreground and middle background",
+        "bbox_xyxy": [
+          0,
+          162,
+          512,
+          288
+        ]
+      }
+    ],
+    "uncertain": [
+      {
+        "category": "service_counter",
+        "description": "Distant equipment/counter-like forms have insufficient detail to identify their role."
+      }
+    ],
+    "unknowns": [
+      "Small text in the central and right sign panels is not transcribed.",
+      "Parking and transit pictograms alone do not establish visible facilities."
+    ]
   },
   {
-    "image_id":"tps-scene-003",
-    "summary_en":"An overhead sign spans a concourse opening. A row of yellow-and-blue barrier gates is visible behind it. The board mentions toilets, the station hall, TRA tickets and TRA/HSR platforms. A wheelchair pictogram on the sign is an accessibility indication, not a verified accessible route.",
-    "summary_zh":"大廳開口上方有方向指標，下方後方可見一排黃藍色閘門。指標提到廁所、車站大廳、台鐵售票處，以及台鐵與高鐵月台。輪椅圖示僅為標示，尚未驗證無障礙路線。",
-    "signs":[
-      {"visible_zh":"廁所","visible_en":null,"label_en":"toilets","direction":"left","panel":"left","symbols":["toilet","wheelchair"]},
-      {"visible_zh":"車站大廳","visible_en":null,"label_en":"station hall","direction":null,"panel":"left-middle","note":"Per-destination arrow association left unresolved."},
-      {"visible_zh":"台鐵售票處","visible_en":null,"label_en":"TRA ticket office","direction":null,"panel":"middle","symbols":["stairs"],"note":"Nearby diagonal arrow/stair icon observed; exact association and floor text need closer review."},
-      {"visible_zh":"月台 台鐵 高鐵","visible_en":null,"label_en":"TRA and HSR platforms","direction":"right","panel":"right","note":"Space-separated visible labels, not one continuous printed phrase."}
+    "image_id": "tps-scene-003",
+    "summary_en": "An overhead sign spans a concourse opening. A row of yellow-and-blue barrier gates is visible behind it. The board mentions toilets, the station hall, TRA tickets and TRA/HSR platforms. A wheelchair pictogram on the sign is an accessibility indication, not a verified accessible route.",
+    "summary_zh": "大廳開口上方有方向指標，下方後方可見一排黃藍色閘門。指標提到廁所、車站大廳、台鐵售票處，以及台鐵與高鐵月台。輪椅圖示僅為標示，尚未驗證無障礙路線。",
+    "signs": [
+      {
+        "visible_zh": "廁所",
+        "visible_en": null,
+        "label_en": "toilets",
+        "direction": "left",
+        "panel": "left",
+        "symbols": [
+          "toilet",
+          "wheelchair"
+        ]
+      },
+      {
+        "visible_zh": "車站大廳",
+        "visible_en": null,
+        "label_en": "station hall",
+        "direction": null,
+        "panel": "left-middle",
+        "note": "Per-destination arrow association left unresolved."
+      },
+      {
+        "visible_zh": "台鐵售票處",
+        "visible_en": null,
+        "label_en": "TRA ticket office",
+        "direction": null,
+        "panel": "middle",
+        "symbols": [
+          "stairs"
+        ],
+        "note": "Nearby diagonal arrow/stair icon observed; exact association and floor text need closer review."
+      },
+      {
+        "visible_zh": "月台 台鐵 高鐵",
+        "visible_en": null,
+        "label_en": "TRA and HSR platforms",
+        "direction": "right",
+        "panel": "right",
+        "note": "Space-separated visible labels, not one continuous printed phrase."
+      }
     ],
-    "objects":[{"category":"fare_gates_or_turnstiles","label_en":"row of yellow-and-blue barrier gates","label_zh":"一排黃藍色閘門","region":"background below the overhead sign","bbox_xyxy":[109,207,209,250],"note":"Barrier gates are visible; exact operator and tripod-turnstile mechanism are not verified."}],
-    "uncertain":[],
-    "unknowns":["No actual toilet room or ticket-service counter is established by the visible words.","The gates do not establish the exact platform or paid-area boundary on a station map."]
+    "objects": [
+      {
+        "category": "fare_gates_or_turnstiles",
+        "label_en": "row of yellow-and-blue barrier gates",
+        "label_zh": "一排黃藍色閘門",
+        "region": "background below the overhead sign",
+        "bbox_xyxy": [
+          109,
+          207,
+          209,
+          250
+        ],
+        "note": "Barrier gates are visible; exact operator and tripod-turnstile mechanism are not verified."
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "No actual toilet room or ticket-service counter is established by the visible words.",
+      "The gates do not establish the exact platform or paid-area boundary on a station map."
+    ]
   },
   {
-    "image_id":"tps-scene-004",
-    "summary_en":"An indoor corridor/concourse under a striped ceiling and circular lights. The long sign refers to the Tamsui-Xinyi and Bannan lines, toilets and parking. An illuminated emergency-exit pictogram hangs above. The physical toilet entrance is not visible in the reviewed regions.",
-    "summary_zh":"條狀天花板與圓形燈具下的室內通道。長形指標提到淡水信義線、板南線、廁所及停車設施，上方另有發光逃生出口圖示。已檢視區域中未確認實際廁所入口。",
-    "signs":[
-      {"visible_zh":"淡水信義線","visible_en":null,"label_en":"Tamsui-Xinyi Line","direction":"up","panel":"left"},
-      {"visible_zh":"板南線","visible_en":null,"label_en":"Bannan Line","direction":"up","panel":"left-middle","note":"Shared left-group upward arrow."},
-      {"visible_zh":"廁所","visible_en":null,"label_en":"toilets","direction":"up","panel":"right","symbols":["toilet","wheelchair"]},
-      {"visible_zh":null,"visible_en":null,"label_en":"parking","direction":null,"panel":"right","symbols":["P"],"note":"P pictogram; parking-lot name not reliably transcribed."}
+    "image_id": "tps-scene-004",
+    "summary_en": "An indoor corridor/concourse under a striped ceiling and circular lights. The long sign refers to the Tamsui-Xinyi and Bannan lines, toilets and parking. An illuminated emergency-exit pictogram hangs above. The physical toilet entrance is not visible in the reviewed regions.",
+    "summary_zh": "條狀天花板與圓形燈具下的室內通道。長形指標提到淡水信義線、板南線、廁所及停車設施，上方另有發光逃生出口圖示。已檢視區域中未確認實際廁所入口。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": null,
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "板南線",
+        "visible_en": null,
+        "label_en": "Bannan Line",
+        "direction": "up",
+        "panel": "left-middle",
+        "note": "Shared left-group upward arrow."
+      },
+      {
+        "visible_zh": "廁所",
+        "visible_en": null,
+        "label_en": "toilets",
+        "direction": "up",
+        "panel": "right",
+        "symbols": [
+          "toilet",
+          "wheelchair"
+        ]
+      },
+      {
+        "visible_zh": null,
+        "visible_en": null,
+        "label_en": "parking",
+        "direction": null,
+        "panel": "right",
+        "symbols": [
+          "P"
+        ],
+        "note": "P pictogram; parking-lot name not reliably transcribed."
+      }
     ],
-    "objects":[{"category":"emergency_exit_sign","label_en":"illuminated emergency-exit pictogram","label_zh":"發光逃生出口圖示","region":"upper right","bbox_xyxy":[342,64,378,102]}],
-    "uncertain":[],
-    "unknowns":["Much of the lower concourse is redacted; fixtures behind masks are not assessable.","A wheelchair pictogram does not verify physical accessibility."]
+    "objects": [
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "illuminated emergency-exit pictogram",
+        "label_zh": "發光逃生出口圖示",
+        "region": "upper right",
+        "bbox_xyxy": [
+          342,
+          64,
+          378,
+          102
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "Much of the lower concourse is redacted; fixtures behind masks are not assessable.",
+      "A wheelchair pictogram does not verify physical accessibility."
+    ]
   },
   {
-    "image_id":"tps-scene-005",
-    "summary_en":"A broad staircase with a centre handrail and adjacent escalator structures is directly visible under an overhead sign. The yellow panel refers to Exit North 1 and Civic Boulevard. Other panels mention a TRA ticket office, a service centre and the station hall. Those counters or rooms are referenced, not directly observed.",
-    "summary_zh":"可直接看見中央有扶手的寬樓梯及旁邊的電扶梯結構。上方黄色指標提到出口北1門（市民大道）；其他面板提到台鐵售票處、服務中心及車站大廳。這些櫃檯或空間僅由指標提及，並未直接看見。",
-    "signs":[
-      {"visible_zh":"出口北1門（市民大道）","visible_en":null,"label_en":"Exit North 1, Civic Boulevard","direction":"up","panel":"yellow left","note":"Bracket glyphs normalized."},
-      {"visible_zh":"台鐵售票處","visible_en":null,"label_en":"TRA ticket office","direction":null,"panel":"middle"},
-      {"visible_zh":"服務中心","visible_en":null,"label_en":"service centre","direction":null,"panel":"middle-right","symbols":["question_mark"]},
-      {"visible_zh":"車站大廳","visible_en":null,"label_en":"station hall","direction":"up","panel":"right"}
+    "image_id": "tps-scene-005",
+    "summary_en": "A broad staircase with a centre handrail and adjacent escalator structures is directly visible under an overhead sign. The yellow panel refers to Exit North 1 and Civic Boulevard. Other panels mention a TRA ticket office, a service centre and the station hall. Those counters or rooms are referenced, not directly observed.",
+    "summary_zh": "可直接看見中央有扶手的寬樓梯及旁邊的電扶梯結構。上方黄色指標提到出口北1門（市民大道）；其他面板提到台鐵售票處、服務中心及車站大廳。這些櫃檯或空間僅由指標提及，並未直接看見。",
+    "signs": [
+      {
+        "visible_zh": "出口北1門（市民大道）",
+        "visible_en": null,
+        "label_en": "Exit North 1, Civic Boulevard",
+        "direction": "up",
+        "panel": "yellow left",
+        "note": "Bracket glyphs normalized."
+      },
+      {
+        "visible_zh": "台鐵售票處",
+        "visible_en": null,
+        "label_en": "TRA ticket office",
+        "direction": null,
+        "panel": "middle"
+      },
+      {
+        "visible_zh": "服務中心",
+        "visible_en": null,
+        "label_en": "service centre",
+        "direction": null,
+        "panel": "middle-right",
+        "symbols": [
+          "question_mark"
+        ]
+      },
+      {
+        "visible_zh": "車站大廳",
+        "visible_en": null,
+        "label_en": "station hall",
+        "direction": "up",
+        "panel": "right"
+      }
     ],
-    "objects":[
-      {"category":"stairs","label_en":"broad staircase with central handrail","label_zh":"中央有扶手的寬樓梯","region":"centre below sign","bbox_xyxy":[156,163,326,288]},
-      {"category":"escalator","label_en":"escalator structures beside the stairs","label_zh":"樓梯旁的電扶梯結構","region":"left and right sides of staircase","bbox_xyxy":[94,162,410,288],"note":"Operational status and direction of movement are not determined from a still image."}
+    "objects": [
+      {
+        "category": "stairs",
+        "label_en": "broad staircase with central handrail",
+        "label_zh": "中央有扶手的寬樓梯",
+        "region": "centre below sign",
+        "bbox_xyxy": [
+          156,
+          163,
+          326,
+          288
+        ]
+      },
+      {
+        "category": "escalator",
+        "label_en": "escalator structures beside the stairs",
+        "label_zh": "樓梯旁的電扶梯結構",
+        "region": "left and right sides of staircase",
+        "bbox_xyxy": [
+          94,
+          162,
+          410,
+          288
+        ],
+        "note": "Operational status and direction of movement are not determined from a still image."
+      }
     ],
-    "uncertain":[],
-    "unknowns":["No step-free alternative is verified.","Shared-arrow associations for the middle panels remain unresolved."]
+    "uncertain": [],
+    "unknowns": [
+      "No step-free alternative is verified.",
+      "Shared-arrow associations for the middle panels remain unresolved."
+    ]
   },
   {
-    "image_id":"tps-scene-006",
-    "summary_en":"A long concourse has a shopfront on the left and a blue LOCKERS / 置物櫃 label with adjacent locker units on the right. The overhead sign mentions the Tamsui-Xinyi Line, Taipei Bus Station, Taipei City Mall and Zhongshan Metro Mall, with toilet/accessibility and parking pictograms. The shop's complete name is not certified from this frame.",
-    "summary_zh":"長形通道左側可見商店門面，右側可見藍色 LOCKERS／置物櫃標示及相鄰櫃體。上方指標提到淡水信義線、臺北轉運站、台北地下街與中山地下街，並有廁所、輪椅及停車圖示。此照片中的商店全名尚未確認。",
-    "signs":[
-      {"visible_zh":"淡水信義線","visible_en":null,"label_en":"Tamsui-Xinyi Line","direction":"up","panel":"left"},
-      {"visible_zh":"臺北轉運站","visible_en":"Taipei Bus Station","label_en":"Taipei Bus Station","direction":"up","panel":"left-middle"},
-      {"visible_zh":"台北地下街","visible_en":null,"label_en":"Taipei City Mall","direction":"up","panel":"right-middle","note":"Shared upward arrow in the right destination group."},
-      {"visible_zh":"中山地下街","visible_en":null,"label_en":"Zhongshan Metro Mall","direction":"up","panel":"right","note":"Shared upward arrow in the right destination group."},
-      {"visible_zh":null,"visible_en":null,"label_en":"toilets","direction":"up","panel":"right-group symbols","symbols":["toilet","wheelchair"]},
-      {"visible_zh":null,"visible_en":null,"label_en":"parking","direction":null,"panel":"right-group symbols","symbols":["P"]}
+    "image_id": "tps-scene-006",
+    "summary_en": "A long concourse has a shopfront on the left and a blue LOCKERS / 置物櫃 label with adjacent locker units on the right. The overhead sign mentions the Tamsui-Xinyi Line, Taipei Bus Station, Taipei City Mall and Zhongshan Metro Mall, with toilet/accessibility and parking pictograms. The shop's complete name is not certified from this frame.",
+    "summary_zh": "長形通道左側可見商店門面，右側可見藍色 LOCKERS／置物櫃標示及相鄰櫃體。上方指標提到淡水信義線、臺北轉運站、台北地下街與中山地下街，並有廁所、輪椅及停車圖示。此照片中的商店全名尚未確認。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": null,
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "臺北轉運站",
+        "visible_en": "Taipei Bus Station",
+        "label_en": "Taipei Bus Station",
+        "direction": "up",
+        "panel": "left-middle"
+      },
+      {
+        "visible_zh": "台北地下街",
+        "visible_en": null,
+        "label_en": "Taipei City Mall",
+        "direction": "up",
+        "panel": "right-middle",
+        "note": "Shared upward arrow in the right destination group."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up",
+        "panel": "right",
+        "note": "Shared upward arrow in the right destination group."
+      },
+      {
+        "visible_zh": null,
+        "visible_en": null,
+        "label_en": "toilets",
+        "direction": "up",
+        "panel": "right-group symbols",
+        "symbols": [
+          "toilet",
+          "wheelchair"
+        ]
+      },
+      {
+        "visible_zh": null,
+        "visible_en": null,
+        "label_en": "parking",
+        "direction": null,
+        "panel": "right-group symbols",
+        "symbols": [
+          "P"
+        ]
+      }
     ],
-    "objects":[
-      {"category":"lockers","label_en":"locker bank with blue LOCKERS label","label_zh":"有藍色標示的置物櫃","region":"right side of image","bbox_xyxy":[416,175,473,288],"visible_text_en":"LOCKERS","visible_text_zh":"置物櫃","note":"Evidence is image-relative and historical; capacity, price and current availability unknown."},
-      {"category":"shopfront","label_en":"shopfront with yellow fascia and blue display","label_zh":"黃色招牌與藍色展示面的商店門面","region":"left side of image","bbox_xyxy":[0,155,124,224],"shop_name":null,"note":"A partial English brand mark is present, but the complete shop name is not certified."}
+    "objects": [
+      {
+        "category": "lockers",
+        "label_en": "locker bank with blue LOCKERS label",
+        "label_zh": "有藍色標示的置物櫃",
+        "region": "right side of image",
+        "bbox_xyxy": [
+          416,
+          175,
+          473,
+          288
+        ],
+        "visible_text_en": "LOCKERS",
+        "visible_text_zh": "置物櫃",
+        "note": "Evidence is image-relative and historical; capacity, price and current availability unknown."
+      },
+      {
+        "category": "shopfront",
+        "label_en": "shopfront with yellow fascia and blue display",
+        "label_zh": "黃色招牌與藍色展示面的商店門面",
+        "region": "left side of image",
+        "bbox_xyxy": [
+          0,
+          155,
+          124,
+          224
+        ],
+        "shop_name": null,
+        "note": "A partial English brand mark is present, but the complete shop name is not certified."
+      }
     ],
-    "uncertain":[],
-    "unknowns":["Physical toilet entrance and parking access are not verified.","This is the same source photograph used by locker pilot record tps-amenity-pilot-001, not an independent locker location."]
+    "uncertain": [],
+    "unknowns": [
+      "Physical toilet entrance and parking access are not verified.",
+      "This is the same source photograph used by locker pilot record tps-amenity-pilot-001, not an independent locker location."
+    ]
   },
   {
-    "image_id":"tps-scene-007",
-    "summary_en":"An indoor opening has a white-and-yellow overhead sign, a pair of large wall-mounted map/information panels on the left and an illuminated green emergency-exit pictogram on the right. A warm-lit passage lies behind the opening. The maps are not established as interactive kiosks.",
-    "summary_zh":"室內開口上方有白黃兩色指標，左側牆面可見大型地圖或資訊看板，右側有綠色發光逃生出口圖示。入口後方為暖色照明通道。這些看板未確認為可操作的互動式資訊機。",
-    "signs":[{"visible_zh":"台北地下街","visible_en":null,"label_en":"Taipei City Mall","direction":"up","panel":"white left"}],
-    "objects":[
-      {"category":"map_information_board","label_en":"large wall-mounted map/information panels","label_zh":"大型壁掛地圖／資訊看板","region":"left of the opening","bbox_xyxy":[0,169,143,283]},
-      {"category":"passage_entrance","label_en":"warm-lit passage opening","label_zh":"暖色照明通道入口","region":"centre","bbox_xyxy":[169,168,356,288]},
-      {"category":"emergency_exit_sign","label_en":"green emergency-exit pictogram","label_zh":"綠色逃生出口圖示","region":"right side above passage","bbox_xyxy":[423,166,445,192]}
+    "image_id": "tps-scene-007",
+    "summary_en": "An indoor opening has a white-and-yellow overhead sign, a pair of large wall-mounted map/information panels on the left and an illuminated green emergency-exit pictogram on the right. A warm-lit passage lies behind the opening. The maps are not established as interactive kiosks.",
+    "summary_zh": "室內開口上方有白黃兩色指標，左側牆面可見大型地圖或資訊看板，右側有綠色發光逃生出口圖示。入口後方為暖色照明通道。這些看板未確認為可操作的互動式資訊機。",
+    "signs": [
+      {
+        "visible_zh": "台北地下街",
+        "visible_en": null,
+        "label_en": "Taipei City Mall",
+        "direction": "up",
+        "panel": "white left"
+      }
     ],
-    "uncertain":[],
-    "unknowns":["Yellow-panel destination text is too small for reliable transcription; an upward arrow is visible.","Map text and precise floor layout are unreadable at this resolution.","A map board is not evidence of a staffed counter or interactive kiosk."]
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "large wall-mounted map/information panels",
+        "label_zh": "大型壁掛地圖／資訊看板",
+        "region": "left of the opening",
+        "bbox_xyxy": [
+          0,
+          169,
+          143,
+          283
+        ]
+      },
+      {
+        "category": "passage_entrance",
+        "label_en": "warm-lit passage opening",
+        "label_zh": "暖色照明通道入口",
+        "region": "centre",
+        "bbox_xyxy": [
+          169,
+          168,
+          356,
+          288
+        ]
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green emergency-exit pictogram",
+        "label_zh": "綠色逃生出口圖示",
+        "region": "right side above passage",
+        "bbox_xyxy": [
+          423,
+          166,
+          445,
+          192
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "Yellow-panel destination text is too small for reliable transcription; an upward arrow is visible.",
+      "Map text and precise floor layout are unreadable at this resolution.",
+      "A map board is not evidence of a staffed counter or interactive kiosk."
+    ]
   },
   {
-    "image_id":"tps-scene-008",
-    "summary_en":"A prominent Taoyuan Airport MRT board points upward above an indoor passage. Purple structural panels, metal rails at lower left and a corridor receding to the right provide surrounding visual context. No airport check-in counter or train platform is established by this image.",
-    "summary_zh":"大型桃園機場捷運指標以向上箭頭指示方向。周圍可見紫色柱面、左下金屬欄杆及向右後方延伸的通道。照片未確認機場報到櫃檯或實際月台。",
-    "signs":[{"visible_zh":"桃園機場捷運","visible_en":"Taoyuan Airport MRT","label_en":"Taoyuan Airport MRT","direction":"up","panel":"main"}],
-    "objects":[
-      {"category":"corridor","label_en":"corridor with purple structural panels","label_zh":"有紫色柱面的通道","region":"background and right side","bbox_xyxy":[0,166,512,288]},
-      {"category":"handrail","label_en":"metal railing at lower left","label_zh":"左下方金屬欄杆","region":"lower left","bbox_xyxy":[0,238,144,288]}
+    "image_id": "tps-scene-008",
+    "summary_en": "A prominent Taoyuan Airport MRT board points upward above an indoor passage. Purple structural panels, metal rails at lower left and a corridor receding to the right provide surrounding visual context. No airport check-in counter or train platform is established by this image.",
+    "summary_zh": "大型桃園機場捷運指標以向上箭頭指示方向。周圍可見紫色柱面、左下金屬欄杆及向右後方延伸的通道。照片未確認機場報到櫃檯或實際月台。",
+    "signs": [
+      {
+        "visible_zh": "桃園機場捷運",
+        "visible_en": "Taoyuan Airport MRT",
+        "label_en": "Taoyuan Airport MRT",
+        "direction": "up",
+        "panel": "main"
+      }
     ],
-    "uncertain":[],
-    "unknowns":["An Airport MRT direction does not establish an airport check-in facility.","No exact physical station coordinate or current route accessibility is known."]
+    "objects": [
+      {
+        "category": "corridor",
+        "label_en": "corridor with purple structural panels",
+        "label_zh": "有紫色柱面的通道",
+        "region": "background and right side",
+        "bbox_xyxy": [
+          0,
+          166,
+          512,
+          288
+        ]
+      },
+      {
+        "category": "handrail",
+        "label_en": "metal railing at lower left",
+        "label_zh": "左下方金屬欄杆",
+        "region": "lower left",
+        "bbox_xyxy": [
+          0,
+          238,
+          144,
+          288
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "An Airport MRT direction does not establish an airport check-in facility.",
+      "No exact physical station coordinate or current route accessibility is known."
+    ]
   },
   {
-    "image_id":"tps-scene-009",
-    "summary_en":"A striped ceiling and grey wall panels frame a concourse with an overhead directional board. The left panel points left to Taoyuan Airport MRT. A small green illuminated exit pictogram is visible below the board, with a wall-mounted information panel at the far right. Much of the foreground is masked; no MRT entrance or ticket counter is established.",
-    "summary_zh":"條狀天花板與灰色牆板圍繞大廳，上方有方向指標。左側面板以向左箭頭指向桃園機場捷運。指標下方可見綠色發光出口圖示，最右側牆面有資訊看板。前景多處已遮蔽，未確認捷運入口或售票櫃檯。",
-    "signs":[
-      {"visible_zh":"桃園機場捷運","visible_en":"Taoyuan Airport MRT","label_en":"Taoyuan Airport MRT","direction":"left","panel":"left"},
-      {"visible_zh":null,"visible_en":null,"label_en":"parking","direction":null,"panel":"white middle","symbols":["P"],"note":"Parking pictogram visible; adjacent destination and arrow association are unverified."}
+    "image_id": "tps-scene-009",
+    "summary_en": "A striped ceiling and grey wall panels frame a concourse with an overhead directional board. The left panel points left to Taoyuan Airport MRT. A small green illuminated exit pictogram is visible below the board, with a wall-mounted information panel at the far right. Much of the foreground is masked; no MRT entrance or ticket counter is established.",
+    "summary_zh": "條狀天花板與灰色牆板圍繞大廳，上方有方向指標。左側面板以向左箭頭指向桃園機場捷運。指標下方可見綠色發光出口圖示，最右側牆面有資訊看板。前景多處已遮蔽，未確認捷運入口或售票櫃檯。",
+    "signs": [
+      {
+        "visible_zh": "桃園機場捷運",
+        "visible_en": "Taoyuan Airport MRT",
+        "label_en": "Taoyuan Airport MRT",
+        "direction": "left",
+        "panel": "left"
+      },
+      {
+        "visible_zh": null,
+        "visible_en": null,
+        "label_en": "parking",
+        "direction": null,
+        "panel": "white middle",
+        "symbols": [
+          "P"
+        ],
+        "note": "Parking pictogram visible; adjacent destination and arrow association are unverified."
+      }
     ],
-    "objects":[
-      {"category":"concourse","label_en":"concourse with striped ceiling and grey wall panels","label_zh":"條狀天花板與灰色牆板的大廳","region":"whole unmasked scene","bbox_xyxy":[0,0,512,288]},
-      {"category":"emergency_exit_sign","label_en":"small green illuminated exit pictogram","label_zh":"小型綠色發光出口圖示","region":"beneath the middle of the overhead board","bbox_xyxy":[264,165,274,179]},
-      {"category":"map_information_board","label_en":"partially visible wall-mounted information panel","label_zh":"部分可見的壁掛資訊看板","region":"far right wall","bbox_xyxy":[483,182,512,226],"note":"Panel content is unreadable; not established as an interactive kiosk."}
+    "objects": [
+      {
+        "category": "concourse",
+        "label_en": "concourse with striped ceiling and grey wall panels",
+        "label_zh": "條狀天花板與灰色牆板的大廳",
+        "region": "whole unmasked scene",
+        "bbox_xyxy": [
+          0,
+          0,
+          512,
+          288
+        ]
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "small green illuminated exit pictogram",
+        "label_zh": "小型綠色發光出口圖示",
+        "region": "beneath the middle of the overhead board",
+        "bbox_xyxy": [
+          264,
+          165,
+          274,
+          179
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "partially visible wall-mounted information panel",
+        "label_zh": "部分可見的壁掛資訊看板",
+        "region": "far right wall",
+        "bbox_xyxy": [
+          483,
+          182,
+          512,
+          226
+        ],
+        "note": "Panel content is unreadable; not established as an interactive kiosk."
+      }
     ],
-    "uncertain":[],
-    "unknowns":["Other small destination labels are not reliably transcribed.","Masked foreground and adjacent fixtures are unassessable.","The MRT sign does not establish a physical station entrance, platform, current route or position."]
+    "uncertain": [],
+    "unknowns": [
+      "Other small destination labels are not reliably transcribed.",
+      "Masked foreground and adjacent fixtures are unassessable.",
+      "The MRT sign does not establish a physical station entrance, platform, current route or position."
+    ]
   },
   {
-    "image_id":"tps-scene-010",
-    "summary_en":"An overhead board beneath a striped ceiling mentions platforms, Taoyuan Airport MRT, HSR tickets and Taipei City Mall. The HSR-ticket panel has a stairs pictogram; actual stairs and a ticket counter are not established. A grey pillar separates visible corridor segments, with an illuminated display on the right. Large masks obscure much of the lower scene.",
-    "summary_zh":"條狀天花板下的指標提到月台、桃園機場捷運、高鐵售票區與台北地下街。高鐵售票區面板有樓梯圖示，但未確認實際樓梯或售票櫃檯。灰色柱面分隔通道，右側有照明展示面。下半部多處已遮蔽。",
-    "signs":[
-      {"visible_zh":"月台","visible_en":"Platform","label_en":"platforms","direction":"up","panel":"left"},
-      {"visible_zh":"桃園機場捷運","visible_en":"Taoyuan Airport MRT","label_en":"Taoyuan Airport MRT","direction":null,"panel":"left-middle","note":"Upward arrow appears in the left group; destination-specific association remains unverified."},
-      {"visible_zh":"高鐵售票區","visible_en":"HSR Tickets","label_en":"HSR ticket area","direction":"up","panel":"white middle","symbols":["stairs"]},
-      {"visible_zh":"台北地下街","visible_en":"Taipei City Mall","label_en":"Taipei City Mall","direction":"right","panel":"white right"}
+    "image_id": "tps-scene-010",
+    "summary_en": "An overhead board beneath a striped ceiling mentions platforms, Taoyuan Airport MRT, HSR tickets and Taipei City Mall. The HSR-ticket panel has a stairs pictogram; actual stairs and a ticket counter are not established. A grey pillar separates visible corridor segments, with an illuminated display on the right. Large masks obscure much of the lower scene.",
+    "summary_zh": "條狀天花板下的指標提到月台、桃園機場捷運、高鐵售票區與台北地下街。高鐵售票區面板有樓梯圖示，但未確認實際樓梯或售票櫃檯。灰色柱面分隔通道，右側有照明展示面。下半部多處已遮蔽。",
+    "signs": [
+      {
+        "visible_zh": "月台",
+        "visible_en": "Platform",
+        "label_en": "platforms",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "桃園機場捷運",
+        "visible_en": "Taoyuan Airport MRT",
+        "label_en": "Taoyuan Airport MRT",
+        "direction": null,
+        "panel": "left-middle",
+        "note": "Upward arrow appears in the left group; destination-specific association remains unverified."
+      },
+      {
+        "visible_zh": "高鐵售票區",
+        "visible_en": "HSR Tickets",
+        "label_en": "HSR ticket area",
+        "direction": "up",
+        "panel": "white middle",
+        "symbols": [
+          "stairs"
+        ]
+      },
+      {
+        "visible_zh": "台北地下街",
+        "visible_en": "Taipei City Mall",
+        "label_en": "Taipei City Mall",
+        "direction": "right",
+        "panel": "white right"
+      }
     ],
-    "objects":[
-      {"category":"corridor","label_en":"corridor segments around a grey pillar","label_zh":"灰色柱面兩側的通道","region":"unmasked lower middle and right","bbox_xyxy":[113,178,461,288]},
-      {"category":"display","label_en":"illuminated display beside a dark opening","label_zh":"深色開口旁的照明展示面","region":"right background","bbox_xyxy":[379,191,412,229],"note":"Business name and display function are not verified."}
+    "objects": [
+      {
+        "category": "corridor",
+        "label_en": "corridor segments around a grey pillar",
+        "label_zh": "灰色柱面兩側的通道",
+        "region": "unmasked lower middle and right",
+        "bbox_xyxy": [
+          113,
+          178,
+          461,
+          288
+        ]
+      },
+      {
+        "category": "display",
+        "label_en": "illuminated display beside a dark opening",
+        "label_zh": "深色開口旁的照明展示面",
+        "region": "right background",
+        "bbox_xyxy": [
+          379,
+          191,
+          412,
+          229
+        ],
+        "note": "Business name and display function are not verified."
+      }
     ],
-    "uncertain":[],
-    "unknowns":["Small yellow-symbol text beside the MRT label remains unreadable.","No physical platform, stairs, ticket counter or airport check-in facility is established.","Masked areas cannot be used to infer shops, equipment or passage accessibility."]
+    "uncertain": [],
+    "unknowns": [
+      "Small yellow-symbol text beside the MRT label remains unreadable.",
+      "No physical platform, stairs, ticket counter or airport check-in facility is established.",
+      "Masked areas cannot be used to infer shops, equipment or passage accessibility."
+    ]
   },
   {
-    "image_id":"tps-scene-011",
-    "summary_en":"A long board beneath a striped ceiling separately points left to Taipei Bus Station and upward to airport buses. The airport-bus panel reads Airport Express in English and 機場巴士 in Chinese, with a bus pictogram. A white panel points left to Taipei City Mall. Grey columns and portions of the tiled corridor remain visible around the masks; no physical bus terminal or boarding bay is established.",
-    "summary_zh":"條狀天花板下的長形指標分別以向左箭頭指向臺北轉運站、向上箭頭指向機場巴士。機場巴士面板的英文為 Airport Express，並有巴士圖示。白色面板以向左箭頭指向台北地下街。遮蔽區域周圍仍可見灰色柱面及部分地磚通道，未確認實際客運站或乘車月台。",
-    "signs":[
-      {"visible_zh":"臺北轉運站","visible_en":"Taipei Bus Station","label_en":"Taipei Bus Station","direction":"left","panel":"left"},
-      {"visible_zh":"機場巴士","visible_en":"Airport Express","label_en":"airport bus","direction":"up","panel":"middle","note":"Chinese text and bus pictogram identify airport buses, separately from Taipei Bus Station and Taoyuan Airport MRT."},
-      {"visible_zh":"台北地下街","visible_en":"Taipei City Mall","label_en":"Taipei City Mall","direction":"left","panel":"white right"}
+    "image_id": "tps-scene-011",
+    "summary_en": "A long board beneath a striped ceiling separately points left to Taipei Bus Station and upward to airport buses. The airport-bus panel reads Airport Express in English and 機場巴士 in Chinese, with a bus pictogram. A white panel points left to Taipei City Mall. Grey columns and portions of the tiled corridor remain visible around the masks; no physical bus terminal or boarding bay is established.",
+    "summary_zh": "條狀天花板下的長形指標分別以向左箭頭指向臺北轉運站、向上箭頭指向機場巴士。機場巴士面板的英文為 Airport Express，並有巴士圖示。白色面板以向左箭頭指向台北地下街。遮蔽區域周圍仍可見灰色柱面及部分地磚通道，未確認實際客運站或乘車月台。",
+    "signs": [
+      {
+        "visible_zh": "臺北轉運站",
+        "visible_en": "Taipei Bus Station",
+        "label_en": "Taipei Bus Station",
+        "direction": "left",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up",
+        "panel": "middle",
+        "note": "Chinese text and bus pictogram identify airport buses, separately from Taipei Bus Station and Taoyuan Airport MRT."
+      },
+      {
+        "visible_zh": "台北地下街",
+        "visible_en": "Taipei City Mall",
+        "label_en": "Taipei City Mall",
+        "direction": "left",
+        "panel": "white right"
+      }
     ],
-    "objects":[{"category":"corridor","label_en":"tiled corridor with grey columns","label_zh":"有灰色柱面的地磚通道","region":"unmasked lower scene","bbox_xyxy":[0,170,512,288]}],
-    "uncertain":[],
-    "unknowns":["Far-right small text is unreadable; an upward arrow is visible but its destination is not certified.","Most lower-scene objects are obscured by masks; physical transport facilities are not established.","Airport Express is the printed English bus label in this photograph, not evidence for Airport MRT."]
+    "objects": [
+      {
+        "category": "corridor",
+        "label_en": "tiled corridor with grey columns",
+        "label_zh": "有灰色柱面的地磚通道",
+        "region": "unmasked lower scene",
+        "bbox_xyxy": [
+          0,
+          170,
+          512,
+          288
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "Far-right small text is unreadable; an upward arrow is visible but its destination is not certified.",
+      "Most lower-scene objects are obscured by masks; physical transport facilities are not established.",
+      "Airport Express is the printed English bus label in this photograph, not evidence for Airport MRT."
+    ]
   },
   {
-    "image_id":"tps-scene-012",
-    "summary_en":"A long tiled corridor runs beneath a striped ceiling and an overhead destination board. Taipei City Mall is marked to the left; the right panel points upward for TRA and HSR platforms. A red fire extinguisher stands at the left wall. A partly cropped glass-fronted cabinet is visible on the right, but its function and business name are not established.",
-    "summary_zh":"條狀天花板下的長形地磚通道上方有方向指標。台北地下街箭頭向左，右側台鐵及高鐵月台面板箭頭向上。左側牆邊可見紅色滅火器，右側有部分超出畫面的玻璃櫃體，但用途與商店名稱無法確認。",
-    "signs":[
-      {"visible_zh":"台北地下街","visible_en":"Taipei City Mall","label_en":"Taipei City Mall","direction":"left","panel":"white left"},
-      {"visible_zh":"月台 台鐵 高鐵","visible_en":null,"label_en":"TRA and HSR platforms","direction":"up","panel":"brown right","note":"Space-separated labels on the platform panel; small additional operator text is not certified."}
+    "image_id": "tps-scene-012",
+    "summary_en": "A long tiled corridor runs beneath a striped ceiling and an overhead destination board. Taipei City Mall is marked to the left; the right panel points upward for TRA and HSR platforms. A red fire extinguisher stands at the left wall. A partly cropped glass-fronted cabinet is visible on the right, but its function and business name are not established.",
+    "summary_zh": "條狀天花板下的長形地磚通道上方有方向指標。台北地下街箭頭向左，右側台鐵及高鐵月台面板箭頭向上。左側牆邊可見紅色滅火器，右側有部分超出畫面的玻璃櫃體，但用途與商店名稱無法確認。",
+    "signs": [
+      {
+        "visible_zh": "台北地下街",
+        "visible_en": "Taipei City Mall",
+        "label_en": "Taipei City Mall",
+        "direction": "left",
+        "panel": "white left"
+      },
+      {
+        "visible_zh": "月台 台鐵 高鐵",
+        "visible_en": null,
+        "label_en": "TRA and HSR platforms",
+        "direction": "up",
+        "panel": "brown right",
+        "note": "Space-separated labels on the platform panel; small additional operator text is not certified."
+      }
     ],
-    "objects":[
-      {"category":"corridor","label_en":"long tiled corridor with grey wall panels and dark floor strips","label_zh":"灰色牆板與深色地坪條帶的長通道","region":"lower photograph outside masks","bbox_xyxy":[0,166,449,288]},
-      {"category":"fire_extinguisher","label_en":"red fire extinguisher at the wall","label_zh":"牆邊紅色滅火器","region":"lower left","bbox_xyxy":[96,251,113,276],"note":"Visible object only; serviceability and current placement unknown."},
-      {"category":"cabinet","label_en":"partly cropped glass-fronted cabinet","label_zh":"部分超出畫面的玻璃櫃體","region":"right edge","bbox_xyxy":[449,177,512,288],"note":"No shop name, retail function or interactive function is inferred."}
+    "objects": [
+      {
+        "category": "corridor",
+        "label_en": "long tiled corridor with grey wall panels and dark floor strips",
+        "label_zh": "灰色牆板與深色地坪條帶的長通道",
+        "region": "lower photograph outside masks",
+        "bbox_xyxy": [
+          0,
+          166,
+          449,
+          288
+        ]
+      },
+      {
+        "category": "fire_extinguisher",
+        "label_en": "red fire extinguisher at the wall",
+        "label_zh": "牆邊紅色滅火器",
+        "region": "lower left",
+        "bbox_xyxy": [
+          96,
+          251,
+          113,
+          276
+        ],
+        "note": "Visible object only; serviceability and current placement unknown."
+      },
+      {
+        "category": "cabinet",
+        "label_en": "partly cropped glass-fronted cabinet",
+        "label_zh": "部分超出畫面的玻璃櫃體",
+        "region": "right edge",
+        "bbox_xyxy": [
+          449,
+          177,
+          512,
+          288
+        ],
+        "note": "No shop name, retail function or interactive function is inferred."
+      }
     ],
-    "uncertain":[],
-    "unknowns":["Small central destination labels and far-right additional transit labels are not transcribed.","A mall destination sign does not establish the mall entrance or any hotel in this photograph.","No actual train platform or ticket counter is established; masked background areas are unassessable."]
+    "uncertain": [],
+    "unknowns": [
+      "Small central destination labels and far-right additional transit labels are not transcribed.",
+      "A mall destination sign does not establish the mall entrance or any hotel in this photograph.",
+      "No actual train platform or ticket counter is established; masked background areas are unassessable."
+    ]
   },
   {
-    "image_id":"tps-scene-013",
-    "summary_en":"An overhead board above a tiled concourse points right to Taipei City Mall and upward to West Parking and Taoyuan Airport MRT. A taxi pictogram is also present. Illuminated shopfront fascia and parts of retail displays are visible behind grey columns; complete business names are unreadable. Masks obscure much of the lower background.",
-    "summary_zh":"地磚大廳上方的指標以向右箭頭指向台北地下街，以向上箭頭標示西停車場及桃園機場捷運，另有計程車圖示。灰色柱面後方可見照明商店招牌與部分展示面，但商店全名無法辨讀。下方背景多處已遮蔽。",
-    "signs":[
-      {"visible_zh":"西停車場","visible_en":null,"label_en":"West Parking","direction":"up","panel":"white middle","symbols":["P"]},
-      {"visible_zh":"台北地下街","visible_en":"Taipei City Mall","label_en":"Taipei City Mall","direction":"right","panel":"white middle-right"},
-      {"visible_zh":"桃園機場捷運","visible_en":"Taoyuan Airport MRT","label_en":"Taoyuan Airport MRT","direction":"up","panel":"brown right"},
-      {"visible_zh":null,"visible_en":null,"label_en":"taxi","direction":null,"panel":"brown left symbol","symbols":["taxi"],"note":"Taxi pictogram observed; small text and destination-specific arrow association are not certified."}
+    "image_id": "tps-scene-013",
+    "summary_en": "An overhead board above a tiled concourse points right to Taipei City Mall and upward to West Parking and Taoyuan Airport MRT. A taxi pictogram is also present. Illuminated shopfront fascia and parts of retail displays are visible behind grey columns; complete business names are unreadable. Masks obscure much of the lower background.",
+    "summary_zh": "地磚大廳上方的指標以向右箭頭指向台北地下街，以向上箭頭標示西停車場及桃園機場捷運，另有計程車圖示。灰色柱面後方可見照明商店招牌與部分展示面，但商店全名無法辨讀。下方背景多處已遮蔽。",
+    "signs": [
+      {
+        "visible_zh": "西停車場",
+        "visible_en": null,
+        "label_en": "West Parking",
+        "direction": "up",
+        "panel": "white middle",
+        "symbols": [
+          "P"
+        ]
+      },
+      {
+        "visible_zh": "台北地下街",
+        "visible_en": "Taipei City Mall",
+        "label_en": "Taipei City Mall",
+        "direction": "right",
+        "panel": "white middle-right"
+      },
+      {
+        "visible_zh": "桃園機場捷運",
+        "visible_en": "Taoyuan Airport MRT",
+        "label_en": "Taoyuan Airport MRT",
+        "direction": "up",
+        "panel": "brown right"
+      },
+      {
+        "visible_zh": null,
+        "visible_en": null,
+        "label_en": "taxi",
+        "direction": null,
+        "panel": "brown left symbol",
+        "symbols": [
+          "taxi"
+        ],
+        "note": "Taxi pictogram observed; small text and destination-specific arrow association are not certified."
+      }
     ],
-    "objects":[
-      {"category":"concourse","label_en":"tiled concourse with grey columns and dark floor strips","label_zh":"灰色柱面與深色地坪條帶的大廳","region":"unmasked lower photograph","bbox_xyxy":[0,169,512,288]},
-      {"category":"shopfront","label_en":"illuminated shopfront fascia and partly visible retail displays","label_zh":"照明商店招牌與部分可見展示面","region":"background below the overhead board","bbox_xyxy":[137,181,348,236],"shop_name":null,"note":"Only unmasked fascia and display portions are assessable. Complete brand names are not legible."}
+    "objects": [
+      {
+        "category": "concourse",
+        "label_en": "tiled concourse with grey columns and dark floor strips",
+        "label_zh": "灰色柱面與深色地坪條帶的大廳",
+        "region": "unmasked lower photograph",
+        "bbox_xyxy": [
+          0,
+          169,
+          512,
+          288
+        ]
+      },
+      {
+        "category": "shopfront",
+        "label_en": "illuminated shopfront fascia and partly visible retail displays",
+        "label_zh": "照明商店招牌與部分可見展示面",
+        "region": "background below the overhead board",
+        "bbox_xyxy": [
+          137,
+          181,
+          348,
+          236
+        ],
+        "shop_name": null,
+        "note": "Only unmasked fascia and display portions are assessable. Complete brand names are not legible."
+      }
     ],
-    "uncertain":[],
-    "unknowns":["Two small destination labels on the far-left white panel remain unreadable.","No hotel name or complete retail brand is established by this exact photograph.","The parking, taxi and MRT references do not establish physical entrances, boarding areas or a current route.","Objects behind privacy masks are unassessable."]
+    "uncertain": [],
+    "unknowns": [
+      "Two small destination labels on the far-left white panel remain unreadable.",
+      "No hotel name or complete retail brand is established by this exact photograph.",
+      "The parking, taxi and MRT references do not establish physical entrances, boarding areas or a current route.",
+      "Objects behind privacy masks are unassessable."
+    ]
   },
   {
     "image_id": "tps-scene-014",
@@ -1584,5 +2221,3855 @@
       "No hotel or complete shop name is readable.",
       "The rail structure's function and accessibility remain unverified; mask-covered regions are unassessable."
     ]
+  },
+  {
+    "image_id": "tps-scene-033",
+    "review_date": "2026-10-05",
+    "summary_en": "A red-framed passage under exposed ceiling pipes has an overhead transport board. A blue wall stripe and diagonal metal handrail descend at the left; a few stair treads remain visible at the bottom left. A small wall information panel is present; its contents are unreadable.",
+    "summary_zh": "外露管線天花板下的紅框通道設有交通指標。左側可見藍色牆面條帶、斜向金屬扶手及底部少量階梯。牆上有小型資訊板，內容不清。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "handrail",
+        "label_en": "diagonal metal handrail",
+        "label_zh": "斜向金屬扶手",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          156,
+          234,
+          205,
+          276
+        ]
+      },
+      {
+        "category": "stairs",
+        "label_en": "partly visible stair treads",
+        "label_zh": "部分可見的階梯",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          146,
+          269,
+          201,
+          288
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "small wall information panel",
+        "label_zh": "小型壁掛資訊板",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          148,
+          195,
+          176,
+          218
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, additional vertical lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, bus boarding facilities, current routes or accessibility."
+    ]
+  },
+  {
+    "image_id": "tps-scene-034",
+    "review_date": "2026-10-05",
+    "summary_en": "The overhead board spans a red opening below a fluorescent light and exposed ducts. Inside, cream wall panels, a blue sloping stripe and a diagonal metal handrail are visible at the left. A small wall information sheet cannot be read.",
+    "summary_zh": "交通指標橫跨紅色開口，上方可見日光燈與外露管線。內側左邊有米色牆板、藍色斜條及金屬扶手，牆上小型資訊表無法辨讀。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "handrail",
+        "label_en": "metal handrail beneath blue wall stripe",
+        "label_zh": "藍色牆帶下的金屬扶手",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          198,
+          259,
+          254,
+          288
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "small wall information sheet",
+        "label_zh": "小型壁掛資訊表",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          163,
+          209,
+          191,
+          231
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, additional vertical lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, bus boarding facilities, current routes or accessibility."
+    ]
+  },
+  {
+    "image_id": "tps-scene-035",
+    "review_date": "2026-10-05",
+    "summary_en": "A broad red lintel supports the transport board. The left interior wall carries a blue diagonal stripe, metal handrail and small information panel. Yellow and blue background equipment is partly occluded, so its function is unresolved.",
+    "summary_zh": "寬闊紅色門楣上有交通指標。內側左牆有藍色斜條、金屬扶手與小型資訊板。遠處黃藍設備部分遮蔽，用途不明。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "handrail",
+        "label_en": "diagonal metal handrail along left wall",
+        "label_zh": "左牆斜向金屬扶手",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          186,
+          262,
+          230,
+          288
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "small wall information panel",
+        "label_zh": "小型壁掛資訊板",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          148,
+          207,
+          179,
+          231
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, additional vertical lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, bus boarding facilities, current routes or accessibility."
+    ]
+  },
+  {
+    "image_id": "tps-scene-036",
+    "review_date": "2026-10-05",
+    "summary_en": "A closer upward view shows the long transport board, red beam and dark exposed ceiling. Below it, cream wall panels and a small information sheet remain visible; most of the lower passage is cropped or masked.",
+    "summary_zh": "較近的仰視照片可見長形交通指標、紅色橫樑及深色外露天花板。下方可見米色牆板與小型資訊表，通道下半部多已超出畫面或遮蔽。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "wall information sheet with unreadable text",
+        "label_zh": "文字不清的壁掛資訊表",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          146,
+          221,
+          180,
+          247
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, additional vertical lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, bus boarding facilities, current routes or accessibility."
+    ]
+  },
+  {
+    "image_id": "tps-scene-037",
+    "review_date": "2026-10-05",
+    "summary_en": "The red passage opening sits beneath a large directional board and exposed ceiling. A blue wall stripe follows a descending metal handrail at lower left. A small wall information panel and tall blue-topped panels farther inside are visible, but their text is unreadable.",
+    "summary_zh": "紅色通道開口上方有大型方向指標與外露天花板。左下藍色牆帶沿斜向金屬扶手延伸。牆上小型資訊板及內側藍頂長形看板可見，但文字不清。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "handrail",
+        "label_en": "descending metal handrail",
+        "label_zh": "斜向金屬扶手",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          205,
+          264,
+          247,
+          288
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "tall blue-topped information panels",
+        "label_zh": "藍色頂部的長形資訊板",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          328,
+          254,
+          362,
+          288
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "small wall information panel",
+        "label_zh": "小型壁掛資訊板",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          157,
+          212,
+          192,
+          238
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, additional vertical lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, bus boarding facilities, current routes or accessibility."
+    ]
+  },
+  {
+    "image_id": "tps-scene-038",
+    "review_date": "2026-10-05",
+    "summary_en": "A long light fixture hangs over the red-framed entrance. The left wall has a small information panel and a blue sloping stripe above a metal handrail. Much of the foreground and distant equipment is obscured by masks.",
+    "summary_zh": "長形燈具懸於紅框入口上方。左牆有小型資訊板，藍色斜條下可見金屬扶手。前景及遠處多數設備被遮蔽。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "handrail",
+        "label_en": "metal handrail along sloping blue stripe",
+        "label_zh": "藍色斜條旁金屬扶手",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          156,
+          259,
+          209,
+          288
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "small wall information panel",
+        "label_zh": "小型壁掛資訊板",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          119,
+          206,
+          154,
+          232
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, additional vertical lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, bus boarding facilities, current routes or accessibility."
+    ]
+  },
+  {
+    "image_id": "tps-scene-039",
+    "review_date": "2026-10-05",
+    "summary_en": "The full red-framed opening contains a cream-walled passage. Stair treads and a short metal handrail segment are visible at the lower left. A small wall information panel and tall blue-and-yellow information panels lie farther inside; their detailed contents are unreadable.",
+    "summary_zh": "紅框開口內為米色牆面通道。左下可見階梯及一小段金屬扶手。牆上小型資訊板與內側藍黃長形看板可見，詳細內容不清。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "stairs",
+        "label_en": "partly visible stair treads at left",
+        "label_zh": "左側部分可見階梯",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          124,
+          273,
+          176,
+          288
+        ]
+      },
+      {
+        "category": "handrail",
+        "label_en": "short diagonal handrail segment",
+        "label_zh": "短斜向扶手",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          150,
+          238,
+          170,
+          251
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "small wall information panel",
+        "label_zh": "小型壁掛資訊板",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          122,
+          190,
+          151,
+          214
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "blue-and-yellow information panels",
+        "label_zh": "藍黃資訊看板",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          271,
+          223,
+          300,
+          274
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, additional vertical lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, bus boarding facilities, current routes or accessibility."
+    ]
+  },
+  {
+    "image_id": "tps-scene-040",
+    "review_date": "2026-10-05",
+    "summary_en": "A fluorescent light and round ceiling fixture hang above the transport board. The passage below has cream wall panels, a blue diagonal stripe with metal handrail, and small and tall information boards. The right red post carries additional unreadable vertical lettering.",
+    "summary_zh": "日光燈及圓形天花板設備位於交通指標上方。下方通道有米色牆板、藍色斜條與金屬扶手，以及大小資訊看板。右側紅柱另有無法辨讀的直排文字。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "handrail",
+        "label_en": "diagonal metal handrail at left",
+        "label_zh": "左側斜向金屬扶手",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          139,
+          266,
+          171,
+          288
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "small wall information panel",
+        "label_zh": "小型壁掛資訊板",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          85,
+          201,
+          114,
+          226
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "tall blue-and-yellow information panels",
+        "label_zh": "藍黃長形資訊板",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          234,
+          234,
+          255,
+          279
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, additional vertical lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, bus boarding facilities, current routes or accessibility."
+    ]
+  },
+  {
+    "image_id": "tps-scene-041",
+    "review_date": "2026-10-05",
+    "summary_en": "The transport board occupies much of this upward view. Beneath the red beam, a cream wall information sheet and the upper parts of tall blue-and-yellow panels remain visible. Small vertical signs on the right post cannot be fully transcribed.",
+    "summary_zh": "仰視照片主要呈現交通指標。紅色橫樑下可見米色牆上的資訊表及藍黃長形看板上半部。右側柱面的直排小標示無法完整抄錄。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "wall information sheet",
+        "label_zh": "壁掛資訊表",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          39,
+          224,
+          76,
+          254
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "partly visible tall information panels",
+        "label_zh": "部分可見的長形資訊板",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          205,
+          249,
+          239,
+          288
+        ]
+      },
+      {
+        "category": "handrail",
+        "label_en": "short metal rail segment at lower left",
+        "label_zh": "左下短段金屬欄杆",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          164,
+          276,
+          188,
+          288
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, additional vertical lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, bus boarding facilities, current routes or accessibility."
+    ]
+  },
+  {
+    "image_id": "tps-scene-042",
+    "review_date": "2026-10-05",
+    "summary_en": "An upward close view shows the board under a long ceiling light and above a red lintel. A small wall information sheet is visible at lower left. The remaining lower passage is largely cropped or masked, preventing reliable equipment identification.",
+    "summary_zh": "近距離仰視可見長燈下方及紅色門楣上方的指標。左下有小型壁掛資訊表，其餘通道大多超出畫面或遮蔽，無法可靠辨識設備。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "small wall information sheet",
+        "label_zh": "小型壁掛資訊表",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          16,
+          234,
+          53,
+          264
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, additional vertical lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, bus boarding facilities, current routes or accessibility."
+    ]
+  },
+  {
+    "image_id": "tps-scene-043",
+    "review_date": "2026-10-05",
+    "summary_en": "A red beam and metal shutter track frame the entrance below the board. On the left, a blue wall stripe and metal rail pass beneath an unreadable information sheet. Tall information panels are partly visible deeper in the passage.",
+    "summary_zh": "紅樑與金屬捲門軌道圍住指標下方入口。左側藍色牆带及金屬欄杆上方有文字不清的資訊表，通道內另有部分可見的長形資訊板。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "handrail",
+        "label_en": "metal rail below the blue wall stripe",
+        "label_zh": "藍色牆帶下金屬欄杆",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          90,
+          269,
+          128,
+          288
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "wall information sheet",
+        "label_zh": "壁掛資訊表",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          48,
+          214,
+          80,
+          243
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "partly visible tall information panels",
+        "label_zh": "部分可見長形資訊板",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          201,
+          241,
+          224,
+          288
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, additional vertical lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, bus boarding facilities, current routes or accessibility."
+    ]
+  },
+  {
+    "image_id": "tps-scene-044",
+    "review_date": "2026-10-05",
+    "summary_en": "The red-framed passage has blue wall markings, metal rails and information panels on the left. A separate opening at far right has a partly cropped green illuminated emergency-exit pictogram above it. No accessible route is established.",
+    "summary_zh": "紅框通道左側有藍色牆面標記、金屬欄杆與資訊板。最右側另一開口上方有部分超出畫面的綠色發光逃生出口圖示，未驗證無障礙路線。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "handrail",
+        "label_en": "metal handrail beside left information panels",
+        "label_zh": "左側資訊板旁金屬扶手",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          174,
+          242,
+          202,
+          280
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "small wall information panel",
+        "label_zh": "小型壁掛資訊板",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          64,
+          192,
+          94,
+          220
+        ]
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "partly cropped green exit pictogram",
+        "label_zh": "部分超出畫面的綠色出口圖示",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          503,
+          167,
+          512,
+          181
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, additional vertical lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, bus boarding facilities, current routes or accessibility."
+    ]
+  },
+  {
+    "image_id": "tps-scene-045",
+    "review_date": "2026-10-05",
+    "summary_en": "A wide red-framed opening shows a descending passage with blue wall stripe and metal rails. A small information panel is on the left wall. At right, an open side doorway with a green exit pictogram reveals exposed utility pipes. Masked regions conceal most stair detail.",
+    "summary_zh": "寬闊紅框開口內有向下延伸的通道、藍色牆帶與金屬欄杆。左牆有小型資訊板，右側敞開側門上方有綠色出口圖示，門內可見外露管線。多數階梯細節被遮蔽。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "handrail",
+        "label_en": "diagonal metal handrail along left wall",
+        "label_zh": "左牆斜向金屬扶手",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          90,
+          251,
+          132,
+          283
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "small wall information panel",
+        "label_zh": "小型壁掛資訊板",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          51,
+          193,
+          79,
+          220
+        ]
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green illuminated exit pictogram",
+        "label_zh": "綠色發光出口圖示",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          463,
+          167,
+          478,
+          182
+        ]
+      },
+      {
+        "category": "passage_entrance",
+        "label_en": "open side doorway with exposed utility pipes",
+        "label_zh": "可見外露管線的敞開側門",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          434,
+          182,
+          502,
+          288
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, additional vertical lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, bus boarding facilities, current routes or accessibility."
+    ]
+  },
+  {
+    "image_id": "tps-scene-046",
+    "review_date": "2026-10-05",
+    "summary_en": "A long light hangs above the red passage frame. A blue stripe and short handrail segment remain visible on the left, beneath a wall information sheet. The right side doorway has exposed pipes and an illuminated green exit sign. Detailed lower-passage fixtures are masked.",
+    "summary_zh": "長形燈具位於紅框通道上方。左側資訊表下可見藍色牆帶與短段扶手。右側門內可見管線，上方有綠色發光出口標示；通道下半部詳細設備已遮蔽。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "handrail",
+        "label_en": "short diagonal metal handrail",
+        "label_zh": "短斜向金屬扶手",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          68,
+          257,
+          109,
+          283
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "wall information sheet",
+        "label_zh": "壁掛資訊表",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          35,
+          199,
+          64,
+          225
+        ]
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green illuminated exit pictogram",
+        "label_zh": "綠色發光出口圖示",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          450,
+          167,
+          464,
+          182
+        ]
+      },
+      {
+        "category": "passage_entrance",
+        "label_en": "side doorway with exposed pipes",
+        "label_zh": "可見外露管線的側門",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          421,
+          183,
+          491,
+          288
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, additional vertical lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, bus boarding facilities, current routes or accessibility."
+    ]
+  },
+  {
+    "image_id": "tps-scene-047",
+    "review_date": "2026-10-05",
+    "summary_en": "A closer view centres the transport board beneath a bright rectangular light. The red lintel, metal shutter track and a small wall information sheet remain visible. Masking and the bottom crop limit the assessable passage area.",
+    "summary_zh": "較近照片呈現明亮長方形燈具下的交通指標。紅色門楣、金屬捲門軌道及小型壁掛資訊表仍可見，遮蔽與下緣裁切限制通道可判讀範圍。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "small wall information sheet",
+        "label_zh": "小型壁掛資訊表",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          30,
+          236,
+          66,
+          267
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, additional vertical lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, bus boarding facilities, current routes or accessibility."
+    ]
+  },
+  {
+    "image_id": "tps-scene-048",
+    "review_date": "2026-10-05",
+    "summary_en": "The board dominates this close upward view beneath a ceiling light. Only the top of the passage and a small information sheet at lower left remain in frame. The centre white-panel wording is too blurred for a complete transcription.",
+    "summary_zh": "近距離仰視以燈具下的指標為主。畫面僅保留通道頂部及左下小型資訊表，中央白色面板文字模糊，無法完整抄錄。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "partially cropped wall information sheet",
+        "label_zh": "部分超出畫面的資訊表",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          60,
+          259,
+          98,
+          288
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, additional vertical lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, bus boarding facilities, current routes or accessibility."
+    ]
+  },
+  {
+    "image_id": "tps-scene-049",
+    "review_date": "2026-10-05",
+    "summary_en": "A red passage frame sits beneath a dark ceiling and overhead transport board. A small information panel and blue wall stripe appear on the left; a short exposed metal handrail segment is visible between masks. The distant equipment cannot be classified.",
+    "summary_zh": "深色天花板及交通指標下有紅色通道框架。左側有小型資訊板與藍色牆帶，遮蔽區之間可見短段金屬扶手。遠處設備無法分類。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "small wall information panel",
+        "label_zh": "小型壁掛資訊板",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          159,
+          203,
+          188,
+          226
+        ]
+      },
+      {
+        "category": "handrail",
+        "label_en": "short diagonal handrail segment between masks",
+        "label_zh": "遮蔽區之間的短斜扶手",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          230,
+          272,
+          254,
+          288
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, additional vertical lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, bus boarding facilities, current routes or accessibility."
+    ]
+  },
+  {
+    "image_id": "tps-scene-050",
+    "review_date": "2026-10-05",
+    "summary_en": "The transport board hangs below a bright light in a dark exposed ceiling. Cream wall panels and a small information sheet are visible below the red beam. The foreground is heavily occluded and masked, so other equipment is unresolved.",
+    "summary_zh": "交通指標位於深色外露天花板中的亮燈下方。紅樑下可見米色牆板及小型資訊表，前景大幅遮擋並已遮蔽，其餘設備用途不明。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "small wall information sheet",
+        "label_zh": "小型壁掛資訊表",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          114,
+          209,
+          145,
+          234
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, additional vertical lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, bus boarding facilities, current routes or accessibility."
+    ]
+  },
+  {
+    "image_id": "tps-scene-051",
+    "review_date": "2026-10-05",
+    "summary_en": "A wider view shows the red-framed passage, exposed ceiling and a partly cropped ceiling air-conditioning unit at upper left. A wall information sheet is visible on the left. At right, a side opening with exposed pipes has a green illuminated exit pictogram.",
+    "summary_zh": "較廣角照片可見紅框通道、外露天花板及左上部分超出畫面的天花板空調設備。左牆有資訊表，右側可見管線的開口上方有綠色發光出口圖示。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "small wall information sheet",
+        "label_zh": "小型壁掛資訊表",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          57,
+          198,
+          83,
+          225
+        ]
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green illuminated exit pictogram",
+        "label_zh": "綠色發光出口圖示",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          451,
+          174,
+          465,
+          190
+        ]
+      },
+      {
+        "category": "passage_entrance",
+        "label_en": "side opening with utility pipes",
+        "label_zh": "可見管線的側邊開口",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          426,
+          190,
+          484,
+          288
+        ]
+      },
+      {
+        "category": "ceiling_equipment",
+        "label_en": "partly cropped ceiling air-conditioning unit",
+        "label_zh": "部分超出畫面的天花板空調設備",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          0,
+          0,
+          68,
+          77
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, additional vertical lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, bus boarding facilities, current routes or accessibility."
+    ]
+  },
+  {
+    "image_id": "tps-scene-052",
+    "review_date": "2026-10-05",
+    "summary_en": "The red beam supports the transport board below a long bright ceiling light. The left wall has a small information panel, partly obscured at its lower edge. A green exit pictogram is visible above the side doorway at right; the lower central passage is heavily masked.",
+    "summary_zh": "紅樑支撐長形亮燈下的交通指標。左牆有底部部分遮蔽的小型資訊板，右側門上方可見綠色出口圖示；中央通道下半部大幅遮蔽。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "partially obscured wall information panel",
+        "label_zh": "部分遮蔽的壁掛資訊板",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          4,
+          220,
+          35,
+          240
+        ]
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green illuminated exit pictogram",
+        "label_zh": "綠色發光出口圖示",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          462,
+          177,
+          477,
+          194
+        ]
+      },
+      {
+        "category": "passage_entrance",
+        "label_en": "side doorway beneath exit pictogram",
+        "label_zh": "出口圖示下的側門",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          440,
+          194,
+          502,
+          288
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, additional vertical lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, bus boarding facilities, current routes or accessibility."
+    ]
+  },
+  {
+    "image_id": "tps-scene-053",
+    "review_date": "2026-10-05",
+    "summary_en": "A red lintel and shutter track frame a cream-walled descending passage. A diagonal rail follows the blue stripe at lower left, beside tall information panels. A separate right doorway has a green exit pictogram; background names are unreadable.",
+    "summary_zh": "紅色門楣及捲門軌道圍住米色牆面的下行通道。左下斜向扶手沿藍色牆帶延伸，旁有長形資訊板。右側另一門口上方有綠色出口圖示，遠處名稱不清。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "handrail",
+        "label_en": "visible metal handrail segment",
+        "label_zh": "可見金屬扶手段",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          20,
+          257,
+          76,
+          288
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "information panel; detailed text unreadable",
+        "label_zh": "資訊板，詳細文字不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          108,
+          230,
+          159,
+          245
+        ]
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green illuminated exit pictogram",
+        "label_zh": "綠色發光出口圖示",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          431,
+          167,
+          442,
+          183
+        ]
+      },
+      {
+        "category": "passage_entrance",
+        "label_en": "side doorway; masked portions unassessable",
+        "label_zh": "側門口，遮蔽部分無法判讀",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          411,
+          183,
+          469,
+          288
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, post lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, boarding facilities, current routes or accessibility."
+    ],
+    "browse_priority": 0,
+    "visual_review_passes": 2
+  },
+  {
+    "image_id": "tps-scene-054",
+    "review_date": "2026-10-05",
+    "summary_en": "An oblique view shows the transport board, exposed ducts, a long light and round ceiling fixture. Blue-topped wall information panels and short metal rail segments remain visible below. The right post has vertical lettering that cannot be fully transcribed, beside a green exit pictogram.",
+    "summary_zh": "斜視可見交通指標、外露管線、長燈及圓形天花板設備。下方仍可見藍頂壁面資訊板與短段金屬欄杆。右柱直排文字無法完整抄錄，旁有綠色出口圖示。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "information panel; detailed text unreadable",
+        "label_zh": "資訊板，詳細文字不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          80,
+          253,
+          106,
+          288
+        ]
+      },
+      {
+        "category": "handrail",
+        "label_en": "visible metal handrail segment",
+        "label_zh": "可見金屬扶手段",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          250,
+          266,
+          257,
+          288
+        ]
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green illuminated exit pictogram",
+        "label_zh": "綠色發光出口圖示",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          409,
+          179,
+          420,
+          193
+        ]
+      },
+      {
+        "category": "passage_entrance",
+        "label_en": "side doorway; masked portions unassessable",
+        "label_zh": "側門口，遮蔽部分無法判讀",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          400,
+          194,
+          446,
+          288
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, post lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, boarding facilities, current routes or accessibility."
+    ],
+    "browse_priority": 1,
+    "visual_review_passes": 2
+  },
+  {
+    "image_id": "tps-scene-055",
+    "review_date": "2026-10-05",
+    "summary_en": "The board is nearly frontal above a red beam and metal shutter track. A small wall information sheet, blue stripe and diagonal metal rail are visible on the left. Tall blue-and-yellow panels remain visible deeper inside; their contents are unreadable.",
+    "summary_zh": "交通指標近乎正面，位於紅樑及金屬捲門軌道上方。左側可見小型壁掛資訊表、藍色牆帶與斜向金屬扶手。內側仍可見藍黃長形看板，內容不清。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "information panel; detailed text unreadable",
+        "label_zh": "資訊板，詳細文字不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          97,
+          211,
+          129,
+          237
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "information panel; detailed text unreadable",
+        "label_zh": "資訊板，詳細文字不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          257,
+          245,
+          290,
+          269
+        ]
+      },
+      {
+        "category": "handrail",
+        "label_en": "visible metal handrail segment",
+        "label_zh": "可見金屬扶手段",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          205,
+          262,
+          231,
+          288
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, post lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, boarding facilities, current routes or accessibility."
+    ],
+    "browse_priority": 2,
+    "visual_review_passes": 2
+  },
+  {
+    "image_id": "tps-scene-056",
+    "review_date": "2026-10-05",
+    "summary_en": "A wide red opening beneath exposed ceiling pipes reveals stair treads at the bottom and metal handrails inside. A small wall information sheet and taller blue-and-yellow panels are visible. A second cluster of panels at right has unreadable labels.",
+    "summary_zh": "外露天花板管線下的寬闊紅框開口，底部可見階梯，內側有金屬扶手。可見小型壁掛資訊表及藍黃長形看板；右側另一組看板標示不清。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "stairs",
+        "label_en": "visible stair treads",
+        "label_zh": "可見階梯",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          233,
+          274,
+          342,
+          288
+        ]
+      },
+      {
+        "category": "handrail",
+        "label_en": "visible metal handrail segment",
+        "label_zh": "可見金屬扶手段",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          305,
+          231,
+          326,
+          279
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "information panel; detailed text unreadable",
+        "label_zh": "資訊板，詳細文字不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          158,
+          188,
+          181,
+          208
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "information panel; detailed text unreadable",
+        "label_zh": "資訊板，詳細文字不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          301,
+          220,
+          341,
+          264
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, post lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, boarding facilities, current routes or accessibility."
+    ],
+    "browse_priority": 3,
+    "visual_review_passes": 2
+  },
+  {
+    "image_id": "tps-scene-057",
+    "review_date": "2026-10-05",
+    "summary_en": "Stair treads and a landing are visible across the lower opening, with diagonal metal rails and a blue sloping wall stripe. A small information sheet hangs on the left wall; blue-and-yellow panels are deeper inside. The black exposed ceiling contains long lights and round fixtures.",
+    "summary_zh": "開口下方可見階梯與平台、斜向金屬扶手及藍色斜牆帶。左牆掛有小型資訊表，內側有藍黃看板。黑色外露天花板設有長燈與圓形設備。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "stairs",
+        "label_en": "visible stair treads",
+        "label_zh": "可見階梯",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          148,
+          253,
+          214,
+          288
+        ]
+      },
+      {
+        "category": "handrail",
+        "label_en": "visible metal handrail segment",
+        "label_zh": "可見金屬扶手段",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          189,
+          235,
+          215,
+          254
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "information panel; detailed text unreadable",
+        "label_zh": "資訊板，詳細文字不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          149,
+          183,
+          176,
+          205
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "information panel; detailed text unreadable",
+        "label_zh": "資訊板，詳細文字不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          299,
+          218,
+          333,
+          258
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, post lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, boarding facilities, current routes or accessibility."
+    ],
+    "browse_priority": 4,
+    "visual_review_passes": 2
+  },
+  {
+    "image_id": "tps-scene-058",
+    "review_date": "2026-10-05",
+    "summary_en": "The upward oblique view shows a red beam, long light and round ceiling fixtures. Below, a wall information sheet and short blue wall stripe remain visible. Metal rails descend beside tall blue-and-yellow panels at right; foreground masks limit the view of the steps.",
+    "summary_zh": "斜向仰視可見紅樑、長燈及圓形天花板設備。下方可見壁掛資訊表與短段藍色牆帶。右側長形藍黃看板旁有斜向金屬扶手，前景遮蔽限制階梯判讀。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "information panel; detailed text unreadable",
+        "label_zh": "資訊板，詳細文字不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          181,
+          204,
+          210,
+          227
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "information panel; detailed text unreadable",
+        "label_zh": "資訊板，詳細文字不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          355,
+          245,
+          407,
+          278
+        ]
+      },
+      {
+        "category": "handrail",
+        "label_en": "visible metal handrail segment",
+        "label_zh": "可見金屬扶手段",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          343,
+          259,
+          383,
+          288
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, post lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, boarding facilities, current routes or accessibility."
+    ],
+    "browse_priority": 5,
+    "visual_review_passes": 2
+  },
+  {
+    "image_id": "tps-scene-059",
+    "review_date": "2026-10-05",
+    "summary_en": "The sign fills the upper portion of this close view. A small information sheet and the sloping blue stripe with a short rail segment are visible below. Tall information panels are cropped at the bottom; additional post lettering is too small to transcribe.",
+    "summary_zh": "近距離照片上方主要為指標。下方可見小型資訊表、藍色斜條與短段扶手。長形資訊板在底部超出畫面，柱面其他小字無法抄錄。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "information panel; detailed text unreadable",
+        "label_zh": "資訊板，詳細文字不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          158,
+          219,
+          191,
+          243
+        ]
+      },
+      {
+        "category": "handrail",
+        "label_en": "visible metal handrail segment",
+        "label_zh": "可見金屬扶手段",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          202,
+          279,
+          216,
+          288
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "information panel; detailed text unreadable",
+        "label_zh": "資訊板，詳細文字不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          335,
+          271,
+          380,
+          288
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, post lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, boarding facilities, current routes or accessibility."
+    ],
+    "browse_priority": 6,
+    "visual_review_passes": 2
+  },
+  {
+    "image_id": "tps-scene-060",
+    "review_date": "2026-10-05",
+    "summary_en": "A close frontal board view shows the centre Zhongshan Metro Mall reference. The red lintel and shutter track occupy the middle; only a wall information sheet and narrow fragments of the passage remain assessable below.",
+    "summary_zh": "近距離正面指標中央可辨中山地下街。中段為紅色門楣及捲門軌道，下方僅能判讀壁掛資訊表及少量通道片段。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up",
+        "panel": "centre",
+        "note": "Chinese destination is readable; the small English line is not fully transcribed."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "information panel; detailed text unreadable",
+        "label_zh": "資訊板，詳細文字不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          92,
+          229,
+          126,
+          257
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "Small wall-panel contents, post lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, boarding facilities, current routes or accessibility."
+    ],
+    "browse_priority": 7,
+    "visual_review_passes": 2
+  },
+  {
+    "image_id": "tps-scene-061",
+    "review_date": "2026-10-05",
+    "summary_en": "A wider view includes a cropped ceiling air-conditioning unit, a red-framed stair opening and a side doorway with a green exit pictogram. Stair treads, diagonal metal rails and tall wall information panels are visible. Small distant shopfront portions have unreadable names.",
+    "summary_zh": "較廣角照片含部分超出畫面的天花板空調、紅框階梯開口及有綠色出口圖示的側門。可見階梯、斜向金屬扶手與長形壁面資訊板。遠處少量店面名稱不清。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "ceiling_equipment",
+        "label_en": "partly cropped ceiling air-conditioning unit",
+        "label_zh": "部分超出畫面的天花板空調",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          0,
+          0,
+          117,
+          56
+        ]
+      },
+      {
+        "category": "stairs",
+        "label_en": "visible stair treads",
+        "label_zh": "可見階梯",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          68,
+          263,
+          146,
+          288
+        ]
+      },
+      {
+        "category": "handrail",
+        "label_en": "visible metal handrail segment",
+        "label_zh": "可見金屬扶手段",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          114,
+          222,
+          136,
+          262
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "information panel; detailed text unreadable",
+        "label_zh": "資訊板，詳細文字不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          116,
+          208,
+          143,
+          253
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "information panel; detailed text unreadable",
+        "label_zh": "資訊板，詳細文字不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          11,
+          175,
+          32,
+          198
+        ]
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green illuminated exit pictogram",
+        "label_zh": "綠色發光出口圖示",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          388,
+          154,
+          397,
+          167
+        ]
+      },
+      {
+        "category": "passage_entrance",
+        "label_en": "side doorway; masked portions unassessable",
+        "label_zh": "側門口，遮蔽部分無法判讀",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          366,
+          167,
+          414,
+          259
+        ]
+      },
+      {
+        "category": "shopfront",
+        "label_en": "visible shopfront portion; name unreadable",
+        "label_zh": "可見部分店面，名稱不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          249,
+          206,
+          276,
+          229
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, post lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, boarding facilities, current routes or accessibility."
+    ],
+    "browse_priority": 8,
+    "visual_review_passes": 2
+  },
+  {
+    "image_id": "tps-scene-062",
+    "review_date": "2026-10-05",
+    "summary_en": "The right side of the red-framed opening has a green exit pictogram above a utility doorway. A bank of pale locker doors is visible along the far right wall. Beyond the main opening, shopfront portions have unreadable names. Long lights and exposed pipes fill the upper view.",
+    "summary_zh": "紅框開口右側的設備門上方有綠色出口圖示，最右牆面可見淺色置物櫃門。主開口遠處可見部分店面，名稱不清。上方為長燈與外露管線。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "lockers",
+        "label_en": "pale locker bank; labels and operating status unknown",
+        "label_zh": "淺色置物櫃，標示與運作狀態不明",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          450,
+          194,
+          512,
+          288
+        ]
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green illuminated exit pictogram",
+        "label_zh": "綠色發光出口圖示",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          346,
+          170,
+          356,
+          183
+        ]
+      },
+      {
+        "category": "passage_entrance",
+        "label_en": "side doorway; masked portions unassessable",
+        "label_zh": "側門口，遮蔽部分無法判讀",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          337,
+          184,
+          385,
+          288
+        ]
+      },
+      {
+        "category": "shopfront",
+        "label_en": "visible shopfront portion; name unreadable",
+        "label_zh": "可見部分店面，名稱不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          163,
+          246,
+          187,
+          282
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, post lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, boarding facilities, current routes or accessibility."
+    ],
+    "browse_priority": 9,
+    "visual_review_passes": 2
+  },
+  {
+    "image_id": "tps-scene-063",
+    "review_date": "2026-10-05",
+    "summary_en": "A rightward oblique view shows pale lockers with repeated door seams and a narrow control panel at far right. A green exit sign marks the adjacent open utility doorway. The main passage is largely masked; the overhead board and exposed ceiling remain clear.",
+    "summary_zh": "向右斜視可見淺色置物櫃、重複櫃門接縫及最右側狹窄控制面板。相鄰敞開設備門上方有綠色出口標示。主通道大部分遮蔽，上方指標及外露天花板仍清楚。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "lockers",
+        "label_en": "pale locker bank; labels and operating status unknown",
+        "label_zh": "淺色置物櫃，標示與運作狀態不明",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          411,
+          211,
+          512,
+          288
+        ]
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green illuminated exit pictogram",
+        "label_zh": "綠色發光出口圖示",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          315,
+          188,
+          326,
+          201
+        ]
+      },
+      {
+        "category": "passage_entrance",
+        "label_en": "side doorway; masked portions unassessable",
+        "label_zh": "側門口，遮蔽部分無法判讀",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          305,
+          201,
+          348,
+          288
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, post lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, boarding facilities, current routes or accessibility."
+    ],
+    "browse_priority": 10,
+    "visual_review_passes": 2
+  },
+  {
+    "image_id": "tps-scene-064",
+    "review_date": "2026-10-05",
+    "summary_en": "The transport board is seen obliquely over a red shutter frame. At right, a green exit pictogram sits above an open doorway with exposed pipes; only a narrow part of a pale locker bank remains at the image edge. Small shopfront sections are visible in the lower background, without readable names.",
+    "summary_zh": "交通指標斜置於紅色捲門框上方。右侧綠色出口圖示下為可見管線的敞開門口，畫面邊緣僅保留一小段淺色置物櫃。下方背景可見少量店面，名稱不清。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "lockers",
+        "label_en": "pale locker bank; labels and operating status unknown",
+        "label_zh": "淺色置物櫃，標示與運作狀態不明",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          479,
+          223,
+          512,
+          288
+        ]
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green illuminated exit pictogram",
+        "label_zh": "綠色發光出口圖示",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          363,
+          194,
+          375,
+          210
+        ]
+      },
+      {
+        "category": "passage_entrance",
+        "label_en": "side doorway; masked portions unassessable",
+        "label_zh": "側門口，遮蔽部分無法判讀",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          349,
+          210,
+          402,
+          288
+        ]
+      },
+      {
+        "category": "shopfront",
+        "label_en": "visible shopfront portion; name unreadable",
+        "label_zh": "可見部分店面，名稱不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          118,
+          266,
+          160,
+          285
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, post lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, boarding facilities, current routes or accessibility."
+    ],
+    "browse_priority": 11,
+    "visual_review_passes": 2
+  },
+  {
+    "image_id": "tps-scene-065",
+    "review_date": "2026-10-05",
+    "summary_en": "The red beam carries an oblique transport board beneath a long light and exposed ducts. A green exit pictogram and open doorway with utility pipes are clear at right. The lower main passage is substantially masked; remaining background labels cannot be transcribed.",
+    "summary_zh": "紅色橫樑上斜向交通指標位於長燈及外露管線下方。右側綠色出口圖示及可見管線的敞開門口清楚。主通道下方大幅遮蔽，剩餘背景標示無法抄錄。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green illuminated exit pictogram",
+        "label_zh": "綠色發光出口圖示",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          382,
+          176,
+          394,
+          193
+        ]
+      },
+      {
+        "category": "passage_entrance",
+        "label_en": "side doorway; masked portions unassessable",
+        "label_zh": "側門口，遮蔽部分無法判讀",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          362,
+          194,
+          422,
+          288
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, post lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, boarding facilities, current routes or accessibility."
+    ],
+    "browse_priority": 12,
+    "visual_review_passes": 2
+  },
+  {
+    "image_id": "tps-scene-066",
+    "review_date": "2026-10-05",
+    "summary_en": "A nearly frontal board lies beneath a rectangular light and exposed ceiling pipes. The left wall has a small information sheet. Most of the lower centre is masked, leaving the top of distant yellow-edged panels assessable but their text unreadable.",
+    "summary_zh": "近乎正面的指標位於長方形燈具及外露管線下方。左牆有小型資訊表。下方中央多已遮蔽，遠處黃邊看板僅上部可判讀，文字不清。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "information panel; detailed text unreadable",
+        "label_zh": "資訊板，詳細文字不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          45,
+          205,
+          81,
+          237
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "information panel; detailed text unreadable",
+        "label_zh": "資訊板，詳細文字不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          345,
+          254,
+          375,
+          284
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, post lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, boarding facilities, current routes or accessibility."
+    ],
+    "browse_priority": 13,
+    "visual_review_passes": 2
+  },
+  {
+    "image_id": "tps-scene-067",
+    "review_date": "2026-10-05",
+    "summary_en": "The board and red lintel occupy the upper middle of the view. A wall information sheet and the left end of a blue stripe with a short diagonal rail remain below; the foreground centre is heavily masked. Distant panel details are unresolved.",
+    "summary_zh": "指標及紅色門楣位於畫面中上部。下方仍可見壁掛資訊表、藍色牆帶左端及短斜扶手；前景中央大幅遮蔽，遠處看板細節不明。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "information panel; detailed text unreadable",
+        "label_zh": "資訊板，詳細文字不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          49,
+          205,
+          84,
+          237
+        ]
+      },
+      {
+        "category": "handrail",
+        "label_en": "visible metal handrail segment",
+        "label_zh": "可見金屬扶手段",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          97,
+          272,
+          126,
+          288
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, post lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, boarding facilities, current routes or accessibility."
+    ],
+    "browse_priority": 14,
+    "visual_review_passes": 2
+  },
+  {
+    "image_id": "tps-scene-068",
+    "review_date": "2026-10-05",
+    "summary_en": "A tilted close view shows the transport board, red beam and shiny shutter track. The lower left wall carries a small information sheet; only the edge of a blue stripe remains visible. Foreground masking and cropping hide most passage fixtures.",
+    "summary_zh": "傾斜近照可見交通指標、紅樑及反光捲門軌道。左下牆面有小型資訊表，另僅可見藍色牆帶邊缘。前景遮蔽與裁切隱去大部分通道設備。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "information panel; detailed text unreadable",
+        "label_zh": "資訊板，詳細文字不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          193,
+          222,
+          235,
+          252
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, post lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, boarding facilities, current routes or accessibility."
+    ],
+    "browse_priority": 15,
+    "visual_review_passes": 2
+  },
+  {
+    "image_id": "tps-scene-069",
+    "review_date": "2026-10-05",
+    "summary_en": "A close oblique view shows the overhead board below exposed ceiling ducts and circular fixtures. A wall information sheet remains visible beneath the shutter track. Cropping and masks prevent reliable identification of the lower-passage equipment.",
+    "summary_zh": "近距離斜視可見外露天花板管線與圓形設備下方的交通指標。捲門軌道下仍可見壁掛資訊表。裁切與遮蔽使通道下方設備無法可靠辨識。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "information panel; detailed text unreadable",
+        "label_zh": "資訊板，詳細文字不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          196,
+          225,
+          235,
+          257
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, post lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, boarding facilities, current routes or accessibility."
+    ],
+    "browse_priority": 16,
+    "visual_review_passes": 2
+  },
+  {
+    "image_id": "tps-scene-070",
+    "review_date": "2026-10-05",
+    "summary_en": "The board is viewed from below with an exposed dark ceiling and long light. A yellow-edged illuminated panel is cropped at far left. A wall information sheet is partly visible after mask refinement, together with the top of a blue-topped panel at lower right.",
+    "summary_zh": "由下仰視指標，上方有深色外露天花板及長燈。最左側黃邊發光看板部分超出畫面。遮蔽範圍修正後，部分壁掛資訊表及右下藍頂看板頂端可見。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "information panel; detailed text unreadable",
+        "label_zh": "資訊板，詳細文字不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          0,
+          215,
+          20,
+          288
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "information panel; detailed text unreadable",
+        "label_zh": "資訊板，詳細文字不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          446,
+          276,
+          480,
+          288
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "partly visible wall information sheet; text unreadable",
+        "label_zh": "部分可見壁掛資訊表，文字不清",
+        "bbox_xyxy": [
+          220,
+          217,
+          241,
+          230
+        ],
+        "region": "left background; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, post lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, boarding facilities, current routes or accessibility."
+    ],
+    "browse_priority": 17,
+    "visual_review_passes": 2
+  },
+  {
+    "image_id": "tps-scene-071",
+    "review_date": "2026-10-05",
+    "summary_en": "The centre panel clearly refers to Zhongshan Metro Mall between the transit and airport-bus panels. Below the red beam, a small wall information sheet and a blue-topped information panel remain partly visible. Most lower fixtures are masked.",
+    "summary_zh": "中央面板在捷運及機場巴士面板之間，清楚指向中山地下街。紅樑下仍可見部分小型壁掛資訊表及藍頂資訊板，大部分下方設備已遮蔽。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up",
+        "panel": "centre",
+        "note": "Chinese destination is readable; the small English line is not fully transcribed."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "information panel; detailed text unreadable",
+        "label_zh": "資訊板，詳細文字不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          137,
+          201,
+          168,
+          225
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "information panel; detailed text unreadable",
+        "label_zh": "資訊板，詳細文字不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          315,
+          253,
+          332,
+          288
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "Small wall-panel contents, post lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, boarding facilities, current routes or accessibility."
+    ],
+    "browse_priority": 18,
+    "visual_review_passes": 2
+  },
+  {
+    "image_id": "tps-scene-072",
+    "review_date": "2026-10-05",
+    "summary_en": "A long light hangs over the oblique board and red shutter frame. The lower left has a blue sloping wall stripe, a diagonal handrail and a partly cropped information sheet. A green exit pictogram is clipped by the far right edge; background labels are unreadable.",
+    "summary_zh": "長燈位於斜向指標與紅色捲門框上方。左下有藍色斜牆帶、斜向扶手及部分超出畫面的資訊表。最右邊緣裁切綠色出口圖示，背景標示不清。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "handrail",
+        "label_en": "visible metal handrail segment",
+        "label_zh": "可見金屬扶手段",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          30,
+          276,
+          50,
+          288
+        ]
+      },
+      {
+        "category": "handrail",
+        "label_en": "visible metal handrail segment",
+        "label_zh": "可見金屬扶手段",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          127,
+          266,
+          148,
+          288
+        ]
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "information panel; detailed text unreadable",
+        "label_zh": "資訊板，詳細文字不清",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          0,
+          205,
+          23,
+          234
+        ]
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green illuminated exit pictogram",
+        "label_zh": "綠色發光出口圖示",
+        "region": "image-relative box; only unmasked portions are assessable",
+        "bbox_xyxy": [
+          505,
+          165,
+          512,
+          185
+        ]
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its full destination wording is not reliably readable in this exact image.",
+      "Small wall-panel contents, post lettering and background business names are not certified.",
+      "Masked and off-image regions are unassessable. Transport signs do not establish platforms, boarding facilities, current routes or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-073",
+    "review_date": "2026-10-05",
+    "summary_en": "An oblique transport board sits below a long light and round ceiling fixture. The right red post borders an open side doorway with a green exit pictogram and exposed vertical pipes. Blue-topped wall panels are partly visible at lower left; foreground masks obscure most passage details.",
+    "summary_zh": "斜向交通指標上方有長燈及圓形天花板設備。右側紅柱旁為敞開側門，設綠色出口圖示及外露直立管線。左下可見部分藍頂壁面看板，前景遮蔽大部分通道細節。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green illuminated exit pictogram",
+        "label_zh": "綠色發光出口圖示",
+        "bbox_xyxy": [
+          407,
+          180,
+          419,
+          195
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "passage_entrance",
+        "label_en": "side doorway; masked portions unassessable",
+        "label_zh": "側門口，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          393,
+          197,
+          449,
+          288
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "partly visible information panel; detailed text unreadable",
+        "label_zh": "部分可見資訊板，詳細文字不清",
+        "bbox_xyxy": [
+          64,
+          263,
+          81,
+          286
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its complete destination wording is not reliably readable in this exact photograph.",
+      "Small background signs, post lettering and business names are not reliably readable.",
+      "Masked and off-image regions are unassessable. Signs do not establish physical platforms, current routes, boarding facilities or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-074",
+    "review_date": "2026-10-05",
+    "summary_en": "The nearly frontal board spans a red lintel above a tiled descending passage. A small information sheet is visible on the left wall. Blue-topped information panels and a metal handrail remain in the lower left background; lettering on the red side post is too small to transcribe.",
+    "summary_zh": "近乎正面的指標橫跨紅色門楣，下方為磁磚牆面的下行通道。左牆可見小型資訊表；左下背景有藍頂資訊板與金屬扶手，紅色側柱文字過小而無法抄錄。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "partly visible information panel; detailed text unreadable",
+        "label_zh": "部分可見資訊板，詳細文字不清",
+        "bbox_xyxy": [
+          1,
+          216,
+          40,
+          248
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "partly visible information panel; detailed text unreadable",
+        "label_zh": "部分可見資訊板，詳細文字不清",
+        "bbox_xyxy": [
+          172,
+          253,
+          196,
+          288
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "handrail",
+        "label_en": "visible metal handrail segment",
+        "label_zh": "可見金屬扶手段",
+        "bbox_xyxy": [
+          145,
+          273,
+          166,
+          288
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its complete destination wording is not reliably readable in this exact photograph.",
+      "Small background signs, post lettering and business names are not reliably readable.",
+      "Masked and off-image regions are unassessable. Signs do not establish physical platforms, current routes, boarding facilities or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-075",
+    "review_date": "2026-10-05",
+    "summary_en": "A long ceiling light hangs over the transport board and red opening. The lower left wall has a blue diagonal stripe and a partly cropped information sheet. At right an open doorway contains visible pipes beneath a green exit pictogram; background shopfront text is unresolved.",
+    "summary_zh": "長形天花板燈位於交通指標與紅色開口上方。左下牆面有藍色斜條及部分裁切資訊表；右側敞開門口內可見管線，上方有綠色出口圖示，背景店面文字不清。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "partly visible information panel; detailed text unreadable",
+        "label_zh": "部分可見資訊板，詳細文字不清",
+        "bbox_xyxy": [
+          0,
+          206,
+          32,
+          236
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green illuminated exit pictogram",
+        "label_zh": "綠色發光出口圖示",
+        "bbox_xyxy": [
+          456,
+          174,
+          470,
+          191
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "passage_entrance",
+        "label_en": "side doorway; masked portions unassessable",
+        "label_zh": "側門口，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          431,
+          193,
+          502,
+          288
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its complete destination wording is not reliably readable in this exact photograph.",
+      "Small background signs, post lettering and business names are not reliably readable.",
+      "Masked and off-image regions are unassessable. Signs do not establish physical platforms, current routes, boarding facilities or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-076",
+    "review_date": "2026-10-05",
+    "summary_en": "The large frontal board shows Zhongshan Metro Mall between the Tamsui-Xinyi Line and airport-bus references. A bright rectangular light overlaps the board's upper edge. The lower frame shows ceiling panels beyond the red lintel; cropping and masks leave little assessable equipment.",
+    "summary_zh": "大型正面指標中央為中山地下街，兩側為淡水信義線與機場巴士。明亮長方形燈具與指標上緣重疊。紅色門楣下可見內側天花板，裁切與遮蔽後可判讀設備有限。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up",
+        "panel": "centre",
+        "note": "Chinese name is readable in this exact photograph; small English line is not fully transcribed."
+      }
+    ],
+    "objects": [],
+    "uncertain": [],
+    "unknowns": [
+      "Small background signs, post lettering and business names are not reliably readable.",
+      "Masked and off-image regions are unassessable. Signs do not establish physical platforms, current routes, boarding facilities or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-077",
+    "review_date": "2026-10-05",
+    "summary_en": "A nearly level board carries a readable Zhongshan Metro Mall reference and three printed arrows. Exposed pipes, a round fixture and a long light are visible above; a red beam and shutter track frame the opening below. Lower background signage is too small for reliable text transcription.",
+    "summary_zh": "近乎水平的指標可讀中山地下街並有三個箭頭。上方可見外露管線、圓形設備與長燈；下方開口由紅樑及捲門軌道圍住，遠處標示過小而無法可靠抄錄。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up",
+        "panel": "centre",
+        "note": "Chinese name is readable in this exact photograph; small English line is not fully transcribed."
+      }
+    ],
+    "objects": [],
+    "uncertain": [],
+    "unknowns": [
+      "Small background signs, post lettering and business names are not reliably readable.",
+      "Masked and off-image regions are unassessable. Signs do not establish physical platforms, current routes, boarding facilities or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-078",
+    "review_date": "2026-10-05",
+    "summary_en": "The frontal sign has a clear Zhongshan Metro Mall label below a rectangular light. The shutter track runs horizontally under the red beam. A wall information sheet is partly cut off at far left; distant yellow and white sign strips cannot be transcribed.",
+    "summary_zh": "正面指標中央中山地下街清楚，上方為長方形燈具。紅樑下方捲門軌道水平延伸。最左邊壁掛資訊表部分裁切；遠處黃色與白色標示帶無法抄錄。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up",
+        "panel": "centre",
+        "note": "Chinese name is readable in this exact photograph; small English line is not fully transcribed."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "partly visible information panel; detailed text unreadable",
+        "label_zh": "部分可見資訊板，詳細文字不清",
+        "bbox_xyxy": [
+          0,
+          233,
+          35,
+          273
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "Small background signs, post lettering and business names are not reliably readable.",
+      "Masked and off-image regions are unassessable. Signs do not establish physical platforms, current routes, boarding facilities or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-079",
+    "review_date": "2026-10-05",
+    "summary_en": "The overhead board clearly names Zhongshan Metro Mall, with upward and upper-right arrows across its panels. A rectangular ceiling light sits above the left-centre portion. A small information sheet on the lower left tiled wall remains visible; lower background details are cropped.",
+    "summary_zh": "上方指標清楚標示中山地下街，各面板有向上及右上箭頭。長方形天花板燈位於左中上方。左下磁磚牆面保留小型資訊表，背景下方細節已裁切。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up",
+        "panel": "centre",
+        "note": "Chinese name is readable in this exact photograph; small English line is not fully transcribed."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "partly visible information panel; detailed text unreadable",
+        "label_zh": "部分可見資訊板，詳細文字不清",
+        "bbox_xyxy": [
+          9,
+          231,
+          54,
+          273
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "Small background signs, post lettering and business names are not reliably readable.",
+      "Masked and off-image regions are unassessable. Signs do not establish physical platforms, current routes, boarding facilities or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-080",
+    "review_date": "2026-10-05",
+    "summary_en": "An angled close view preserves the Zhongshan Metro Mall and airport-bus panels. The right lower region is masked. A partly cropped wall information sheet sits below the red beam at left; the ceiling has exposed parallel pipes and a long light.",
+    "summary_zh": "斜向近照保留中山地下街與機場巴士面板。右下區域已遮蔽；左側紅樑下方有部分裁切的壁掛資訊表，天花板可見平行外露管線及長燈。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up",
+        "panel": "centre",
+        "note": "Chinese name is readable in this exact photograph; small English line is not fully transcribed."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "partly visible information panel; detailed text unreadable",
+        "label_zh": "部分可見資訊板，詳細文字不清",
+        "bbox_xyxy": [
+          95,
+          256,
+          144,
+          288
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "Small background signs, post lettering and business names are not reliably readable.",
+      "Masked and off-image regions are unassessable. Signs do not establish physical platforms, current routes, boarding facilities or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-081",
+    "review_date": "2026-10-05",
+    "summary_en": "A near-frontal transport board includes the Zhongshan Metro Mall label, with a long light slanting above the left panel. A wall information sheet is visible below the shutter track. Most of the lower foreground is masked; no detailed background destination is established.",
+    "summary_zh": "近乎正面的交通指標含中山地下街，左面板上方有斜向長燈。捲門軌道下可見壁掛資訊表。下方前景多已遮蔽，無法確立遠處目的地細節。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up",
+        "panel": "centre",
+        "note": "Chinese name is readable in this exact photograph; small English line is not fully transcribed."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "partly visible information panel; detailed text unreadable",
+        "label_zh": "部分可見資訊板，詳細文字不清",
+        "bbox_xyxy": [
+          96,
+          225,
+          144,
+          265
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "Small background signs, post lettering and business names are not reliably readable.",
+      "Masked and off-image regions are unassessable. Signs do not establish physical platforms, current routes, boarding facilities or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-082",
+    "review_date": "2026-10-05",
+    "summary_en": "The board fills most of the view beneath exposed dark ceiling pipes. Zhongshan Metro Mall is readable in its central panel. Below the red beam, only part of a wall information sheet and cream ceiling panels remain assessable after foreground masking.",
+    "summary_zh": "指標佔據畫面大部分，上方為深色外露管線。中央中山地下街清楚可讀。紅樑下經前景遮蔽後，僅能判讀部分壁掛資訊表及米色天花板。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up",
+        "panel": "centre",
+        "note": "Chinese name is readable in this exact photograph; small English line is not fully transcribed."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "partly visible information panel; detailed text unreadable",
+        "label_zh": "部分可見資訊板，詳細文字不清",
+        "bbox_xyxy": [
+          86,
+          235,
+          121,
+          276
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "Small background signs, post lettering and business names are not reliably readable.",
+      "Masked and off-image regions are unassessable. Signs do not establish physical platforms, current routes, boarding facilities or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-083",
+    "review_date": "2026-10-05",
+    "summary_en": "The board is slightly tilted above a red lintel, with Zhongshan Metro Mall readable in the centre. A long light and round ceiling fixture sit above it. The lower left information sheet is cropped by the image bottom; foreground masking prevents assessment of the passage floor.",
+    "summary_zh": "指標稍微傾斜，位於紅色門楣上方，中央中山地下街可讀。上方有長燈及圓形天花板設備。左下資訊表在畫面底部裁切，前景遮蔽使通道地面無法判讀。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up",
+        "panel": "centre",
+        "note": "Chinese name is readable in this exact photograph; small English line is not fully transcribed."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "partly visible information panel; detailed text unreadable",
+        "label_zh": "部分可見資訊板，詳細文字不清",
+        "bbox_xyxy": [
+          33,
+          251,
+          75,
+          288
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "Small background signs, post lettering and business names are not reliably readable.",
+      "Masked and off-image regions are unassessable. Signs do not establish physical platforms, current routes, boarding facilities or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-084",
+    "review_date": "2026-10-05",
+    "summary_en": "A long rectangular light hangs above the left half of the board. Below the red beam and shutter track, a partly visible wall information sheet remains at left. The central white panel has an upward arrow, but its full destination text is degraded in this exact view.",
+    "summary_zh": "長方形燈具位於指標左半部上方。紅樑及捲門軌道下方左側仍可見部分壁掛資訊表。中央白色面板有向上箭頭，但此照片中完整目的地文字不清。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "partly visible information panel; detailed text unreadable",
+        "label_zh": "部分可見資訊板，詳細文字不清",
+        "bbox_xyxy": [
+          24,
+          232,
+          66,
+          268
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its complete destination wording is not reliably readable in this exact photograph.",
+      "Small background signs, post lettering and business names are not reliably readable.",
+      "Masked and off-image regions are unassessable. Signs do not establish physical platforms, current routes, boarding facilities or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-085",
+    "review_date": "2026-10-05",
+    "summary_en": "The transport board is angled above a cream tiled wall with a small information sheet. Zhongshan Metro Mall is readable in the centre. A blue wall stripe reaches the lower edge, and blue-topped information panels are partly visible at lower right with unreadable contents.",
+    "summary_zh": "斜向交通指標下方為米色磁磚牆及小型資訊表，中央中山地下街可讀。藍色牆帶延伸至畫面下緣，右下部分藍頂資訊板可見但內容不清。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up",
+        "panel": "centre",
+        "note": "Chinese name is readable in this exact photograph; small English line is not fully transcribed."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "partly visible information panel; detailed text unreadable",
+        "label_zh": "部分可見資訊板，詳細文字不清",
+        "bbox_xyxy": [
+          138,
+          214,
+          181,
+          247
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "partly visible information panel; detailed text unreadable",
+        "label_zh": "部分可見資訊板，詳細文字不清",
+        "bbox_xyxy": [
+          402,
+          277,
+          449,
+          288
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "Small background signs, post lettering and business names are not reliably readable.",
+      "Masked and off-image regions are unassessable. Signs do not establish physical platforms, current routes, boarding facilities or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-086",
+    "review_date": "2026-10-05",
+    "summary_en": "A slightly oblique transport board sits above a red beam and shiny shutter track. The cream wall below holds an information sheet and a sloping blue stripe. Blue-and-yellow panels are partly visible at lower right; the central overhead label is too degraded for complete transcription.",
+    "summary_zh": "略斜的交通指標位於紅樑及反光捲門軌道上方。下方米色牆面有資訊表與藍色斜條，右下可見部分藍黃看板；上方中央標示過於模糊而無法完整抄錄。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "partly visible information panel; detailed text unreadable",
+        "label_zh": "部分可見資訊板，詳細文字不清",
+        "bbox_xyxy": [
+          132,
+          213,
+          177,
+          247
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "partly visible information panel; detailed text unreadable",
+        "label_zh": "部分可見資訊板，詳細文字不清",
+        "bbox_xyxy": [
+          391,
+          270,
+          463,
+          288
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its complete destination wording is not reliably readable in this exact photograph.",
+      "Small background signs, post lettering and business names are not reliably readable.",
+      "Masked and off-image regions are unassessable. Signs do not establish physical platforms, current routes, boarding facilities or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-087",
+    "review_date": "2026-10-05",
+    "summary_en": "The sign and red beam span a wider view of the tiled passage wall. An information sheet is partly visible behind the lower masks; a blue diagonal stripe and short metal rail remain at left. Yellow-edged information panels appear at lower right, with unreadable detail.",
+    "summary_zh": "指標與紅樑橫跨較廣的磁磚通道牆面。下方遮蔽外仍可見部分資訊表；左側有藍色斜條與短段金屬扶手，右下黃邊資訊板細節不清。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "partly visible information panel; detailed text unreadable",
+        "label_zh": "部分可見資訊板，詳細文字不清",
+        "bbox_xyxy": [
+          108,
+          211,
+          146,
+          241
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "handrail",
+        "label_en": "visible metal handrail segment",
+        "label_zh": "可見金屬扶手段",
+        "bbox_xyxy": [
+          149,
+          274,
+          184,
+          288
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "map_information_board",
+        "label_en": "partly visible information panel; detailed text unreadable",
+        "label_zh": "部分可見資訊板，詳細文字不清",
+        "bbox_xyxy": [
+          414,
+          256,
+          451,
+          275
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its complete destination wording is not reliably readable in this exact photograph.",
+      "Small background signs, post lettering and business names are not reliably readable.",
+      "Masked and off-image regions are unassessable. Signs do not establish physical platforms, current routes, boarding facilities or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-088",
+    "review_date": "2026-10-05",
+    "summary_en": "Zhongshan Metro Mall is readable in the centre of the slightly angled overhead board. A long bright light and circular ceiling fixture are visible above. The red right post has a small left arrow and pictograms, but its vertical lettering and distant shop names cannot be fully read.",
+    "summary_zh": "略斜的上方指標中央可讀中山地下街。上方有明亮長燈與圓形天花板設備。右側紅柱有小型向左箭頭與圖示，但直排文字及遠處店名無法完整辨讀。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up",
+        "panel": "centre",
+        "note": "Chinese name is readable in this exact photograph; small English line is not fully transcribed."
+      }
+    ],
+    "objects": [],
+    "uncertain": [],
+    "unknowns": [
+      "Small background signs, post lettering and business names are not reliably readable.",
+      "Masked and off-image regions are unassessable. Signs do not establish physical platforms, current routes, boarding facilities or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-089",
+    "review_date": "2026-10-05",
+    "summary_en": "The oblique board includes the Zhongshan Metro Mall reference beneath exposed pipes and a rectangular light. At lower left a blue-topped information panel remains partly visible. The red right post borders the passage, while small background signs and business names are unreadable.",
+    "summary_zh": "斜向指標含中山地下街，上方有外露管線及長方形燈具。左下仍可見部分藍頂資訊板；右侧紅柱位於通道邊緣，背景小型標示與店名不清。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      },
+      {
+        "visible_zh": "中山地下街",
+        "visible_en": null,
+        "label_en": "Zhongshan Metro Mall",
+        "direction": "up",
+        "panel": "centre",
+        "note": "Chinese name is readable in this exact photograph; small English line is not fully transcribed."
+      }
+    ],
+    "objects": [
+      {
+        "category": "map_information_board",
+        "label_en": "partly visible information panel; detailed text unreadable",
+        "label_zh": "部分可見資訊板，詳細文字不清",
+        "bbox_xyxy": [
+          97,
+          274,
+          137,
+          288
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "Small background signs, post lettering and business names are not reliably readable.",
+      "Masked and off-image regions are unassessable. Signs do not establish physical platforms, current routes, boarding facilities or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
+  },
+  {
+    "image_id": "tps-scene-090",
+    "review_date": "2026-10-05",
+    "summary_en": "This tilted upward view shows the overhead transit and airport-bus board, exposed ceiling pipes and a large rectangular light. The red beam and shutter track dominate the lower half. A green exit pictogram sits above a partly cropped side doorway at far right; the main passage floor is outside the frame.",
+    "summary_zh": "向上傾斜的照片可見捷運及機場巴士指標、外露天花板管線與大型長方形燈。下半部主要為紅樑及捲門軌道。最右側部分裁切的側門上方有綠色出口圖示，主通道地面在畫面外。",
+    "signs": [
+      {
+        "visible_zh": "淡水信義線",
+        "visible_en": "Tamsui-Xinyi Line",
+        "label_en": "Tamsui-Xinyi Line",
+        "direction": "up",
+        "panel": "left"
+      },
+      {
+        "visible_zh": "機場巴士",
+        "visible_en": "Airport Express",
+        "label_en": "airport bus",
+        "direction": "up_right",
+        "panel": "right",
+        "symbols": [
+          "bus",
+          "airplane"
+        ],
+        "note": "Chinese text and bus pictogram identify airport buses; printed Airport Express is not an Airport MRT identity."
+      }
+    ],
+    "objects": [
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green illuminated exit pictogram",
+        "label_zh": "綠色發光出口圖示",
+        "bbox_xyxy": [
+          473,
+          205,
+          488,
+          225
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      },
+      {
+        "category": "passage_entrance",
+        "label_en": "side doorway; masked portions unassessable",
+        "label_zh": "側門口，遮蔽部分無法判讀",
+        "bbox_xyxy": [
+          454,
+          225,
+          503,
+          288
+        ],
+        "region": "image-relative box; only unmasked pixels are evidence"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central white panel has an upward arrow; its complete destination wording is not reliably readable in this exact photograph.",
+      "Small background signs, post lettering and business names are not reliably readable.",
+      "Masked and off-image regions are unassessable. Signs do not establish physical platforms, current routes, boarding facilities or accessibility."
+    ],
+    "visual_review_passes": 1,
+    "annotation_method": "single visual inspection of the exact full original with basic manual masking; no second visual review; no OCR or fine-tuned model"
   }
 ]

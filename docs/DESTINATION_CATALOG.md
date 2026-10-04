@@ -214,7 +214,7 @@ Category checklist only: some categories occur in existing scenes or online faci
 
 ## Coverage and continuation
 
-6 destination names are readable in sampled images; 6 candidates await photo matches, and 1 historical candidate remains unresolved. The annotation checkpoint is 32 whole-photo records covering 33 unique originals together with the locker pilot. 8,938 source entries remain without new annotations.
+6 destination names are readable in sampled images; 6 candidates await photo matches, and 1 historical candidate remains unresolved. The annotation checkpoint is 90 whole-photo records covering 91 unique originals together with the locker pilot. 8,880 source entries remain without new annotations.
 
 Continue full-photograph annotation batches including hotels, malls and other sites. Use this existing catalogue as a reference and add readable names during each photo annotation; repeating online research is not a prerequisite. Keep current online names and historical printed text separate. Preserve the three separate transport categories: airport buses, Taoyuan Airport MRT and Taipei Bus Station.
 

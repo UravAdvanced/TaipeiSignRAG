@@ -9,10 +9,13 @@ const transportLabels = {
   taipei_bus_station:'Taipei Bus Station / 臺北轉運站'
 };
 let dataset;
-function run() {
+let resultLimit = 50;
+function run(reset = true) {
   if (!dataset) return;
-  const data = search(dataset, $('#q').value, $('#mode').value);
-  $('#status').textContent = data.count ? `${data.count} matching scene record(s) / 筆符合的照片紀錄` : 'No supported match in this POC. This does not establish absence from the station. / 本概念驗證未找到支持證據，不代表車站沒有該設施。';
+  if (reset) resultLimit = 50;
+  const data = search(dataset, $('#q').value, $('#mode').value, resultLimit);
+  $('#status').textContent = data.count ? `Showing ${data.count} of ${data.total_count} matching scene records / 顯示 ${data.count} 筆，共 ${data.total_count} 筆符合的照片紀錄` : 'No supported match in this POC. This does not establish absence from the station. / 本概念驗證未找到支持證據，不代表車站沒有該設施。';
+  $('#more').hidden = data.count >= data.total_count;
   $('#results').innerHTML = data.results.map(({record:r,matched_categories:m,matched_transport:t}) => {
     const imageUrl = new URL('../release/huggingface/' + r.evidence_image, import.meta.url).href;
     return `<article><img src="${esc(imageUrl)}" width="512" height="288" loading="lazy" alt="Manually masked evidence for ${esc(r.image_id)}"><div class="body"><small>${esc(r.image_id)} · ${esc(r.filename_family)}</small><h2>${esc(r.filename_family)} scene</h2>
@@ -26,6 +29,7 @@ function run() {
   $('#context').textContent = JSON.stringify({instructions:data.llm_instructions,evidence:data.context_for_llm,llm_called:false},null,2);
 }
 $('#search').addEventListener('submit', event => {event.preventDefault();run();});
+$('#more').addEventListener('click', () => {resultLimit += 50;run(false);});
 $('#mode').addEventListener('change', run);
 document.querySelectorAll('[data-q]').forEach(button => button.addEventListener('click', () => {$('#q').value=button.dataset.q;run();}));
 try {

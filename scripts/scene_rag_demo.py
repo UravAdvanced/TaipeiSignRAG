@@ -89,14 +89,16 @@ def search(query,mode='all',limit=50):
         if query.strip() and not wanted and not transport and not destinations and not hits:continue
         score=sum(4 if s=='visible' else 2 for s in matched.values())+hits+6*len(matched_transport)
         results.append({'record':row,'ranking_score':score,'matched_categories':matched,'matched_transport':matched_transport})
-    results.sort(key=lambda r:(-r['ranking_score'],r['record']['image_id']))
+    browse = not query.strip() and mode == 'all'
+    results.sort(key=lambda r:((r['record'].get('browse_priority',100000) if browse else 0),-r['ranking_score'],r['record']['image_id']))
+    total_count=len(results)
     results=results[:limit]
     context=[]
     for hit in results:
         r=hit['record'];context.append({'source_id':r['image_id'],'source_image':r['source_image'],
           'scene_description':r['summary_en'],'physical_objects':r['objects'],'sign_references':r['signs'],
           'uncertainties':r['unknowns'],'map_coordinate':None,'anchor_id':None,'human_review':r['human_review_status']})
-    return {'query':query,'mode':mode,'count':len(results),'requested_categories':wanted,
+    return {'query':query,'mode':mode,'count':len(results),'total_count':total_count,'requested_categories':wanted,
       'requested_transport':transport,'requested_destinations':destinations,
       'retrieval_method':'local lexical matching with bilingual amenity aliases; ranking scores are not probabilities',
       'results':results,'context_for_llm':context,'llm_instructions':INSTRUCTIONS,

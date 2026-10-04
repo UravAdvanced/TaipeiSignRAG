@@ -45,10 +45,11 @@ export function search(data, query, mode = 'all', limit = 50) {
     const score = Object.values(matched).reduce((sum, s) => sum + (s === 'visible' ? 4 : 2), 0) + hits + 6 * matchedTransport.length;
     results.push({record:row, ranking_score:score, matched_categories:matched, matched_transport:matchedTransport});
   }
-  results.sort((a,b) => b.ranking_score - a.ranking_score || a.record.image_id.localeCompare(b.record.image_id));
+  const browse = !query.trim() && mode === 'all';
+  results.sort((a,b) => (browse ? (a.record.browse_priority ?? 100000) - (b.record.browse_priority ?? 100000) : 0) || b.ranking_score - a.ranking_score || a.record.image_id.localeCompare(b.record.image_id));
   const selected = results.slice(0, limit);
   return {
-    query, mode, count:selected.length, requested_categories:wanted, requested_transport:transport, requested_destinations:destinations,
+    query, mode, count:selected.length, total_count:results.length, requested_categories:wanted, requested_transport:transport, requested_destinations:destinations,
     retrieval_method:'browser-side lexical matching with bilingual aliases; ranking scores are not probabilities',
     results:selected,
     context_for_llm:selected.map(({record:r}) => ({source_id:r.image_id, source_image:r.source_image,

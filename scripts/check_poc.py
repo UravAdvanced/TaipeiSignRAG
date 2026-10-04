@@ -17,8 +17,11 @@ progress=json.loads((ROOT/'annotations/progress.json').read_text(encoding='utf-8
 assert data['progress']==progress
 amenities=[json.loads(line) for line in (PACK/'amenity_pilot.jsonl').read_text(encoding='utf-8').splitlines()]
 unique={r['source_sha256'] for r in rows+amenities}
-assert progress['scene_records']==len(rows)==32
-assert progress['unique_source_images_with_any_new_annotation']==len(unique)==33
+notes=json.loads((ROOT/'annotations/scene_pilot_notes.json').read_text(encoding='utf-8'))
+assert progress['scene_records']==len(rows)==len(notes)
+assert {r['image_id'] for r in rows}=={n['image_id'] for n in notes}
+assert len(rows)==len({r['source_sha256'] for r in rows}), 'Duplicate source photographs'
+assert progress['unique_source_images_with_any_new_annotation']==len(unique)
 assert progress['remaining_source_entries_without_new_annotation']==8971-len(unique)
 with zipfile.ZipFile(ROOT/'Taipei Station Sign Board 2.v1i.coco.zip') as archive:
     for row in rows:
@@ -40,7 +43,7 @@ cases=[]
 for query in queries:
     for mode in ('all','visible','signs'):
         result=search(query,mode)
-        cases.append({'query':query,'mode':mode,'hits':[[h['record']['image_id'],h['ranking_score'],h['matched_categories'],h['matched_transport']] for h in result['results']]})
+        cases.append({'query':query,'mode':mode,'total_count':result['total_count'],'hits':[[h['record']['image_id'],h['ranking_score'],h['matched_categories'],h['matched_transport']] for h in result['results']]})
 subprocess.run(['node',str(ROOT/'scripts/check_browser_search.mjs')],input=json.dumps(cases,ensure_ascii=False),encoding='utf-8',check=True)
 class QuietStatic(SimpleHTTPRequestHandler):
     def log_message(self,*args): pass

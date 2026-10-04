@@ -6,7 +6,7 @@ The user explicitly requested the entire photograph, including surrounding visua
 
 - `annotations/scene_pilot_notes.json`: authored observations from interactive visual inspection; the source of semantic content.
 - `release/huggingface/scene_manifest.jsonl`: original-image hashes, supplied sign boxes and local privacy masks.
-- `release/huggingface/scene_annotations.jsonl`: thirty-two enriched whole-scene records.
+- `release/huggingface/scene_annotations.jsonl`: 90 enriched whole-scene records.
 - `release/huggingface/scene_images/`: native-size full-frame views with conservative person masks.
 - `annotations/progress.json`: exact completed and remaining counts.
 - `scripts/build_scene_records.py`: combines notes and provenance; does not automatically invent annotations.
@@ -21,7 +21,7 @@ Scenes 009–011 add exact photographs A04N_HH_001, A06W_HH_001 and A07E_HH_001.
 
 `signs[].transport_id` has separate values `airport_bus`, `taoyuan_airport_mrt`, and `taipei_bus_station`. These are semantic destination categories, not physical landmark IDs. They are assigned from the authored sign labels in each exact photograph. “Airport Express” is retained in `visible_en` on bus panels; the Chinese text and bus pictogram support the bus category. No MRT platform, bus boarding bay or current route is inferred from these signs.
 
-There are 32 scene records plus two locker observations, covering 33 unique original source hashes. There are 8,938 source entries without new annotation. Zero records have independent expert review or physical anchor links. `build_scene_records.py` derives coverage counts from the records and source hashes rather than fixed pilot counts.
+There are 90 scene records plus two locker observations, covering 91 unique original source hashes. There are 8,880 source entries without new annotation. Zero records have independent expert review or physical anchor links. `build_scene_records.py` derives coverage counts from the records and source hashes rather than fixed pilot counts.
 
 ## Hotels, retail and other destinations
 
@@ -50,6 +50,10 @@ The checked category set includes lockers, toilets, shopfronts, fare gates/turns
 - A wheelchair pictogram is a sign observation, not proof of an accessible route. A printed map is not automatically an interactive kiosk. A transit destination does not establish a train entrance or airport check-in counter.
 - `related_observations` records exact source-image hash links; scene 006 and the first locker pilot refer to the same original photograph. This must not be counted as two independent places.
 
+## Current continuation workflow
+
+User instruction, 5 October 2026: use exactly 19 images per batch. From scene 072 onward, inspect each original once, author its observations and basic masks in that pass, and save without a second visual review. Automated integrity/export checks continue. Keep already double-checked scenes 053–071 first in the default site browse view; search relevance is unchanged. No additional viewer disclaimers are requested.
+
 ## Privacy and review provenance
 
 Pilot privacy regions are conservative manual masks. Coarsely pixelated local previews were used to refine the regions while preserving fixtures. Masks may cover objects adjacent to people; those parts are not assessable. Masked full-frame views and enlarged sign details were visually inspected by the assistant. No human identity or activity descriptions are included. Independent expert review of both privacy and annotation remains pending.
@@ -67,6 +71,6 @@ C:/Python313/python.exe scripts/check_poc.py
 C:/Python313/python.exe scripts/scene_rag_demo.py serve --port 8766
 ```
 
-The first command requires the original second COCO archive at the project root. Add new image selections and review their full privacy views before authoring notes. Never propagate all details from one image to every image in its filename family. Check the exact source image/crop before accepting a relationship.
+The first command requires the original second COCO archive at the project root. Add new image selections, inspect each original once, and author its notes and basic masks in that pass. Never propagate all details from one image to every image in its filename family. Check the exact source image/crop before accepting a relationship.
 
 The demo uses lexical retrieval and bilingual amenity aliases; it does not execute an LLM. Its returned `context_for_llm` and `llm_instructions` can be consumed by the app's existing generative model. Ranking scores are not confidence percentages. Ordinary functional checks verify, among other things, that toilet signs do not become visible toilet entrances and that an Airport MRT query is not matched to airport buses.

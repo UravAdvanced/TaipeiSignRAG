@@ -24,7 +24,7 @@ for note in notes:
         row['amenity_coverage']['stairs']='sign_reference_only'
     row.update(schema_version='0.1.0',annotation_scope='whole photograph, all unmasked visible regions',
       review_status='visually_checked_by_assistant',human_review_status='pending',review_date=note.get('review_date','2026-10-04'),
-      annotation_method='interactive visual inspection of full-frame privacy views and enlarged sign details; no OCR or fine-tuned model',
+      annotation_method=note.get('annotation_method','interactive visual inspection of full-frame privacy views and enlarged sign details; no OCR or fine-tuned model'),
       physical_sign_id=None,station_map_coordinate=None,cloud_anchor_id=None,
       accessibility_verified=False,current_operational_status=None,
       privacy_review='manual conservative person masks; no human descriptions; masked areas unassessable; independent review pending',

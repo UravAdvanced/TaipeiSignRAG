@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'data/scene-pilot-review'
 OUT.mkdir(parents=True, exist_ok=True)
 parser = argparse.ArgumentParser(description=__doc__)
-parser.add_argument('--limit', type=int, default=8)
+parser.add_argument('--limit', type=int, default=19)
 args = parser.parse_args()
 if args.limit < 1:
     parser.error('--limit must be positive')
