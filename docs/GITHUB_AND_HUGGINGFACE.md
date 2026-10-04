@@ -1,6 +1,6 @@
 # Repository connection and release preparation
 
-Owner supplied by the user: `PHIT2026Team`. Proposed repository name: `TaipeiSignRAG`.
+GitHub owner confirmed by the user: `UravAdvanced`. Proposed repository name: `TaipeiSignRAG`. `PHIT2026Team` remains the project team label, not the GitHub owner.
 Affiliation: Urav Advanced Learning Systems Pvt Ltd. Individual paper authors remain pending.
 
 ## Local Git connection
@@ -8,32 +8,27 @@ Affiliation: Urav Advanced Learning Systems Pvt Ltd. Individual paper authors re
 The project folder is initialised as a Git repository on `main`, with the planned remote:
 
 ```text
-https://github.com/PHIT2026Team/TaipeiSignRAG.git
+https://github.com/UravAdvanced/TaipeiSignRAG.git
 ```
 
-Setting this address does not create a repository or authenticate to GitHub. During preparation, `gh auth status` reported an invalid saved login for `UravAdvanced`. No token was printed or stored in this project. No remote repository was created and nothing was pushed.
+Setting this address does not create a repository or authenticate to GitHub. The user has successfully authenticated `UravAdvanced` with HTTPS in their terminal. The Codex Windows sandbox runs under a different account and still receives HTTP 401 from gh and SEC_E_NO_CREDENTIALS from Git HTTPS. Do not repeat browser authentication in the user's terminal merely because of that sandbox error. No token is stored in this project. No remote repository was created and nothing was pushed by this session.
 
-From PowerShell, run:
+The initial curated commit already exists locally. To finish from the user's authenticated PowerShell terminal:
 
 ```powershell
 Set-Location 'E:\UrbanLensMCP\TaipeiMainStation_SighBoad_Annotation_Relational_Dataset'
-gh auth login --hostname github.com --web
+gh repo create UravAdvanced/TaipeiSignRAG --private --description 'Linked Taipei station signboard and amenity annotations for grounded indoor navigation assistance'
+git push -u origin main
 ```
 
-Log into an account allowed to create/write repositories under `PHIT2026Team`. If the repository does not exist, create the initial draft repository:
+If the repository already exists, skip creation and push to it. An unauthenticated public lookup returned 404, which cannot distinguish a missing repository from an existing private one. The remote is already set locally, so no `--source` or extra `git remote add` is needed. If you choose another owner/name, update it with `git remote set-url origin https://github.com/OWNER/REPOSITORY.git`.
 
-```powershell
-gh repo create PHIT2026Team/TaipeiSignRAG --private --description 'Linked Taipei station signboard and amenity annotations for grounded indoor navigation assistance'
-```
-
-The remote is already set locally, so no `--source` or extra `git remote add` is needed. If you choose another owner/name, update it with `git remote set-url origin https://github.com/OWNER/REPOSITORY.git`.
-
-Review and make the first commit, then push:
+For future changes, review, commit and push:
 
 ```powershell
 git status --short
-git add README.md CITATION.cff .gitignore requirements.txt paper docs scripts release
-git commit -m 'Prepare TaipeiSignRAG draft, citations and amenity pilot'
+git add README.md CITATION.cff .gitignore .gitattributes requirements.txt paper docs scripts release
+git commit -m 'Update TaipeiSignRAG documentation and annotations'
 git push -u origin main
 ```
 

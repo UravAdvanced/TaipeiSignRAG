@@ -10,7 +10,7 @@ The immediate deliverable is a reviewed sign knowledge base for the 3rDi4All nav
 - [GitHub connection and later Hugging Face upload](docs/GITHUB_AND_HUGGINGFACE.md)
 - [Next steps](docs/NEXT_STEPS.md)
 
-The Git remote is configured for `PHIT2026Team/TaipeiSignRAG`; authentication and remote creation/push remain pending. Raw archives, full image data and historical research stay in this local folder and are excluded from Git; the curated release package is separate.
+The Git remote is configured for `UravAdvanced/TaipeiSignRAG`; remote creation/push remain pending. The user's terminal is authenticated, but the current Codex Windows sandbox cannot access its keyring credentials. Raw archives, full image data and historical research stay in this local folder and are excluded from Git; the curated release package is separate.
 
 ## Project contents
 
