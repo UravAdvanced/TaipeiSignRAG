@@ -1,0 +1,12 @@
+{
+  "pilot_records": 2,
+  "evidence_images_valid": true,
+  "physical_coordinates_unset": true,
+  "human_review_pending": true,
+  "references": 12,
+  "citation_occurrences": 15,
+  "first_appearance_order_valid": true,
+  "abstract_without_citations": true,
+  "training_or_field_results_claimed": false,
+  "github_commit_or_push_performed": false
+}

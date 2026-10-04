@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite the working draft and the original TibaMe datasets when using this work. This project is a draft, not a published or validated navigation system."
+type: dataset
+title: "TaipeiSignRAG: A Linked Multilingual Signboard and Amenity Knowledge Base for Indoor Navigation Assistance"
+authors:
+  - name: "PHIT2026Team"
+version: "0.0.1-draft"
+abstract: "Dataset audit, relational annotation design and a two-observation locker pilot prepared by PHIT2026Team, Urav Advanced Learning Systems Pvt Ltd. Full annotations, RAG integration and field testing are pending."
+keywords:
+  - indoor navigation
+  - Taipei Main Station
+  - sign understanding
+  - Traditional Chinese
+  - retrieval-augmented generation

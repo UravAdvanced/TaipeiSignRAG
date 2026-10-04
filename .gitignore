@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+
+# Local source archives, full image exports and historical research captures.
+# Only the curated release/ package is intended for dataset publication.
+/*.zip
+/data/
+/research/
+/relocation_manifest.json
+/relocation_verification.json
+/scripts/consolidate.ps1
+/PROJECT_STATE.md
