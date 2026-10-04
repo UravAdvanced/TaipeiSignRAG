@@ -3,9 +3,9 @@ message: "Please cite the working draft and the original TibaMe datasets when us
 type: dataset
 title: "TaipeiSignRAG: A Linked Multilingual Signboard and Amenity Knowledge Base for Indoor Navigation Assistance"
 authors:
-  - name: "PHIT2026Team"
+  - name: "3rdEye4All (PHIT 2026 Finalist Team)"
 version: "0.0.1-draft"
-abstract: "Dataset audit, eight whole-scene annotations, two locker observations and a local evidence-retrieval prototype prepared by PHIT2026Team, Urav Advanced Learning Systems Pvt Ltd. Full annotation, live LLM integration and field testing are pending."
+abstract: "AI Eye 4 All: AI Indoor Navigation for Inclusive Smart Cities. Dataset audit, eleven AI-assisted whole-scene annotations, two locker observations and browser-side Chinese/English evidence search by PHIT 2026 Finalist Team: 3rdEye4All, Urav Advanced Learning Systems Pvt Ltd. Human review, full annotation, live LLM integration and field testing are pending. No precise positioning is established."
 keywords:
   - indoor navigation
   - Taipei Main Station

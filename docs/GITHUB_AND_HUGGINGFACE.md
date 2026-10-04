@@ -1,6 +1,6 @@
 # Repository connection and release preparation
 
-GitHub owner confirmed by the user: `UravAdvanced`. Proposed repository name: `TaipeiSignRAG`. `PHIT2026Team` remains the project team label, not the GitHub owner.
+GitHub owner confirmed by the user: `UravAdvanced`. Repository name: `TaipeiSignRAG`. **PHIT 2026 Finalist Team: 3rdEye4All** is the team credit, not the GitHub owner. Project: **AI Eye 4 All: AI Indoor Navigation for Inclusive Smart Cities.**
 Affiliation: Urav Advanced Learning Systems Pvt Ltd. Individual paper authors remain pending.
 
 ## Local Git connection
@@ -26,7 +26,7 @@ For future changes, review, commit and push:
 
 ```powershell
 git status --short
-git add README.md CITATION.cff .gitignore .gitattributes requirements.txt paper docs scripts release annotations demo
+git add README.md CITATION.cff .gitignore .gitattributes .nojekyll .github index.html requirements.txt paper docs scripts release annotations demo
 git commit -m 'Update TaipeiSignRAG documentation and annotations'
 git push -u origin main
 ```
@@ -35,7 +35,7 @@ Use your own Git author identity if Git requests it. The raw archives, full `dat
 
 ## Hugging Face, later and user-managed
 
-The user will handle Hugging Face after preparation is complete. The current upload candidate is `release/huggingface/`; it includes a dataset card, eight whole-scene records, two locker observations, privacy-transformed image evidence and attribution. Do not describe it as the full annotation release.
+The user will handle Hugging Face after preparation is complete. The current upload candidate is `release/huggingface/`; it includes a dataset card, eleven whole-scene records, two locker observations, privacy-transformed image evidence and attribution. Do not describe it as the full annotation release. Browser-side Chinese/English search is prepared for GitHub Pages separately; see [Pages setup](GITHUB_PAGES.md). No Pages deployment has been performed in this iteration.
 
 When ready, create a dataset repository in the selected namespace and upload the contents of that folder at the dataset repository root. The card declares a JSONL `amenity_pilot` configuration. The full dataset card and record counts must be updated as reviewed records are added. Hugging Face credentials are not needed for local preparation.
 

@@ -111,5 +111,51 @@
     ],
     "uncertain":[],
     "unknowns":["An Airport MRT direction does not establish an airport check-in facility.","No exact physical station coordinate or current route accessibility is known."]
+  },
+  {
+    "image_id":"tps-scene-009",
+    "summary_en":"A striped ceiling and grey wall panels frame a concourse with an overhead directional board. The left panel points left to Taoyuan Airport MRT. A small green illuminated exit pictogram is visible below the board, with a wall-mounted information panel at the far right. Much of the foreground is masked; no MRT entrance or ticket counter is established.",
+    "summary_zh":"條狀天花板與灰色牆板圍繞大廳，上方有方向指標。左側面板以向左箭頭指向桃園機場捷運。指標下方可見綠色發光出口圖示，最右側牆面有資訊看板。前景多處已遮蔽，未確認捷運入口或售票櫃檯。",
+    "signs":[
+      {"visible_zh":"桃園機場捷運","visible_en":"Taoyuan Airport MRT","label_en":"Taoyuan Airport MRT","direction":"left","panel":"left"},
+      {"visible_zh":null,"visible_en":null,"label_en":"parking","direction":null,"panel":"white middle","symbols":["P"],"note":"Parking pictogram visible; adjacent destination and arrow association are unverified."}
+    ],
+    "objects":[
+      {"category":"concourse","label_en":"concourse with striped ceiling and grey wall panels","label_zh":"條狀天花板與灰色牆板的大廳","region":"whole unmasked scene","bbox_xyxy":[0,0,512,288]},
+      {"category":"emergency_exit_sign","label_en":"small green illuminated exit pictogram","label_zh":"小型綠色發光出口圖示","region":"beneath the middle of the overhead board","bbox_xyxy":[264,165,274,179]},
+      {"category":"map_information_board","label_en":"partially visible wall-mounted information panel","label_zh":"部分可見的壁掛資訊看板","region":"far right wall","bbox_xyxy":[483,182,512,226],"note":"Panel content is unreadable; not established as an interactive kiosk."}
+    ],
+    "uncertain":[],
+    "unknowns":["Other small destination labels are not reliably transcribed.","Masked foreground and adjacent fixtures are unassessable.","The MRT sign does not establish a physical station entrance, platform, current route or position."]
+  },
+  {
+    "image_id":"tps-scene-010",
+    "summary_en":"An overhead board beneath a striped ceiling mentions platforms, Taoyuan Airport MRT, HSR tickets and Taipei City Mall. The HSR-ticket panel has a stairs pictogram; actual stairs and a ticket counter are not established. A grey pillar separates visible corridor segments, with an illuminated display on the right. Large masks obscure much of the lower scene.",
+    "summary_zh":"條狀天花板下的指標提到月台、桃園機場捷運、高鐵售票區與台北地下街。高鐵售票區面板有樓梯圖示，但未確認實際樓梯或售票櫃檯。灰色柱面分隔通道，右側有照明展示面。下半部多處已遮蔽。",
+    "signs":[
+      {"visible_zh":"月台","visible_en":"Platform","label_en":"platforms","direction":"up","panel":"left"},
+      {"visible_zh":"桃園機場捷運","visible_en":"Taoyuan Airport MRT","label_en":"Taoyuan Airport MRT","direction":null,"panel":"left-middle","note":"Upward arrow appears in the left group; destination-specific association remains unverified."},
+      {"visible_zh":"高鐵售票區","visible_en":"HSR Tickets","label_en":"HSR ticket area","direction":"up","panel":"white middle","symbols":["stairs"]},
+      {"visible_zh":"台北地下街","visible_en":"Taipei City Mall","label_en":"Taipei City Mall","direction":"right","panel":"white right"}
+    ],
+    "objects":[
+      {"category":"corridor","label_en":"corridor segments around a grey pillar","label_zh":"灰色柱面兩側的通道","region":"unmasked lower middle and right","bbox_xyxy":[113,178,461,288]},
+      {"category":"display","label_en":"illuminated display beside a dark opening","label_zh":"深色開口旁的照明展示面","region":"right background","bbox_xyxy":[379,191,412,229],"note":"Business name and display function are not verified."}
+    ],
+    "uncertain":[],
+    "unknowns":["Small yellow-symbol text beside the MRT label remains unreadable.","No physical platform, stairs, ticket counter or airport check-in facility is established.","Masked areas cannot be used to infer shops, equipment or passage accessibility."]
+  },
+  {
+    "image_id":"tps-scene-011",
+    "summary_en":"A long board beneath a striped ceiling separately points left to Taipei Bus Station and upward to airport buses. The airport-bus panel reads Airport Express in English and 機場巴士 in Chinese, with a bus pictogram. A white panel points left to Taipei City Mall. Grey columns and portions of the tiled corridor remain visible around the masks; no physical bus terminal or boarding bay is established.",
+    "summary_zh":"條狀天花板下的長形指標分別以向左箭頭指向臺北轉運站、向上箭頭指向機場巴士。機場巴士面板的英文為 Airport Express，並有巴士圖示。白色面板以向左箭頭指向台北地下街。遮蔽區域周圍仍可見灰色柱面及部分地磚通道，未確認實際客運站或乘車月台。",
+    "signs":[
+      {"visible_zh":"臺北轉運站","visible_en":"Taipei Bus Station","label_en":"Taipei Bus Station","direction":"left","panel":"left"},
+      {"visible_zh":"機場巴士","visible_en":"Airport Express","label_en":"airport bus","direction":"up","panel":"middle","note":"Chinese text and bus pictogram identify airport buses, separately from Taipei Bus Station and Taoyuan Airport MRT."},
+      {"visible_zh":"台北地下街","visible_en":"Taipei City Mall","label_en":"Taipei City Mall","direction":"left","panel":"white right"}
+    ],
+    "objects":[{"category":"corridor","label_en":"tiled corridor with grey columns","label_zh":"有灰色柱面的地磚通道","region":"unmasked lower scene","bbox_xyxy":[0,170,512,288]}],
+    "uncertain":[],
+    "unknowns":["Far-right small text is unreadable; an upward arrow is visible but its destination is not certified.","Most lower-scene objects are obscured by masks; physical transport facilities are not established.","Airport Express is the printed English bus label in this photograph, not evidence for Airport MRT."]
   }
 ]

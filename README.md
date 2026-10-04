@@ -1,10 +1,30 @@
 # Taipei Main Station Signboard Annotation and Relational Dataset
 
-The immediate deliverable is a reviewed sign knowledge base for the 3rDi4All navigation demo, usable through retrieval and an LLM before model fine-tuning.
+**PHIT 2026 Finalist Team: 3rdEye4All**
+
+**AI Eye 4 All: AI Indoor Navigation for Inclusive Smart Cities.**
+
+Urav Advanced Learning Systems Pvt Ltd.
+
+TaipeiSignRAG is an AI-assisted whole-photograph annotation POC and bilingual evidence-search demo. Human review is pending. It does not establish precise positioning, current facilities or accessible routes.
 
 ## Whole-scene pilot and local demo
 
-Eight whole-photograph annotations now cover readable signs **and** surrounding objects. Observed examples include a locker bank, barrier gates, stairs/escalators, a shopfront, map boards and passage entrances. Fourteen amenity categories are explicitly checked per scene. A toilet mentioned on a sign is kept separate from a physically visible toilet. No lift or check-in counter is verified in this pilot.
+Eleven whole-photograph annotations now cover readable signs **and** surrounding objects. Observed examples include a locker bank, barrier gates, stairs/escalators, a shopfront, map boards and passage entrances. Fourteen amenity categories are explicitly checked per scene. A toilet mentioned on a sign is kept separate from a physically visible toilet. No lift or check-in counter is verified in this pilot.
+
+**Airport buses / 機場巴士, Taoyuan Airport MRT / 桃園機場捷運, and Taipei Bus Station / 臺北轉運站 are separate destinations.** Scene 011 shows different arrows for Taipei Bus Station and airport buses on the same board. The printed English “Airport Express” on these bus panels is preserved as text, not treated as an MRT identity.
+
+## Browser search and GitHub Pages
+
+The [demo](demo/index.html) searches Chinese and English in the browser, with no backend, API key or live LLM. It uses lexical matching and bilingual aliases. Asset paths support the `/TaipeiSignRAG/` GitHub Pages prefix. To preview the exact curated Pages package locally:
+
+```powershell
+python scripts/build_browser_search.py
+python scripts/build_pages_site.py
+python -m http.server 8767 --bind 127.0.0.1 --directory _site
+```
+
+Open http://127.0.0.1:8767 . For publication, the manually triggered Pages workflow stages only the demo, generated search data, attributed records and masked evidence images. See [Pages setup](docs/GITHUB_PAGES.md). Pages has not been deployed in this iteration.
 
 Run the evidence-search demo locally:
 
@@ -14,9 +34,9 @@ C:/Python313/python.exe scripts/scene_rag_demo.py serve --port 8766
 
 Open http://127.0.0.1:8766 . Try `置物櫃`, `廁所`, `stairs`, `gates`, `map`, or `Airport MRT`; compare “Physically visible” with “Mentioned on signs.” `/api/search?q=...` returns evidence and instructions ready for the app's LLM. **No live LLM or positioning engine is connected to this demo.** Retrieval is local lexical matching with bilingual aliases, not a trained embedding model.
 
-Records: [scene annotations](release/huggingface/scene_annotations.jsonl). [Schema and review policy](docs/WHOLE_SCENE_ANNOTATION.md). Progress: [annotation counts](annotations/progress.json). This is an eight-scene pilot, not the completed 8,971-entry annotation collection. All records are assistant-checked; human review is pending.
+Records: [scene annotations](release/huggingface/scene_annotations.jsonl). [Schema and review policy](docs/WHOLE_SCENE_ANNOTATION.md). Progress: [annotation counts](annotations/progress.json). This is an eleven-scene pilot, not the completed 8,971-entry annotation collection. All records are assistant-checked; human review is pending.
 
-**Team:** PHIT2026Team, Urav Advanced Learning Systems Pvt Ltd.
+**Team:** PHIT 2026 Finalist Team: 3rdEye4All, Urav Advanced Learning Systems Pvt Ltd.
 
 - [Working paper and numbered references](paper/draft.md)
 - [BibTeX bibliography](paper/references.bib)
@@ -41,7 +61,7 @@ There are 8,971 image entries across the archives, not 8,971 independent photogr
 
 ## Current status
 
-Archive audits and sampled visual reviews are complete. Eight whole-scene records and two locker observations are prepared, covering nine unique source photographs. They are assistant-checked, with human review pending. A local evidence-retrieval demo runs over the eight scene records and prepares LLM context. Full annotation, a live LLM integration, geometric app integration and field testing remain incomplete. No training or Azure inference has run. A small current station walkthrough is planned only after the annotation pipeline and app are ready.
+Archive audits and sampled visual reviews are complete. Eleven whole-scene records and two locker observations are prepared, covering twelve unique source photographs. They are assistant-checked, with human review pending; 8,959 source entries remain without new annotations. Browser search and the optional local API prepare evidence context for an LLM. Full annotation, a live LLM integration, geometric app integration and field testing remain incomplete. No training or Azure inference has run. A small current station walkthrough is planned only after the annotation pipeline and app are ready.
 
 The supplied annotations are bounding boxes or class-folder codes. They do not supply text transcripts, physical sign positions, camera poses or station map anchors. Reviewed sign IDs will be attached to the app's mapped anchors separately; retrieval scores are not spatial confidence estimates.
 

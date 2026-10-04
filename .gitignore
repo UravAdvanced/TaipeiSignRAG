@@ -15,3 +15,4 @@ __pycache__/
 /scripts/consolidate.ps1
 /PROJECT_STATE.md
 /.tools/
+/_site/

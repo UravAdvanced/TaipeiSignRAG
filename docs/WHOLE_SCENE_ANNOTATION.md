@@ -6,11 +6,22 @@ The user explicitly requested the entire photograph, including surrounding visua
 
 - `annotations/scene_pilot_notes.json`: authored observations from interactive visual inspection; the source of semantic content.
 - `release/huggingface/scene_manifest.jsonl`: original-image hashes, supplied sign boxes and local privacy masks.
-- `release/huggingface/scene_annotations.jsonl`: eight enriched whole-scene records.
+- `release/huggingface/scene_annotations.jsonl`: eleven enriched whole-scene records.
 - `release/huggingface/scene_images/`: native-size full-frame views with conservative person masks.
 - `annotations/progress.json`: exact completed and remaining counts.
 - `scripts/build_scene_records.py`: combines notes and provenance; does not automatically invent annotations.
-- `scripts/scene_rag_demo.py` and `demo/index.html`: local evidence search and LLM-context preparation.
+- `demo/index.html`, `demo/search.mjs` and `demo/search-data.json`: static browser search and LLM-context preparation; no backend required.
+- `scripts/scene_rag_demo.py`: optional local evidence-search API.
+
+## Latest batch and transport scope
+
+**PHIT 2026 Finalist Team: 3rdEye4All** — **AI Eye 4 All: AI Indoor Navigation for Inclusive Smart Cities.**
+
+Scenes 009–011 add exact photographs A04N_HH_001, A06W_HH_001 and A07E_HH_001. Each was inspected as a whole photograph and as an enlarged masked view. Additional masks cover the foreground and an illustrated person in a display; obscured fixtures remain unassessable. Scene 009 adds an MRT reference and visible information/exit signs; scene 010 adds platform, MRT and HSR-ticket references; scene 011 separately records Taipei Bus Station (left) and airport buses (up). Enlargement is ordinary resizing for inspection, not recovered detail or super-resolution.
+
+`signs[].transport_id` has separate values `airport_bus`, `taoyuan_airport_mrt`, and `taipei_bus_station`. These are semantic destination categories, not physical landmark IDs. They are assigned from the authored sign labels in each exact photograph. “Airport Express” is retained in `visible_en` on bus panels; the Chinese text and bus pictogram support the bus category. No MRT platform, bus boarding bay or current route is inferred from these signs.
+
+There are 11 scene records plus two locker observations, covering 12 unique original source hashes. There are 8,959 source entries without new annotation. Zero records have independent human review or physical anchor links. `build_scene_records.py` derives coverage counts from the records and source hashes rather than fixed pilot counts.
 
 ## Observation levels
 
@@ -42,6 +53,9 @@ A local Windows FaceDetector was investigated but found only one face in these l
 ```powershell
 C:/Python313/python.exe scripts/prepare_scene_pilot.py
 C:/Python313/python.exe scripts/build_scene_records.py
+C:/Python313/python.exe scripts/build_browser_search.py
+C:/Python313/python.exe scripts/build_pages_site.py
+C:/Python313/python.exe scripts/check_poc.py
 C:/Python313/python.exe scripts/scene_rag_demo.py serve --port 8766
 ```
 

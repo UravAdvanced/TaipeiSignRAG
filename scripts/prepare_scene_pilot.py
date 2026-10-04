@@ -24,6 +24,9 @@ SELECTION = {
  'A10E_HH_001': [(0,217,48,288),(75,188,122,288),(121,179,177,288),(175,176,244,248),(243,167,310,288),(347,182,416,288)],
  'A16N_HH_001': [(125,204,210,288),(205,183,273,288),(287,175,352,288),(467,174,512,288)],
  'A18W_HH_001': [(141,190,215,288),(211,187,252,288),(252,178,304,288),(395,218,441,288),(460,205,512,288)],
+ 'A04N_HH_001': [(45,194,153,288),(161,187,214,288),(228,192,253,247),(416,182,488,288)],
+ 'A06W_HH_001': [(0,193,113,288),(143,177,199,249),(196,187,315,288),(308,199,359,288),(461,163,512,288)],
+ 'A07E_HH_001': [(0,186,57,288),(62,185,127,288),(168,181,271,288),(302,185,501,288)],
 }
 
 rows = []
@@ -47,9 +50,12 @@ with zipfile.ZipFile(ROOT / ARCHIVE) as z:
           'provided_sign_boxes_xywh':[a['bbox'] for a in coco['annotations'] if a['image_id']==meta['id']],
           'source_url':'https://universe.roboflow.com/tibame-4ueve/taipei-station-sign-board-2','license':'CC-BY-4.0'})
 (PACK/'scene_manifest.jsonl').write_text(''.join(json.dumps(r,ensure_ascii=False)+'\n' for r in rows),encoding='utf-8')
-sheet=Image.new('RGB',(1024,4*315),'white');d=ImageDraw.Draw(sheet)
+sheet=Image.new('RGB',(1024,((len(rows)+1)//2)*315),'white');d=ImageDraw.Draw(sheet)
 for i,r in enumerate(rows):
     x=i%2*512;y=i//2*315;sheet.paste(Image.open(PACK/r['evidence_image']),(x,y));d.text((x+4,y+291),r['image_id']+' '+r['filename_family'],fill='black')
 (ROOT/'data/scene-pilot-review').mkdir(exist_ok=True)
 sheet.save(ROOT/'data/scene-pilot-review/contact.jpg',quality=95)
+for r in rows[8:]:
+    im=Image.open(PACK/r['evidence_image'])
+    im.resize((1536,864)).save(ROOT/'data/scene-pilot-review'/f"{r['image_id']}-detail.png")
 print(f'Prepared {len(rows)} full-frame masked views; original archives unchanged.')

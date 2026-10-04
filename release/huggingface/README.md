@@ -26,17 +26,21 @@ configs:
 
 # TaipeiSignRAG: draft amenity pilot
 
-**Prepared locally; not yet published.** PHIT2026Team, Urav Advanced Learning Systems Pvt Ltd.
+**PHIT 2026 Finalist Team: 3rdEye4All**
 
-This package currently contains **eight assistant-checked whole-scene annotations and two locker observations**, covering nine unique source photographs. Scene records cover readable text plus visible amenities and surroundings, with full-frame manually masked evidence images. It is not the completed signboard knowledge base. The split name `train` is a Hub loading convention; no training or evaluation split has been designed and no model was trained on this pilot.
+**AI Eye 4 All: AI Indoor Navigation for Inclusive Smart Cities.**
+
+**Prepared locally; not yet published.** Urav Advanced Learning Systems Pvt Ltd.
+
+This package currently contains **eleven AI-assisted, assistant-checked whole-scene annotations and two locker observations**, covering twelve unique source photographs. Scene records cover readable text plus visible amenities and surroundings, with full-frame manually masked evidence images. Human review is pending. It is not the completed signboard knowledge base. The split name `train` is a Hub loading convention; no training or evaluation split has been designed and no model was trained on this pilot.
 
 The source photographs are from [TibaMe's Taipei Station Sign Board 2, version 1](https://universe.roboflow.com/tibame-4ueve/taipei-station-sign-board-2), which declares CC BY 4.0. The photographs show locker signage, including the word “LOCKERS,” on the right side of the frame. Their original stems are A10E_HH_001 and A10E_YY_016. We provide cropped evidence and new structured observation records. Source photos and crops can show the same physical amenity; that identity is not established.
 
 ## Contents
 
 - `amenity_pilot.jsonl`: two observation records.
-- `scene_annotations.jsonl`: eight whole-scene records, with fourteen amenity observation-status fields per image.
-- `scene_manifest.jsonl`: provenance and mask metadata for those eight records.
+- `scene_annotations.jsonl`: eleven whole-scene records, with fourteen amenity observation-status fields per image.
+- `scene_manifest.jsonl`: provenance and mask metadata for those eleven records.
 - `scene_images/`: full-frame privacy views. Manually masked areas are not assessable; independent privacy review is pending.
 - `images/locker_evidence_01.png` and `images/locker_evidence_02.png`: native-resolution label crops.
 - `ATTRIBUTION.md`: original source, licence and modification notice.
@@ -50,6 +54,8 @@ The `evidence_image` field is a path relative to this package. A JSON loader may
 Source archive, filename, SHA-256, review date and review type are recorded. `review_status` is `visually_checked_by_assistant`; `human_review_status` remains `pending`. Both records have unknown physical amenity ID, map coordinate, Cloud Anchor ID, current availability, capture date and wheelchair accessibility.
 
 ## Intended use and limits
+
+Airport buses, Taoyuan Airport MRT and Taipei Bus Station have separate `transport_id` values. A07E_HH_001 shows Taipei Bus Station and airport buses in different panels with different arrows. Printed “Airport Express” text on the bus panel does not establish an MRT identity. All are sign references, not verified physical transport facilities or precise positions.
 
 The pilot illustrates how an indoor assistant could retrieve image-supported amenity knowledge. It supports “a locker label appears in this historical photograph.” It does not establish exact user position, route safety, available locker capacity, pricing, current operations or accessibility. It is not sufficient to train or validate a navigation model.
 

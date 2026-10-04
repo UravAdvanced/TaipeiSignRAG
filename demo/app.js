@@ -1,0 +1,41 @@
+import {search} from './search.mjs';
+
+const $ = selector => document.querySelector(selector);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const arrows = {up:'↑',left:'←',right:'→',up_right:'↗'};
+const transportLabels = {
+  airport_bus:'Airport buses / 機場巴士',
+  taoyuan_airport_mrt:'Taoyuan Airport MRT / 桃園機場捷運',
+  taipei_bus_station:'Taipei Bus Station / 臺北轉運站'
+};
+let dataset;
+function run() {
+  if (!dataset) return;
+  const data = search(dataset, $('#q').value, $('#mode').value);
+  $('#status').textContent = data.count ? `${data.count} matching scene record(s) / 筆符合的照片紀錄` : 'No supported match in this POC. This does not establish absence from the station. / 本概念驗證未找到支持證據，不代表車站沒有該設施。';
+  $('#results').innerHTML = data.results.map(({record:r,matched_categories:m,matched_transport:t}) => {
+    const imageUrl = new URL('../release/huggingface/' + r.evidence_image, import.meta.url).href;
+    return `<article><img src="${esc(imageUrl)}" width="512" height="288" loading="lazy" alt="Manually masked evidence for ${esc(r.image_id)}"><div class="body"><small>${esc(r.image_id)} · ${esc(r.filename_family)}</small><h2>${esc(r.filename_family)} scene</h2>
+    ${Object.entries(m).map(([c,s]) => `<span class="badge ${s==='sign_reference_only'?'sign':''}">${esc(c.replaceAll('_',' '))}: ${s==='visible'?'visible':'sign only'}</span>`).join('')}
+    ${t.map(id => `<span class="badge sign">${esc(transportLabels[id])}: sign only</span>`).join('')}
+    <p>${esc(r.summary_en)}</p><p lang="zh-Hant">${esc(r.summary_zh)}</p>
+    <h3>Physically visible / 實際可見</h3><ul>${r.objects.map(o => `<li>${esc(o.label_en)} / ${esc(o.label_zh)} — ${esc(o.region)}</li>`).join('')}</ul>
+    <h3>Sign references / 指標提及</h3><ul>${r.signs.map(s => `<li>${esc(s.visible_zh||s.label_en)} · ${esc(s.label_en)} ${esc(arrows[s.direction]||'— arrow association unverified')}${s.visible_en ? `<br>Printed English: ${esc(s.visible_en)}` : ''}${s.note ? `<br><small>${esc(s.note)}</small>` : ''}</li>`).join('')}</ul>
+    <details><summary>Uncertainties and source / 不確定資訊與來源</summary><ul>${r.unknowns.map(u => `<li>${esc(u)}</li>`).join('')}${r.uncertain.map(u => `<li>${esc(u.description)}</li>`).join('')}</ul><p>Masked regions are not assessable. Coordinates and anchors: unknown. Human review: pending. Arrows describe the photograph only.</p><pre>${esc(r.source_image)}\nSHA-256: ${esc(r.source_sha256)}</pre><a href="${esc(r.source_url)}" target="_blank" rel="noopener noreferrer">Original dataset · CC BY 4.0</a></details></div></article>`;
+  }).join('');
+  $('#context').textContent = JSON.stringify({instructions:data.llm_instructions,evidence:data.context_for_llm,llm_called:false},null,2);
+}
+$('#search').addEventListener('submit', event => {event.preventDefault();run();});
+$('#mode').addEventListener('change', run);
+document.querySelectorAll('[data-q]').forEach(button => button.addEventListener('click', () => {$('#q').value=button.dataset.q;run();}));
+try {
+  const response = await fetch(new URL('./search-data.json', import.meta.url));
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  dataset = await response.json();
+  if (!Array.isArray(dataset.records) || !dataset.config || !dataset.progress) throw new Error('Invalid evidence package');
+  const p = dataset.progress;
+  $('#coverage').textContent = `${p.scene_records} whole-photo records · ${p.unique_source_images_with_any_new_annotation} unique annotated source photos including the locker pilot · ${p.remaining_source_entries_without_new_annotation.toLocaleString()} source entries remaining · ${p.human_reviewed_records} human-reviewed records.`;
+  run();
+} catch (error) {
+  $('#status').textContent = 'Evidence could not load. Serve this site over HTTP or GitHub Pages, then reload. / 無法載入資料，請透過 HTTP 或 GitHub Pages 開啟後重新整理。';
+}
