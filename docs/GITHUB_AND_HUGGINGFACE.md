@@ -11,23 +11,22 @@ The project folder is initialised as a Git repository on `main`, with the planne
 https://github.com/UravAdvanced/TaipeiSignRAG.git
 ```
 
-Setting this address does not create a repository or authenticate to GitHub. The user has successfully authenticated `UravAdvanced` with HTTPS in their terminal. The Codex Windows sandbox runs under a different account and still receives HTTP 401 from gh and SEC_E_NO_CREDENTIALS from Git HTTPS. Do not repeat browser authentication in the user's terminal merely because of that sandbox error. No token is stored in this project. No remote repository was created and nothing was pushed by this session.
+The user has successfully created this private repository, authenticated `UravAdvanced` with HTTPS and pushed the initial commits. The Codex Windows sandbox runs under a different account and still receives HTTP 401 from gh and SEC_E_NO_CREDENTIALS from Git HTTPS. Do not repeat browser authentication in the user's terminal merely because of that sandbox error. No token is stored in this project. Codex can commit locally; the user's terminal can push those commits.
 
-The initial curated commit already exists locally. To finish from the user's authenticated PowerShell terminal:
+To push newly prepared commits from the user's authenticated PowerShell terminal:
 
 ```powershell
 Set-Location 'E:\UrbanLensMCP\TaipeiMainStation_SighBoad_Annotation_Relational_Dataset'
-gh repo create UravAdvanced/TaipeiSignRAG --private --description 'Linked Taipei station signboard and amenity annotations for grounded indoor navigation assistance'
 git push -u origin main
 ```
 
-If the repository already exists, skip creation and push to it. An unauthenticated public lookup returned 404, which cannot distinguish a missing repository from an existing private one. The remote is already set locally, so no `--source` or extra `git remote add` is needed. If you choose another owner/name, update it with `git remote set-url origin https://github.com/OWNER/REPOSITORY.git`.
+The repository already exists and the remote is set. Unauthenticated requests cannot distinguish a missing repository from a private one. No new repository-creation command is needed.
 
 For future changes, review, commit and push:
 
 ```powershell
 git status --short
-git add README.md CITATION.cff .gitignore .gitattributes requirements.txt paper docs scripts release
+git add README.md CITATION.cff .gitignore .gitattributes requirements.txt paper docs scripts release annotations demo
 git commit -m 'Update TaipeiSignRAG documentation and annotations'
 git push -u origin main
 ```
@@ -36,7 +35,7 @@ Use your own Git author identity if Git requests it. The raw archives, full `dat
 
 ## Hugging Face, later and user-managed
 
-The user will handle Hugging Face after preparation is complete. The current upload candidate is `release/huggingface/`; it includes a dataset card, two pilot records, cropped image evidence and attribution. Do not describe it as the full annotation release.
+The user will handle Hugging Face after preparation is complete. The current upload candidate is `release/huggingface/`; it includes a dataset card, eight whole-scene records, two locker observations, privacy-transformed image evidence and attribution. Do not describe it as the full annotation release.
 
 When ready, create a dataset repository in the selected namespace and upload the contents of that folder at the dataset repository root. The card declares a JSONL `amenity_pilot` configuration. The full dataset card and record counts must be updated as reviewed records are added. Hugging Face credentials are not needed for local preparation.
 

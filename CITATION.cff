@@ -5,7 +5,7 @@ title: "TaipeiSignRAG: A Linked Multilingual Signboard and Amenity Knowledge Bas
 authors:
   - name: "PHIT2026Team"
 version: "0.0.1-draft"
-abstract: "Dataset audit, relational annotation design and a two-observation locker pilot prepared by PHIT2026Team, Urav Advanced Learning Systems Pvt Ltd. Full annotations, RAG integration and field testing are pending."
+abstract: "Dataset audit, eight whole-scene annotations, two locker observations and a local evidence-retrieval prototype prepared by PHIT2026Team, Urav Advanced Learning Systems Pvt Ltd. Full annotation, live LLM integration and field testing are pending."
 keywords:
   - indoor navigation
   - Taipei Main Station

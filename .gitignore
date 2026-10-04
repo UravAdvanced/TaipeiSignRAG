@@ -14,3 +14,4 @@ __pycache__/
 /relocation_verification.json
 /scripts/consolidate.ps1
 /PROJECT_STATE.md
+/.tools/

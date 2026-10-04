@@ -1,0 +1,51 @@
+{
+  "checks": [
+    {
+      "query": "置物櫃",
+      "mode": "visible",
+      "expected_count": 1
+    },
+    {
+      "query": "廁所",
+      "mode": "visible",
+      "expected_count": 0
+    },
+    {
+      "query": "廁所",
+      "mode": "signs",
+      "expected_count": 3
+    },
+    {
+      "query": "elevator",
+      "mode": "all",
+      "expected_count": 0
+    },
+    {
+      "query": "check-in",
+      "mode": "all",
+      "expected_count": 0
+    },
+    {
+      "query": "gates",
+      "mode": "visible",
+      "expected_count": 1
+    },
+    {
+      "query": "stairs",
+      "mode": "visible",
+      "expected_count": 1
+    },
+    {
+      "query": "map",
+      "mode": "visible",
+      "expected_count": 1
+    },
+    {
+      "query": "Airport MRT",
+      "mode": "all",
+      "expected_count": 1
+    }
+  ],
+  "passed": true,
+  "llm_called": false
+}

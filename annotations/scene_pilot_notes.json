@@ -1,0 +1,115 @@
+[
+  {
+    "image_id":"tps-scene-001",
+    "summary_en":"A red-framed indoor passage beneath an exposed dark ceiling. A long overhead board points to the Tamsui-Xinyi Line and airport buses. A blue diagonal handrail and yellow gate-like equipment are visible deeper inside the passage; their exact function is not established.",
+    "summary_zh":"紅色框架的室內通道，上方可見外露管線與指標。指標提到淡水信義線及機場巴士。通道內可見藍色斜向扶手與黃色設備，但無法確認設備用途。",
+    "signs":[
+      {"visible_zh":"淡水信義線","visible_en":"Tamsui-Xinyi Line","label_en":"Tamsui-Xinyi Line","direction":"up","panel":"left"},
+      {"visible_zh":"機場巴士","visible_en":"Airport Express","label_en":"airport bus","direction":"up_right","panel":"right","note":"Bus pictogram and Chinese label identify a bus reference; do not equate this with Airport MRT."}
+    ],
+    "objects":[
+      {"category":"passage_entrance","label_en":"red-framed passage entrance","label_zh":"紅框通道入口","region":"middle and lower image","bbox_xyxy":[23,164,511,288]},
+      {"category":"handrail","label_en":"blue diagonal handrail","label_zh":"藍色斜向扶手","region":"left side inside passage","bbox_xyxy":[181,231,236,280]}
+    ],
+    "uncertain":[{"category":"fare_gates_or_turnstiles","description":"Yellow equipment in the background could be gate-related; its function cannot be confirmed."}],
+    "unknowns":["Middle white sign panel is too small for a reliable transcription.","A diagonal rail does not alone establish stairs versus escalator or a step-free route."]
+  },
+  {
+    "image_id":"tps-scene-002",
+    "summary_en":"An open indoor concourse with a patterned floor, striped ceiling, pillars and an overhead directional board. The main left panel refers to Kuo-Kuang airport buses. A distant row of equipment is visible, but a check-in counter, ticket counter or fare gate cannot be reliably identified from this view.",
+    "summary_zh":"室內大廳可見花紋地坪、條狀天花板、柱子及懸掛指標。左側主要指標指向國光客運站（機場巴士）。遠處設備用途不明，不能確認為報到櫃檯、售票櫃檯或驗票閘門。",
+    "signs":[{"visible_zh":"國光客運站（機場巴士）","visible_en":null,"label_en":"Kuo-Kuang Bus Station, airport buses","direction":"left","panel":"left","note":"Chinese transcription normalizes the bracket glyphs; English small text is not certified."}],
+    "objects":[{"category":"concourse","label_en":"open concourse with patterned floor and pillars","label_zh":"有花紋地坪與柱子的開放大廳","region":"foreground and middle background","bbox_xyxy":[0,162,512,288]}],
+    "uncertain":[{"category":"service_counter","description":"Distant equipment/counter-like forms have insufficient detail to identify their role."}],
+    "unknowns":["Small text in the central and right sign panels is not transcribed.","Parking and transit pictograms alone do not establish visible facilities."]
+  },
+  {
+    "image_id":"tps-scene-003",
+    "summary_en":"An overhead sign spans a concourse opening. A row of yellow-and-blue barrier gates is visible behind it. The board mentions toilets, the station hall, TRA tickets and TRA/HSR platforms. A wheelchair pictogram on the sign is an accessibility indication, not a verified accessible route.",
+    "summary_zh":"大廳開口上方有方向指標，下方後方可見一排黃藍色閘門。指標提到廁所、車站大廳、台鐵售票處，以及台鐵與高鐵月台。輪椅圖示僅為標示，尚未驗證無障礙路線。",
+    "signs":[
+      {"visible_zh":"廁所","visible_en":null,"label_en":"toilets","direction":"left","panel":"left","symbols":["toilet","wheelchair"]},
+      {"visible_zh":"車站大廳","visible_en":null,"label_en":"station hall","direction":null,"panel":"left-middle","note":"Per-destination arrow association left unresolved."},
+      {"visible_zh":"台鐵售票處","visible_en":null,"label_en":"TRA ticket office","direction":null,"panel":"middle","symbols":["stairs"],"note":"Nearby diagonal arrow/stair icon observed; exact association and floor text need closer review."},
+      {"visible_zh":"月台 台鐵 高鐵","visible_en":null,"label_en":"TRA and HSR platforms","direction":"right","panel":"right","note":"Space-separated visible labels, not one continuous printed phrase."}
+    ],
+    "objects":[{"category":"fare_gates_or_turnstiles","label_en":"row of yellow-and-blue barrier gates","label_zh":"一排黃藍色閘門","region":"background below the overhead sign","bbox_xyxy":[109,207,209,250],"note":"Barrier gates are visible; exact operator and tripod-turnstile mechanism are not verified."}],
+    "uncertain":[],
+    "unknowns":["No actual toilet room or ticket-service counter is established by the visible words.","The gates do not establish the exact platform or paid-area boundary on a station map."]
+  },
+  {
+    "image_id":"tps-scene-004",
+    "summary_en":"An indoor corridor/concourse under a striped ceiling and circular lights. The long sign refers to the Tamsui-Xinyi and Bannan lines, toilets and parking. An illuminated emergency-exit pictogram hangs above. The physical toilet entrance is not visible in the reviewed regions.",
+    "summary_zh":"條狀天花板與圓形燈具下的室內通道。長形指標提到淡水信義線、板南線、廁所及停車設施，上方另有發光逃生出口圖示。已檢視區域中未確認實際廁所入口。",
+    "signs":[
+      {"visible_zh":"淡水信義線","visible_en":null,"label_en":"Tamsui-Xinyi Line","direction":"up","panel":"left"},
+      {"visible_zh":"板南線","visible_en":null,"label_en":"Bannan Line","direction":"up","panel":"left-middle","note":"Shared left-group upward arrow."},
+      {"visible_zh":"廁所","visible_en":null,"label_en":"toilets","direction":"up","panel":"right","symbols":["toilet","wheelchair"]},
+      {"visible_zh":null,"visible_en":null,"label_en":"parking","direction":null,"panel":"right","symbols":["P"],"note":"P pictogram; parking-lot name not reliably transcribed."}
+    ],
+    "objects":[{"category":"emergency_exit_sign","label_en":"illuminated emergency-exit pictogram","label_zh":"發光逃生出口圖示","region":"upper right","bbox_xyxy":[342,64,378,102]}],
+    "uncertain":[],
+    "unknowns":["Much of the lower concourse is redacted; fixtures behind masks are not assessable.","A wheelchair pictogram does not verify physical accessibility."]
+  },
+  {
+    "image_id":"tps-scene-005",
+    "summary_en":"A broad staircase with a centre handrail and adjacent escalator structures is directly visible under an overhead sign. The yellow panel refers to Exit North 1 and Civic Boulevard. Other panels mention a TRA ticket office, a service centre and the station hall. Those counters or rooms are referenced, not directly observed.",
+    "summary_zh":"可直接看見中央有扶手的寬樓梯及旁邊的電扶梯結構。上方黄色指標提到出口北1門（市民大道）；其他面板提到台鐵售票處、服務中心及車站大廳。這些櫃檯或空間僅由指標提及，並未直接看見。",
+    "signs":[
+      {"visible_zh":"出口北1門（市民大道）","visible_en":null,"label_en":"Exit North 1, Civic Boulevard","direction":"up","panel":"yellow left","note":"Bracket glyphs normalized."},
+      {"visible_zh":"台鐵售票處","visible_en":null,"label_en":"TRA ticket office","direction":null,"panel":"middle"},
+      {"visible_zh":"服務中心","visible_en":null,"label_en":"service centre","direction":null,"panel":"middle-right","symbols":["question_mark"]},
+      {"visible_zh":"車站大廳","visible_en":null,"label_en":"station hall","direction":"up","panel":"right"}
+    ],
+    "objects":[
+      {"category":"stairs","label_en":"broad staircase with central handrail","label_zh":"中央有扶手的寬樓梯","region":"centre below sign","bbox_xyxy":[156,163,326,288]},
+      {"category":"escalator","label_en":"escalator structures beside the stairs","label_zh":"樓梯旁的電扶梯結構","region":"left and right sides of staircase","bbox_xyxy":[94,162,410,288],"note":"Operational status and direction of movement are not determined from a still image."}
+    ],
+    "uncertain":[],
+    "unknowns":["No step-free alternative is verified.","Shared-arrow associations for the middle panels remain unresolved."]
+  },
+  {
+    "image_id":"tps-scene-006",
+    "summary_en":"A long concourse has a shopfront on the left and a blue LOCKERS / 置物櫃 label with adjacent locker units on the right. The overhead sign mentions the Tamsui-Xinyi Line, Taipei Bus Station, Taipei City Mall and Zhongshan Metro Mall, with toilet/accessibility and parking pictograms. The shop's complete name is not certified from this frame.",
+    "summary_zh":"長形通道左側可見商店門面，右側可見藍色 LOCKERS／置物櫃標示及相鄰櫃體。上方指標提到淡水信義線、臺北轉運站、台北地下街與中山地下街，並有廁所、輪椅及停車圖示。此照片中的商店全名尚未確認。",
+    "signs":[
+      {"visible_zh":"淡水信義線","visible_en":null,"label_en":"Tamsui-Xinyi Line","direction":"up","panel":"left"},
+      {"visible_zh":"臺北轉運站","visible_en":"Taipei Bus Station","label_en":"Taipei Bus Station","direction":"up","panel":"left-middle"},
+      {"visible_zh":"台北地下街","visible_en":null,"label_en":"Taipei City Mall","direction":"up","panel":"right-middle","note":"Shared upward arrow in the right destination group."},
+      {"visible_zh":"中山地下街","visible_en":null,"label_en":"Zhongshan Metro Mall","direction":"up","panel":"right","note":"Shared upward arrow in the right destination group."},
+      {"visible_zh":null,"visible_en":null,"label_en":"toilets","direction":"up","panel":"right-group symbols","symbols":["toilet","wheelchair"]},
+      {"visible_zh":null,"visible_en":null,"label_en":"parking","direction":null,"panel":"right-group symbols","symbols":["P"]}
+    ],
+    "objects":[
+      {"category":"lockers","label_en":"locker bank with blue LOCKERS label","label_zh":"有藍色標示的置物櫃","region":"right side of image","bbox_xyxy":[416,175,473,288],"visible_text_en":"LOCKERS","visible_text_zh":"置物櫃","note":"Evidence is image-relative and historical; capacity, price and current availability unknown."},
+      {"category":"shopfront","label_en":"shopfront with yellow fascia and blue display","label_zh":"黃色招牌與藍色展示面的商店門面","region":"left side of image","bbox_xyxy":[0,155,124,224],"shop_name":null,"note":"A partial English brand mark is present, but the complete shop name is not certified."}
+    ],
+    "uncertain":[],
+    "unknowns":["Physical toilet entrance and parking access are not verified.","This is the same source photograph used by locker pilot record tps-amenity-pilot-001, not an independent locker location."]
+  },
+  {
+    "image_id":"tps-scene-007",
+    "summary_en":"An indoor opening has a white-and-yellow overhead sign, a pair of large wall-mounted map/information panels on the left and an illuminated green emergency-exit pictogram on the right. A warm-lit passage lies behind the opening. The maps are not established as interactive kiosks.",
+    "summary_zh":"室內開口上方有白黃兩色指標，左側牆面可見大型地圖或資訊看板，右側有綠色發光逃生出口圖示。入口後方為暖色照明通道。這些看板未確認為可操作的互動式資訊機。",
+    "signs":[{"visible_zh":"台北地下街","visible_en":null,"label_en":"Taipei City Mall","direction":"up","panel":"white left"}],
+    "objects":[
+      {"category":"map_information_board","label_en":"large wall-mounted map/information panels","label_zh":"大型壁掛地圖／資訊看板","region":"left of the opening","bbox_xyxy":[0,169,143,283]},
+      {"category":"passage_entrance","label_en":"warm-lit passage opening","label_zh":"暖色照明通道入口","region":"centre","bbox_xyxy":[169,168,356,288]},
+      {"category":"emergency_exit_sign","label_en":"green emergency-exit pictogram","label_zh":"綠色逃生出口圖示","region":"right side above passage","bbox_xyxy":[423,166,445,192]}
+    ],
+    "uncertain":[],
+    "unknowns":["Yellow-panel destination text is too small for reliable transcription; an upward arrow is visible.","Map text and precise floor layout are unreadable at this resolution.","A map board is not evidence of a staffed counter or interactive kiosk."]
+  },
+  {
+    "image_id":"tps-scene-008",
+    "summary_en":"A prominent Taoyuan Airport MRT board points upward above an indoor passage. Purple structural panels, metal rails at lower left and a corridor receding to the right provide surrounding visual context. No airport check-in counter or train platform is established by this image.",
+    "summary_zh":"大型桃園機場捷運指標以向上箭頭指示方向。周圍可見紫色柱面、左下金屬欄杆及向右後方延伸的通道。照片未確認機場報到櫃檯或實際月台。",
+    "signs":[{"visible_zh":"桃園機場捷運","visible_en":"Taoyuan Airport MRT","label_en":"Taoyuan Airport MRT","direction":"up","panel":"main"}],
+    "objects":[
+      {"category":"corridor","label_en":"corridor with purple structural panels","label_zh":"有紫色柱面的通道","region":"background and right side","bbox_xyxy":[0,166,512,288]},
+      {"category":"handrail","label_en":"metal railing at lower left","label_zh":"左下方金屬欄杆","region":"lower left","bbox_xyxy":[0,238,144,288]}
+    ],
+    "uncertain":[],
+    "unknowns":["An Airport MRT direction does not establish an airport check-in facility.","No exact physical station coordinate or current route accessibility is known."]
+  }
+]

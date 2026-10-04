@@ -2,6 +2,20 @@
 
 The immediate deliverable is a reviewed sign knowledge base for the 3rDi4All navigation demo, usable through retrieval and an LLM before model fine-tuning.
 
+## Whole-scene pilot and local demo
+
+Eight whole-photograph annotations now cover readable signs **and** surrounding objects. Observed examples include a locker bank, barrier gates, stairs/escalators, a shopfront, map boards and passage entrances. Fourteen amenity categories are explicitly checked per scene. A toilet mentioned on a sign is kept separate from a physically visible toilet. No lift or check-in counter is verified in this pilot.
+
+Run the evidence-search demo locally:
+
+```powershell
+C:/Python313/python.exe scripts/scene_rag_demo.py serve --port 8766
+```
+
+Open http://127.0.0.1:8766 . Try `置物櫃`, `廁所`, `stairs`, `gates`, `map`, or `Airport MRT`; compare “Physically visible” with “Mentioned on signs.” `/api/search?q=...` returns evidence and instructions ready for the app's LLM. **No live LLM or positioning engine is connected to this demo.** Retrieval is local lexical matching with bilingual aliases, not a trained embedding model.
+
+Records: [scene annotations](release/huggingface/scene_annotations.jsonl). [Schema and review policy](docs/WHOLE_SCENE_ANNOTATION.md). Progress: [annotation counts](annotations/progress.json). This is an eight-scene pilot, not the completed 8,971-entry annotation collection. All records are assistant-checked; human review is pending.
+
 **Team:** PHIT2026Team, Urav Advanced Learning Systems Pvt Ltd.
 
 - [Working paper and numbered references](paper/draft.md)
@@ -10,7 +24,7 @@ The immediate deliverable is a reviewed sign knowledge base for the 3rDi4All nav
 - [GitHub connection and later Hugging Face upload](docs/GITHUB_AND_HUGGINGFACE.md)
 - [Next steps](docs/NEXT_STEPS.md)
 
-The Git remote is configured for `UravAdvanced/TaipeiSignRAG`; remote creation/push remain pending. The user's terminal is authenticated, but the current Codex Windows sandbox cannot access its keyring credentials. Raw archives, full image data and historical research stay in this local folder and are excluded from Git; the curated release package is separate.
+The private GitHub repository is `UravAdvanced/TaipeiSignRAG`; the user successfully pushed the initial commits. New local commits still require `git push` from the user's authenticated terminal because the current Codex Windows sandbox cannot access its keyring credentials. Raw archives, full image data and historical research stay in this local folder and are excluded from Git; the curated release package is separate.
 
 ## Project contents
 
@@ -27,7 +41,7 @@ There are 8,971 image entries across the archives, not 8,971 independent photogr
 
 ## Current status
 
-Archive audits and sampled visual reviews are complete. Two evidence-linked locker observations are now prepared in `release/huggingface/amenity_pilot.jsonl`; their status is assistant-checked, with human review pending. The full semantic annotation collection, verified cross-image relationships and searchable RAG index have not yet been created. No training, app integration, Azure inference or publication has run. A small current station walkthrough is planned only after the annotation pipeline and app are ready.
+Archive audits and sampled visual reviews are complete. Eight whole-scene records and two locker observations are prepared, covering nine unique source photographs. They are assistant-checked, with human review pending. A local evidence-retrieval demo runs over the eight scene records and prepares LLM context. Full annotation, a live LLM integration, geometric app integration and field testing remain incomplete. No training or Azure inference has run. A small current station walkthrough is planned only after the annotation pipeline and app are ready.
 
 The supplied annotations are bounding boxes or class-folder codes. They do not supply text transcripts, physical sign positions, camera poses or station map anchors. Reviewed sign IDs will be attached to the app's mapped anchors separately; retrieval scores are not spatial confidence estimates.
 
