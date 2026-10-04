@@ -6,7 +6,7 @@
 
 Urav Advanced Learning Systems Pvt Ltd.
 
-TaipeiSignRAG is an AI-assisted whole-photograph annotation POC and bilingual evidence-search demo. Human review is pending. It does not establish precise positioning, current facilities or accessible routes.
+TaipeiSignRAG is the Taipei Main Station whole-photograph annotation POC and bilingual evidence-search demo. Human review is pending. It does not establish precise positioning, current facilities or accessible routes.
 
 ## Whole-scene pilot and local demo
 
