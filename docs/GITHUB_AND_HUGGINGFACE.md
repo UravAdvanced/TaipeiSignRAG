@@ -35,7 +35,7 @@ Use your own Git author identity if Git requests it. The raw archives, full `dat
 
 ## Hugging Face, later and user-managed
 
-The user will handle Hugging Face after preparation is complete. The current upload candidate is `release/huggingface/`; it includes a dataset card, eleven whole-scene records, two locker observations, privacy-transformed image evidence and attribution. Do not describe it as the full annotation release. Browser-side Chinese/English search is prepared for GitHub Pages separately; see [Pages setup](GITHUB_PAGES.md). No Pages deployment has been performed in this iteration.
+The user will handle Hugging Face after preparation is complete. The current upload candidate is `release/huggingface/`; it includes a dataset card, thirty-two whole-scene records, two locker observations, privacy-transformed image evidence and attribution. Do not describe it as the full annotation release. Browser-side Chinese/English search is prepared for GitHub Pages separately; see [Pages setup](GITHUB_PAGES.md). No Pages deployment has been performed in this iteration.
 
 When ready, create a dataset repository in the selected namespace and upload the contents of that folder at the dataset repository root. The card declares a JSONL `amenity_pilot` configuration. The full dataset card and record counts must be updated as reviewed records are added. Hugging Face credentials are not needed for local preparation.
 

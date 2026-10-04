@@ -31,6 +31,13 @@ ALIASES={
  'emergency_exit_sign':['emergency exit','逃生出口','緊急出口'],
 }
 STOP={'where','is','are','the','a','an','i','can','find','me','show','there','this','that','to','for','of','in','do','you','what','with','it','please'}
+DESTINATION_ALIASES={
+ 'taipei_city_mall':['Taipei City Mall','台北地下街','臺北地下街'],
+ 'zhongshan_metro_mall':['Zhongshan Metro Mall','Zhongshan underground mall','中山地下街'],
+ 'k_underground_mall':['K Underground Mall','K area underground mall','K區地下街'],
+ 'new_balance':['new balance'],
+ 'tra_bento':['TRA Bento Shop','臺鐵便當本舖','台鐵便當本舖','便當本舖'],
+}
 TRANSPORT_ALIASES={
  'airport_bus':['airport bus','airport buses','airport express','kuo kuang','國光客運','機場巴士','机场巴士'],
  'taoyuan_airport_mrt':['taoyuan airport mrt','airport mrt','taoyuan mrt','airport train','airport rail','桃園機場捷運','機場捷運','機捷','机场捷运','桃园机场捷运'],
@@ -40,7 +47,7 @@ INSTRUCTIONS=('Answer only from the supplied evidence and cite source_id. Distin
  'Keep airport buses, Taoyuan Airport MRT and Taipei Bus Station separate. Airport Express on these bus panels is printed English text, not an MRT identity. '
  'Directions are arrows in a historical image, not live route commands. Do not infer current location, floor, availability, accessibility, opening hours, or map coordinates. '
  'If a facility is not observed, say it is not established by these pilot images; do not say it is absent from the station. '
- 'Records are AI-assisted and assistant-checked; human review is pending. No people may be described. If evidence is insufficient, say so.')
+ 'Records are assistant-checked; expert review is pending. No people may be described. If evidence is insufficient, say so.')
 
 def normalize(text):
     return re.sub(r'[\s-]+',' ',unicodedata.normalize('NFKC',text).lower().replace('臺','台')).strip()
@@ -65,7 +72,8 @@ def concepts(query,aliases=ALIASES):
 
 def search(query,mode='all',limit=50):
     if mode not in ('all','visible','signs'):raise ValueError('Unknown evidence mode')
-    wanted=concepts(query);transport=concepts(query,TRANSPORT_ALIASES);qt=tokens(query);results=[]
+    wanted=concepts(query);transport=concepts(query,TRANSPORT_ALIASES);destinations=concepts(query,DESTINATION_ALIASES);qt=tokens(query);results=[]
+    destination_names={normalize(alias) for key in destinations for alias in DESTINATION_ALIASES[key]}
     for row in records():
         matched_transport=sorted({s['transport_id'] for s in row['signs'] if s.get('transport_id') in transport}) if mode!='visible' else []
         if transport and not matched_transport:continue
@@ -75,9 +83,10 @@ def search(query,mode='all',limit=50):
         if wanted and not matched:continue
         objects=row['objects'] if mode!='signs' else []
         signs=row['signs'] if mode!='visible' else []
+        if destinations and not any(normalize(str(item.get(field) or '')) in destination_names for item in objects+signs for field in ('label_en','visible_zh','visible_en','visible_text_zh','visible_text_en')):continue
         corpus=' '.join(str(v or '') for obj in objects+signs for k,v in obj.items() if k in ('label_en','label_zh','visible_zh','visible_en','visible_text_zh','visible_text_en','region'))
         hits=len(qt & tokens(corpus))
-        if query.strip() and not wanted and not transport and not hits:continue
+        if query.strip() and not wanted and not transport and not destinations and not hits:continue
         score=sum(4 if s=='visible' else 2 for s in matched.values())+hits+6*len(matched_transport)
         results.append({'record':row,'ranking_score':score,'matched_categories':matched,'matched_transport':matched_transport})
     results.sort(key=lambda r:(-r['ranking_score'],r['record']['image_id']))
@@ -88,7 +97,7 @@ def search(query,mode='all',limit=50):
           'scene_description':r['summary_en'],'physical_objects':r['objects'],'sign_references':r['signs'],
           'uncertainties':r['unknowns'],'map_coordinate':None,'anchor_id':None,'human_review':r['human_review_status']})
     return {'query':query,'mode':mode,'count':len(results),'requested_categories':wanted,
-      'requested_transport':transport,
+      'requested_transport':transport,'requested_destinations':destinations,
       'retrieval_method':'local lexical matching with bilingual amenity aliases; ranking scores are not probabilities',
       'results':results,'context_for_llm':context,'llm_instructions':INSTRUCTIONS,
       'llm_called':False,'notice':'Pilot evidence retrieval only. No live generative model or spatial positioning is connected.'}
@@ -102,7 +111,8 @@ class Handler(BaseHTTPRequestHandler):
             except ValueError as exc:self.send_error(400,str(exc));return
             self.send_response(200);self.send_header('Content-Type','application/json; charset=utf-8');self.send_header('Content-Length',str(len(data)));self.end_headers();self.wfile.write(data);return
         if u.path=='/':p=ROOT/'demo/index.html'
-        elif u.path in ('/app.js','/search.mjs','/search-data.json'):p=ROOT/'demo'/u.path[1:]
+        elif u.path in ('/app.js','/search.mjs','/search-data.json','/catalog.html'):p=ROOT/'demo'/u.path[1:]
+        elif u.path=='/annotations/destination_catalog.json':p=ROOT/'annotations/destination_catalog.json'
         elif u.path in ('/release/huggingface/ATTRIBUTION.md','/release/huggingface/scene_annotations.jsonl'):p=ROOT/u.path[1:]
         elif u.path.startswith('/release/huggingface/scene_images/'):
             p=(ROOT/unquote(u.path[1:])).resolve()

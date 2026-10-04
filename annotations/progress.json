@@ -1,12 +1,12 @@
 {
   "total_source_entries": 8971,
-  "scene_records": 11,
+  "scene_records": 32,
   "separate_amenity_pilot_records": 2,
-  "scene_review_scope": "11 full-frame images from Sign Board 2; no per-family propagation",
-  "unique_source_images_with_any_new_annotation": 12,
-  "remaining_source_entries_without_new_annotation": 8959,
+  "scene_review_scope": "32 full-frame images from Sign Board 2; no per-family propagation",
+  "unique_source_images_with_any_new_annotation": 33,
+  "remaining_source_entries_without_new_annotation": 8938,
   "human_reviewed_records": 0,
   "physical_anchor_links": 0,
   "full_dataset_annotation_complete": false,
-  "next_step": "expand scene coverage, validate ambiguous text and add original/crop relationships; do not copy scene facts across views"
+  "next_step": "continue full-photo batches including hotels, malls and other sites using the existing destination catalog; record readable names during annotation without a separate repeat research step; do not copy scene facts across views"
 }

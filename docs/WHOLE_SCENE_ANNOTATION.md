@@ -6,7 +6,7 @@ The user explicitly requested the entire photograph, including surrounding visua
 
 - `annotations/scene_pilot_notes.json`: authored observations from interactive visual inspection; the source of semantic content.
 - `release/huggingface/scene_manifest.jsonl`: original-image hashes, supplied sign boxes and local privacy masks.
-- `release/huggingface/scene_annotations.jsonl`: eleven enriched whole-scene records.
+- `release/huggingface/scene_annotations.jsonl`: thirty-two enriched whole-scene records.
 - `release/huggingface/scene_images/`: native-size full-frame views with conservative person masks.
 - `annotations/progress.json`: exact completed and remaining counts.
 - `scripts/build_scene_records.py`: combines notes and provenance; does not automatically invent annotations.
@@ -21,7 +21,15 @@ Scenes 009–011 add exact photographs A04N_HH_001, A06W_HH_001 and A07E_HH_001.
 
 `signs[].transport_id` has separate values `airport_bus`, `taoyuan_airport_mrt`, and `taipei_bus_station`. These are semantic destination categories, not physical landmark IDs. They are assigned from the authored sign labels in each exact photograph. “Airport Express” is retained in `visible_en` on bus panels; the Chinese text and bus pictogram support the bus category. No MRT platform, bus boarding bay or current route is inferred from these signs.
 
-There are 11 scene records plus two locker observations, covering 12 unique original source hashes. There are 8,959 source entries without new annotation. Zero records have independent human review or physical anchor links. `build_scene_records.py` derives coverage counts from the records and source hashes rather than fixed pilot counts.
+There are 32 scene records plus two locker observations, covering 33 unique original source hashes. There are 8,938 source entries without new annotation. Zero records have independent expert review or physical anchor links. `build_scene_records.py` derives coverage counts from the records and source hashes rather than fixed pilot counts.
+
+## Hotels, retail and other destinations
+
+Include hotels, malls, shops and other sites in the normal full-photograph annotation pass. Use the existing destination catalogue for name references; repeat online research is not a prerequisite. Add names when readable in the photograph, and retain unreadable names as unknown. Catalogue-only destinations remain references until supported by a photo.
+
+Scenes 012–013 add A15E_HH_001 and A15W_HH_001. Both show Taipei City Mall signs; scene 012 also records platform references, a corridor, a fire extinguisher and a partly cropped cabinet. Scene 013 records West Parking, Airport MRT and a taxi pictogram, plus visible shopfront portions with unknown business names. Full-frame masked views and enlarged details were inspected. Neither photo establishes a hotel name.
+
+Scenes 014–032 add 19 individually inspected full photographs, completing one exact-photo record from each of the 32 filename families in Sign Board 2. This is representative coverage, not completion of that archive. Visible shop names include `new balance` (019) and `臺鐵便當本舖` (021); scene 031 adds a K區地下街 sign reference. Additional gates, stairs, escalators, map/information panels, emergency-exit pictograms, fire extinguishers and uncertain screen equipment are recorded. Scene 029's source required no person masks after full-frame inspection; other new views use conservative masks, with independent privacy review pending. Arrow values now include upper-left, lower-left, lower-right and return arrows. The viewer labels these as image arrows, not current route commands.
 
 ## Observation levels
 
@@ -44,7 +52,7 @@ The checked category set includes lockers, toilets, shopfronts, fare gates/turns
 
 ## Privacy and review provenance
 
-Pilot privacy regions are conservative manual masks. Coarsely pixelated local previews were used to refine the regions while preserving fixtures. Masks may cover objects adjacent to people; those parts are not assessable. Masked full-frame views and enlarged sign details were visually inspected by the assistant. No human identity or activity descriptions are included. Independent human review of both privacy and annotation remains pending.
+Pilot privacy regions are conservative manual masks. Coarsely pixelated local previews were used to refine the regions while preserving fixtures. Masks may cover objects adjacent to people; those parts are not assessable. Masked full-frame views and enlarged sign details were visually inspected by the assistant. No human identity or activity descriptions are included. Independent expert review of both privacy and annotation remains pending.
 
 A local Windows FaceDetector was investigated but found only one face in these low-resolution samples, so it is not considered a reliable privacy solution here. `scripts/detect_faces_windows.ps1` is an exploratory local helper, not the basis for claiming complete redaction. OpenCV installation could not complete in this environment; a downloaded MobileNet-SSD model was not executed. Neither is a trained project model or a requirement for the running retrieval demo. Local helper binaries/model files are excluded from Git.
 

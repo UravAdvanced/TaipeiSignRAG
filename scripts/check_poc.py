@@ -8,7 +8,7 @@ from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from urllib.request import urlopen
 from PIL import Image
-from scene_rag_demo import ROOT, PACK, ALIASES, TRANSPORT_ALIASES, records, search, Handler
+from scene_rag_demo import ROOT, PACK, ALIASES, TRANSPORT_ALIASES, DESTINATION_ALIASES, records, search, Handler
 
 rows=records()
 data=json.loads((ROOT/'demo/search-data.json').read_text(encoding='utf-8'))
@@ -17,8 +17,8 @@ progress=json.loads((ROOT/'annotations/progress.json').read_text(encoding='utf-8
 assert data['progress']==progress
 amenities=[json.loads(line) for line in (PACK/'amenity_pilot.jsonl').read_text(encoding='utf-8').splitlines()]
 unique={r['source_sha256'] for r in rows+amenities}
-assert progress['scene_records']==len(rows)==11
-assert progress['unique_source_images_with_any_new_annotation']==len(unique)==12
+assert progress['scene_records']==len(rows)==32
+assert progress['unique_source_images_with_any_new_annotation']==len(unique)==33
 assert progress['remaining_source_entries_without_new_annotation']==8971-len(unique)
 with zipfile.ZipFile(ROOT/'Taipei Station Sign Board 2.v1i.coco.zip') as archive:
     for row in rows:
@@ -34,8 +34,8 @@ with zipfile.ZipFile(ROOT/'Taipei Station Sign Board 2.v1i.coco.zip') as archive
         for obj in row['objects']:
             x1,y1,x2,y2=obj['bbox_xyxy']
             assert 0<=x1<x2<=512 and 0<=y1<y2<=288
-queries=['','AIRPORT-MRT','where are the airport buses','台北轉運站','機場捷運報到','none','nonexistentdestination','airport']
-queries += [alias for terms in {**ALIASES,**TRANSPORT_ALIASES}.values() for alias in terms]
+queries=['','AIRPORT-MRT','where are the airport buses','台北轉運站','機場捷運報到','none','nonexistentdestination','airport','Taipei City Mall','台北地下街','West Parking','西停車場','new balance','臺鐵便當本舖','K區地下街','K Underground Mall']
+queries += [alias for terms in {**ALIASES,**TRANSPORT_ALIASES,**DESTINATION_ALIASES}.values() for alias in terms]
 cases=[]
 for query in queries:
     for mode in ('all','visible','signs'):
@@ -45,8 +45,8 @@ subprocess.run(['node',str(ROOT/'scripts/check_browser_search.mjs')],input=json.
 class QuietStatic(SimpleHTTPRequestHandler):
     def log_message(self,*args): pass
 for handler, paths in [
-    (partial(QuietStatic,directory=str(ROOT/'_site')),['/','/demo/','/demo/app.js','/demo/search.mjs','/demo/search-data.json','/release/huggingface/scene_images/scene_011.png','/release/huggingface/ATTRIBUTION.md']),
-    (Handler,['/','/app.js','/search.mjs','/search-data.json','/release/huggingface/scene_images/scene_011.png','/release/huggingface/ATTRIBUTION.md','/api/search?q=airport%20buses'])
+    (partial(QuietStatic,directory=str(ROOT/'_site')),['/','/demo/','/demo/catalog.html','/annotations/destination_catalog.json','/demo/app.js','/demo/search.mjs','/demo/search-data.json','/release/huggingface/scene_images/scene_011.png','/release/huggingface/ATTRIBUTION.md']),
+    (Handler,['/','/catalog.html','/annotations/destination_catalog.json','/app.js','/search.mjs','/search-data.json','/release/huggingface/scene_images/scene_011.png','/release/huggingface/ATTRIBUTION.md','/api/search?q=airport%20buses'])
 ]:
     server=ThreadingHTTPServer(('127.0.0.1',0),handler)
     thread=threading.Thread(target=server.serve_forever,daemon=True);thread.start()
@@ -57,4 +57,4 @@ for handler, paths in [
                 if path.endswith(('.js','.mjs')): assert 'javascript' in response.headers['Content-Type']
     finally:
         server.shutdown();server.server_close();thread.join()
-print('Source hashes, masks, counts, static site routes and local API routes passed. Human review remains pending.')
+print('Source hashes, masks, counts, static site routes and local API routes passed. Expert review remains pending.')

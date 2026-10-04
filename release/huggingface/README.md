@@ -32,15 +32,15 @@ configs:
 
 **Prepared locally; not yet published.** Urav Advanced Learning Systems Pvt Ltd.
 
-This package currently contains **eleven AI-assisted, assistant-checked whole-scene annotations and two locker observations**, covering twelve unique source photographs. Scene records cover readable text plus visible amenities and surroundings, with full-frame manually masked evidence images. Human review is pending. It is not the completed signboard knowledge base. The split name `train` is a Hub loading convention; no training or evaluation split has been designed and no model was trained on this pilot.
+This package currently contains **thirty-two assistant-checked whole-scene annotations and two locker observations**, covering thirty-three unique source photographs. Scene records cover readable text plus visible amenities and surroundings, with full-frame manually masked evidence images. Expert review is pending. It is not the completed signboard knowledge base. The split name `train` is a Hub loading convention; no training or evaluation split has been designed and no model was trained on this pilot.
 
 The source photographs are from [TibaMe's Taipei Station Sign Board 2, version 1](https://universe.roboflow.com/tibame-4ueve/taipei-station-sign-board-2), which declares CC BY 4.0. The photographs show locker signage, including the word “LOCKERS,” on the right side of the frame. Their original stems are A10E_HH_001 and A10E_YY_016. We provide cropped evidence and new structured observation records. Source photos and crops can show the same physical amenity; that identity is not established.
 
 ## Contents
 
 - `amenity_pilot.jsonl`: two observation records.
-- `scene_annotations.jsonl`: eleven whole-scene records, with fourteen amenity observation-status fields per image.
-- `scene_manifest.jsonl`: provenance and mask metadata for those eleven records.
+- `scene_annotations.jsonl`: thirty-two whole-scene records, with fourteen amenity observation-status fields per image.
+- `scene_manifest.jsonl`: provenance and mask metadata for those thirty-two records.
 - `scene_images/`: full-frame privacy views. Manually masked areas are not assessable; independent privacy review is pending.
 - `images/locker_evidence_01.png` and `images/locker_evidence_02.png`: native-resolution label crops.
 - `ATTRIBUTION.md`: original source, licence and modification notice.

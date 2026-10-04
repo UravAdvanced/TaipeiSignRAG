@@ -2,7 +2,7 @@ import {search} from './search.mjs';
 
 const $ = selector => document.querySelector(selector);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const arrows = {up:'↑',left:'←',right:'→',up_right:'↗'};
+const arrows = {up:'↑',left:'←',right:'→',up_right:'↗',up_left:'↖',down_right:'↘',down_left:'↙',u_turn:'↶ (return arrow)'};
 const transportLabels = {
   airport_bus:'Airport buses / 機場巴士',
   taoyuan_airport_mrt:'Taoyuan Airport MRT / 桃園機場捷運',
@@ -21,7 +21,7 @@ function run() {
     <p>${esc(r.summary_en)}</p><p lang="zh-Hant">${esc(r.summary_zh)}</p>
     <h3>Physically visible / 實際可見</h3><ul>${r.objects.map(o => `<li>${esc(o.label_en)} / ${esc(o.label_zh)} — ${esc(o.region)}</li>`).join('')}</ul>
     <h3>Sign references / 指標提及</h3><ul>${r.signs.map(s => `<li>${esc(s.visible_zh||s.label_en)} · ${esc(s.label_en)} ${esc(arrows[s.direction]||'— arrow association unverified')}${s.visible_en ? `<br>Printed English: ${esc(s.visible_en)}` : ''}${s.note ? `<br><small>${esc(s.note)}</small>` : ''}</li>`).join('')}</ul>
-    <details><summary>Uncertainties and source / 不確定資訊與來源</summary><ul>${r.unknowns.map(u => `<li>${esc(u)}</li>`).join('')}${r.uncertain.map(u => `<li>${esc(u.description)}</li>`).join('')}</ul><p>Masked regions are not assessable. Coordinates and anchors: unknown. Human review: pending. Arrows describe the photograph only.</p><pre>${esc(r.source_image)}\nSHA-256: ${esc(r.source_sha256)}</pre><a href="${esc(r.source_url)}" target="_blank" rel="noopener noreferrer">Original dataset · CC BY 4.0</a></details></div></article>`;
+    <details><summary>Uncertainties and source / 不確定資訊與來源</summary><ul>${r.unknowns.map(u => `<li>${esc(u)}</li>`).join('')}${r.uncertain.map(u => `<li>${esc(u.description)}</li>`).join('')}</ul><p>Masked regions are not assessable. Coordinates and anchors: unknown. Expert review: pending. Arrows describe the photograph only.</p><pre>${esc(r.source_image)}\nSHA-256: ${esc(r.source_sha256)}</pre><a href="${esc(r.source_url)}" target="_blank" rel="noopener noreferrer">Original dataset · CC BY 4.0</a></details></div></article>`;
   }).join('');
   $('#context').textContent = JSON.stringify({instructions:data.llm_instructions,evidence:data.context_for_llm,llm_called:false},null,2);
 }

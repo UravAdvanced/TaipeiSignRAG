@@ -5,7 +5,7 @@ title: "TaipeiSignRAG: A Linked Multilingual Signboard and Amenity Knowledge Bas
 authors:
   - name: "3rdEye4All (PHIT 2026 Finalist Team)"
 version: "0.0.1-draft"
-abstract: "AI Eye 4 All: AI Indoor Navigation for Inclusive Smart Cities. Dataset audit, eleven AI-assisted whole-scene annotations, two locker observations and browser-side Chinese/English evidence search by PHIT 2026 Finalist Team: 3rdEye4All, Urav Advanced Learning Systems Pvt Ltd. Human review, full annotation, live LLM integration and field testing are pending. No precise positioning is established."
+abstract: "AI Eye 4 All: AI Indoor Navigation for Inclusive Smart Cities. Dataset audit, thirty-two whole-scene annotations, two locker observations and browser-side Chinese/English evidence search by PHIT 2026 Finalist Team: 3rdEye4All, Urav Advanced Learning Systems Pvt Ltd. Expert review, full annotation, live LLM integration and field testing are pending. No precise positioning is established."
 keywords:
   - indoor navigation
   - Taipei Main Station

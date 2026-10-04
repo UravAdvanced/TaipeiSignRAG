@@ -1,10 +1,14 @@
 """Stage an explicit curated file list for Pages, excluding local raw data."""
 import shutil
 from pathlib import Path
+from build_destination_catalog import build as build_destination_catalog
+
+build_destination_catalog()
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / '_site'
 files = ['index.html','.nojekyll','demo/index.html','demo/app.js','demo/search.mjs','demo/search-data.json',
+         'demo/catalog.html','annotations/destination_catalog.json',
          'release/huggingface/ATTRIBUTION.md','release/huggingface/scene_annotations.jsonl']
 import json
 records = [json.loads(line) for line in (ROOT/'release/huggingface/scene_annotations.jsonl').read_text(encoding='utf-8').splitlines()]

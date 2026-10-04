@@ -8,6 +8,8 @@ The static page loads `demo/search-data.json` once and performs lexical retrieva
 
 ## Rebuild and preview
 
+The [hotel and mall inventory](DESTINATION_CATALOG.md) is available at `demo/catalog.html`, linked from the scene viewer. Its Chinese/English filters operate locally. `annotations/destination_catalog.json` is the authored source; `build_pages_site.py` also regenerates the inventory HTML and documentation. Web-only candidates are kept outside scene-search evidence and LLM context. The curated allowlist includes the inventory page and JSON, with no raw research pages or additional photographs.
+
 ```powershell
 python scripts/build_browser_search.py
 python scripts/build_pages_site.py
@@ -32,6 +34,8 @@ The build stages an explicit file list in `_site`: the landing page, browser dem
 
 Run `python scripts/check_poc.py` after building `_site` (requires Node and Pillow). Checks cover bilingual destination separation, visible/sign-only distinctions, Python/JavaScript retrieval parity, source hashes, mask pixels, annotation counts and local HTTP assets. These functional checks are not a measured retrieval-accuracy benchmark or independent privacy review. Actual hosted Pages behavior still requires a deployment check.
 
-The current build also passed a local headless Microsoft Edge smoke check: all 11 evidence cards rendered, and the desktop page screenshot was visually inspected. This does not establish hosted Pages availability or a complete accessibility audit.
+The current build also passed a local headless Microsoft Edge smoke check: all 32 evidence cards, the new storefront names and additional arrow types rendered, and the desktop page screenshot was visually inspected. This does not establish hosted Pages availability or a complete accessibility audit.
 
-The UI prominently credits the team and labels the work as an AI-assisted POC. Human review is pending; coordinates, physical anchor links, current operations and accessible routes remain unverified. No precise positioning or full annotation completion is claimed.
+The destination inventory separately passed seven headless Edge cases (all entries, Cosmos, 天成, 臺北天成, an absent name, new balance and 便當本舖) under a simulated `/TaipeiSignRAG/` project prefix. Referenced CLS crop hashes matched the original archive. These checks confirm browser behavior and provenance, not the existence of a Cosmos sign in the dataset.
+
+The UI prominently credits the team and labels the work as a POC. Expert review is pending; coordinates, physical anchor links, current operations and accessible routes remain unverified. No precise positioning or full annotation completion is claimed.
