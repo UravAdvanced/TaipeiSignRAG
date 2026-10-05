@@ -2,7 +2,7 @@
 
 **Preprint draft | 5 October 2026**  
 **3rdEye4All team, Urav Advanced Learning Systems Pvt Ltd**  
-**Corresponding author:** to be supplied
+**Corresponding author:** Team
 
 ## Abstract
 
