@@ -10,14 +10,14 @@ Initial sign-name inventory for Taipei Main Station and connecting shopping area
 
 Independent expert review pending. English names may be normalized translations rather than printed text. Online existence does not establish appearance in a photograph, current routes, accessible paths or precise positioning. No names are propagated across filename families. Capture dates and current operational status remain unverified.
 
-Visual scan of 380 existing CLS contact-sheet samples spanning 95 classes, the first COCO family sheet, and 24 enlarged exact CLS crops. Existing whole-photo records also consulted. Web searches followed by selected official and secondary page reads. No full-dataset OCR; expert review pending. On 2026-10-05, 19 additional full photographs were annotated, adding two readable storefront names and full-photo K Underground Mall evidence. No repeat online research was needed.
+Visual scan of 380 existing CLS contact-sheet samples spanning 95 classes, the first COCO family sheet, and 24 enlarged exact CLS crops. Existing whole-photo records also consulted. Web searches followed by selected official and secondary page reads. No full-dataset OCR; expert review pending. On 2026-10-05, 19 additional full photographs were annotated, adding two readable storefront names and full-photo K Underground Mall evidence. Three separate user-supplied photographs are supplemental browser-demo examples and are excluded from the TibaMe POC counts. No repeat online research was needed.
 
 ## Hotels and shopping
 
 | Name | Photo evidence | Online check |
 | --- | --- | --- |
-| Cosmos Hotel Taipei / 台北天成大飯店 | Readable in sampled image / 樣本可讀 | Secondary page + official search listing; official page blocked |
-| Caesar Park Hotel Taipei / 台北凱撒大飯店 | Photo match pending / 待照片對照 | Official page read |
+| Cosmos Hotel Taipei / 台北天成大飯店 | Readable in supplemental demo photo / 補充示範照片可讀 | Secondary page + official search listing; official page blocked |
+| Caesar Park Hotel Taipei / 台北凱撒大飯店 | Readable in supplemental demo photo / 補充示範照片可讀 | Official page read |
 | Palais de Chine / 君品酒店 | Photo match pending / 待照片對照 | Official page read |
 | Taipei City Mall / 台北地下街 | Readable in sampled image / 樣本可讀 | Secondary page read; official check incomplete |
 | Zhongshan Metro Mall / 中山地下街 | Readable in sampled image / 樣本可讀 | Official page read |
@@ -36,16 +36,17 @@ The supplemental M3 photograph supplied for the browser demo reads 天成旅店 
 
 Aliases: 臺北天成大飯店, 天成飯店, 天成旅店, Cosmos Hotel.
 
-- `User-supplied supplemental demo image (outside the TibaMe POC dataset)` → `demo/supplemental_images/m3_cosmos_hotel.jpg`; SHA-256 `8b8430310e7cef3cb00a6c89f03cc35e206c4a264f60dd85d7ef2d24e81e93e4`. Exact CLS crop, not a whole-photo record.
+- ![Supplemental photo evidence for Cosmos Hotel Taipei](../demo/supplemental_images/m3_cosmos_hotel.jpg) — user-supplied demo photograph, outside the TibaMe POC dataset.
 - [Cosmos Hotel Taipei official website](https://www.cosmos-hotel.com.tw/) — Official listing found by exact-name Bing search; direct page returned HTTP 403. Listing names the hotel and M3; no route instruction inferred.
 - [Cosmos Hotel Taipei — Wikipedia](https://en.wikipedia.org/wiki/Cosmos_Hotel_Taipei) — Page read; secondary corroboration of English/Chinese hotel identity. Linked Taiwanstay registry timed out.
 
 ### Caesar Park Hotel Taipei / 台北凱撒大飯店
 
-Station-area hotel confirmed online; a readable sign in this dataset is still needed.
+The supplemental M6 photograph supplied for the browser demo visibly lists 台北凱撒飯店 / Caesar Park Hotel Taipei. It is outside the TibaMe POC dataset. The hotel listing's arrow association and route are not established by this image.
 
-Aliases: 臺北凱撒大飯店, 凱撒飯店, Caesar Park.
+Aliases: 臺北凱撒大飯店, 台北凱撒飯店, 凱撒飯店, Caesar Park.
 
+- ![Supplemental photo evidence for Caesar Park Hotel Taipei](../demo/supplemental_images/M6_ceasar_park_hotel.jpg) — user-supplied demo photograph, outside the TibaMe POC dataset.
 - [Caesar Park Hotel Taipei official website](https://taipei.caesarpark.com.tw/) — Official page read; hotel identity and relationship to Taipei Main Station confirmed.
 
 ### Palais de Chine / 君品酒店
@@ -197,8 +198,8 @@ Category checklist only: some categories occur in existing scenes or online faci
 
 ## Coverage and continuation
 
-6 destination names are readable in sampled images; 5 candidates await photo matches, and 0 historical candidate remains unresolved. The annotation checkpoint is 204 whole-photo records covering 205 unique originals together with the locker pilot. 8,766 source entries remain without new annotations.
+5 destination records have readable evidence in audited TibaMe images; 2 have evidence in separately supplied supplemental demo photographs; 4 candidates await photo matches, and 0 historical candidate remains unresolved. The annotation checkpoint is 204 whole-photo records covering 205 unique originals together with the locker pilot. 8,766 TibaMe source entries remain without new annotations.
 
-Continue full-photograph annotation batches including hotels, malls and other sites. Use this existing catalogue as a reference and add readable names during each photo annotation; repeating online research is not a prerequisite. Keep current online names and historical printed text separate. Preserve the three separate transport categories: airport buses, Taoyuan Airport MRT and Taipei Bus Station.
+The 204-scene annotation POC is closed; no more core annotation batches are planned. Future work begins with human verification, then app integration with separately confirmed map or anchor links. Keep current online names and historical printed text separate. Preserve the three separate transport categories: airport buses, Taoyuan Airport MRT and Taipei Bus Station.
 
-Generated by `python scripts/build_destination_catalog.py` from [the authored JSON](../annotations/destination_catalog.json). Research responses and enlarged crops remain local; this page republishes authored findings and source links only.
+Generated by `python scripts/build_destination_catalog.py` from [the authored JSON](../annotations/destination_catalog.json). Research responses and enlarged crops remain local; this page republishes authored findings, source links and the separately attributed supplemental demo photographs.

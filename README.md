@@ -59,7 +59,7 @@ Reasoning tokens are included in output usage. Azure's actual billed tariff and 
 
 ## Supplemental search examples
 
-The browser demo also includes three user-provided photographs outside the 204-scene TibaMe POC dataset: an M3 Cosmos Hotel sign, an M6 Caesar Park Hotel listing, and an E5 exit scene. Search for **Cosmos Hotel** to retrieve the M3 photograph. These examples do not change the core annotation count or enter the curated dataset JSONL; the existing E5 mask is retained.
+The browser demo also includes three user-provided photographs outside the 204-scene TibaMe POC dataset: an M3 Cosmos Hotel sign, an M6 Caesar Park Hotel listing, and an E5 exit scene. Search for **Cosmos Hotel** or **Caesar Park Hotel** to retrieve the M3 or M6 photograph. The destination catalogue displays both hotel photos and links to their scene-search results. These examples do not change the core annotation count or enter the curated dataset JSONL; the existing E5 mask is retained.
 
 ## Search demo
 

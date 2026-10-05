@@ -10,6 +10,7 @@ const transportLabels = {
 };
 let dataset;
 let resultLimit = 50;
+$('#q').value = new URLSearchParams(location.search).get('q') || '';
 function run(reset = true) {
   if (!dataset) return;
   if (reset) resultLimit = 50;

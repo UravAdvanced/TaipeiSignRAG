@@ -4,7 +4,7 @@
   "team": "PHIT 2026 Finalist Team: 3rdEye4All",
   "project": "AI Eye 4 All: AI Indoor Navigation for Inclusive Smart Cities.",
   "scope": "Initial sign-name inventory for Taipei Main Station and connecting shopping areas. Nearby destinations are candidates until their names are readable in an exact source image. This is not an exhaustive inventory of every sign or business.",
-  "review_method": "Visual scan of 380 existing CLS contact-sheet samples spanning 95 classes, the first COCO family sheet, and 24 enlarged exact CLS crops. Existing whole-photo records also consulted. Web searches followed by selected official and secondary page reads. No full-dataset OCR; expert review pending. On 2026-10-05, 19 additional full photographs were annotated, adding two readable storefront names and full-photo K Underground Mall evidence. No repeat online research was needed.",
+  "review_method": "Visual scan of 380 existing CLS contact-sheet samples spanning 95 classes, the first COCO family sheet, and 24 enlarged exact CLS crops. Existing whole-photo records also consulted. Web searches followed by selected official and secondary page reads. No full-dataset OCR; expert review pending. On 2026-10-05, 19 additional full photographs were annotated, adding two readable storefront names and full-photo K Underground Mall evidence. Three separate user-supplied photographs are supplemental browser-demo examples and are excluded from the TibaMe POC counts. No repeat online research was needed.",
   "limitations": "Independent expert review pending. English names may be normalized translations rather than printed text. Online existence does not establish appearance in a photograph, current routes, accessible paths or precise positioning. No names are propagated across filename families. Capture dates and current operational status remain unverified.",
   "sources": [
     {
@@ -114,16 +114,23 @@
       "name_en": "Caesar Park Hotel Taipei",
       "aliases": [
         "臺北凱撒大飯店",
+        "台北凱撒飯店",
         "凱撒飯店",
         "Caesar Park"
       ],
-      "photo_status": "pending_photo_match",
-      "photo_evidence": [],
+      "photo_status": "readable_in_sample",
+      "photo_evidence": [
+        {
+          "archive": "User-supplied supplemental demo image (outside the TibaMe POC dataset)",
+          "path": "demo/supplemental_images/M6_ceasar_park_hotel.jpg",
+          "sha256": "17e67d950fa932a0e177e76584683c79ba75ea843f6a531cd212420a7f4eca03"
+        }
+      ],
       "web_status": "official_page_read",
       "source_ids": [
         "caesar"
       ],
-      "note": "Station-area hotel confirmed online; a readable sign in this dataset is still needed."
+      "note": "The supplemental M6 photograph supplied for the browser demo visibly lists 台北凱撒飯店 / Caesar Park Hotel Taipei. It is outside the TibaMe POC dataset. The hotel listing's arrow association and route are not established by this image."
     },
     {
       "id": "palais_de_chine",
