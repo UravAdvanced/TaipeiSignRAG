@@ -9,10 +9,11 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / '_site'
 files = ['index.html','.nojekyll','demo/index.html','demo/app.js','demo/search.mjs','demo/search-data.json',
          'demo/catalog.html','annotations/destination_catalog.json',
-         'release/huggingface/ATTRIBUTION.md','release/huggingface/scene_annotations.jsonl']
+         'release/huggingface/ATTRIBUTION.md','release/huggingface/scene_annotations.jsonl',
+         'release/huggingface/dataset_file_annotations.jsonl']
 import json
 records = [json.loads(line) for line in (ROOT/'release/huggingface/scene_annotations.jsonl').read_text(encoding='utf-8').splitlines()]
-files += ['release/huggingface/'+row['evidence_image'] for row in records]
+files += ['release/huggingface/'+row['evidence_image'] for row in records if row.get('evidence_image')]
 for name in files:
     destination = OUT / name
     destination.parent.mkdir(parents=True,exist_ok=True)

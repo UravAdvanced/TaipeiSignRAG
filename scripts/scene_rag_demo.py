@@ -115,7 +115,7 @@ class Handler(BaseHTTPRequestHandler):
         if u.path=='/':p=ROOT/'demo/index.html'
         elif u.path in ('/app.js','/search.mjs','/search-data.json','/catalog.html'):p=ROOT/'demo'/u.path[1:]
         elif u.path=='/annotations/destination_catalog.json':p=ROOT/'annotations/destination_catalog.json'
-        elif u.path in ('/release/huggingface/ATTRIBUTION.md','/release/huggingface/scene_annotations.jsonl'):p=ROOT/u.path[1:]
+        elif u.path in ('/release/huggingface/ATTRIBUTION.md','/release/huggingface/scene_annotations.jsonl','/release/huggingface/dataset_file_annotations.jsonl'):p=ROOT/u.path[1:]
         elif u.path.startswith('/release/huggingface/scene_images/'):
             p=(ROOT/unquote(u.path[1:])).resolve()
             if not p.is_relative_to((PACK/'scene_images').resolve()):self.send_error(403);return

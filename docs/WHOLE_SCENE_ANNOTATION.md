@@ -1,5 +1,13 @@
 # Whole-photograph annotation policy and pilot
 
+## Current annotations-only policy — 5 October 2026
+
+From scene 129, inspect each exact original once in the cloud session and save dataset, filename, source hash and annotations. Do not generate or publish new masks, evidence images, thumbnails or crops. Omit person descriptions and identifying personal details. Preserve the existing 128 scene images and two locker observations. Originals still enter the cloud model context. Human review remains pending; local checks establish structural integrity, not semantic verification.
+
+Current local exports contain 185 scenes, including 57 annotations-only records, covering 186 unique originals together with the locker observations; 8,785 source entries remain. `release/huggingface/dataset_file_annotations.jsonl` provides the dataset/filename/annotations representation. The three 19-photo timing batches are complete; see `ANNOTATIONS_ONLY_TIMING.md`. Next batch would be scenes 186–204, after the pilot scale decision.
+
+For metadata-only batches use `scripts/metadata_batches.py` to prepare, save and finish checkpoints. Preserve existing batch checkpoints and never re-inspect completed images merely to resume exports. The image-generation commands and masking details below describe the retained historical image workflow, which is superseded for new records by this policy.
+
 The user explicitly requested the entire photograph, including surrounding visual clues, rather than only the supplied COCO box. An annotation examines overhead signage, left/right surroundings, the foreground and the visible background. It records useful physical objects even when the original dataset did not label them. A CLS file remains a narrow crop: it cannot inherit off-image context without an evidence-linked source relationship.
 
 ## Current files

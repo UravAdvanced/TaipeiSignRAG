@@ -26,8 +26,6 @@ Visual scan of 380 existing CLS contact-sheet samples spanning 95 classes, the f
 | Q square / 京站時尚廣場 | Photo match pending / 待照片對照 | Official page read |
 | Shin Kong Mitsukoshi — Taipei Main Station / 新光三越 臺北車站 | Photo match pending / 待照片對照 | Official page read |
 | Shin Kong Mitsukoshi — Taipei Station Front / 新光三越 台北站前店 | Photo match pending / 待照片對照 | Official page read |
-| Breeze Taipei Station / 微風台北車站 | Unresolved historical candidate / 歷史名稱待查 | Historical identity unresolved |
-| new balance / new balance | Readable in sampled image / 樣本可讀 | Not checked online; photo evidence recorded |
 | TRA Bento Shop / 臺鐵便當本舖 | Readable in sampled image / 樣本可讀 | Not checked online; photo evidence recorded |
 
 ## Entry notes and evidence
@@ -126,22 +124,6 @@ Aliases: 新光三越站前店, SKM Taipei Station Front.
 
 - [Shin Kong Mitsukoshi — 台北站前店](https://www.skm.com.tw/store_branch/2) — Official branch page read. Keep separate from 臺北車站; English is a descriptive translation.
 
-### Breeze Taipei Station / 微風台北車站
-
-Historical-name review candidate only. Neither occurrence in these sampled photos nor dated operator history was established. No closure, replacement or present-day operation is asserted.
-
-Aliases: 微風臺北車站, Breeze Taipei Main Station.
-
-- [Breeze official website](https://www.breeze.com.tw/) — Current official site read; the inspected branch list did not substantiate the historical Taipei Station name. Absence from this page does not prove closure or a change of operator.
-
-### new balance / new balance
-
-Readable English fascia on a visible shopfront in scene 019. No Chinese brand name is inferred. Exact branch identity, current tenancy and opening hours remain unverified.
-
-Aliases: New Balance.
-
-- [tps-scene-019](../release/huggingface/scene_images/scene_019.png) — existing masked photograph.
-
 ### TRA Bento Shop / 臺鐵便當本舖
 
 Readable Chinese fascia on a visible bento shop with shelves and a retail counter. English is an authored translation. The retail counter is not a railway ticket or check-in counter; current operation and exact branch identity remain unverified.
@@ -214,7 +196,7 @@ Category checklist only: some categories occur in existing scenes or online faci
 
 ## Coverage and continuation
 
-6 destination names are readable in sampled images; 6 candidates await photo matches, and 1 historical candidate remains unresolved. The annotation checkpoint is 128 whole-photo records covering 129 unique originals together with the locker pilot. 8,842 source entries remain without new annotations.
+5 destination names are readable in sampled images; 6 candidates await photo matches, and 0 historical candidate remains unresolved. The annotation checkpoint is 185 whole-photo records covering 186 unique originals together with the locker pilot. 8,785 source entries remain without new annotations.
 
 Continue full-photograph annotation batches including hotels, malls and other sites. Use this existing catalogue as a reference and add readable names during each photo annotation; repeating online research is not a prerequisite. Keep current online names and historical printed text separate. Preserve the three separate transport categories: airport buses, Taoyuan Airport MRT and Taipei Bus Station.
 

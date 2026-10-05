@@ -44,7 +44,10 @@ def build():
         for ref in row['photo_evidence']:
             if 'scene_id' in ref:
                 scene = scenes[ref['scene_id']]
-                evidence.append(f'<a href="../release/huggingface/{e(scene["evidence_image"], quote=True)}">{e(ref["scene_id"])}: masked whole photograph</a>')
+                if scene.get('evidence_image'):
+                    evidence.append(f'<a href="../release/huggingface/{e(scene["evidence_image"], quote=True)}">{e(ref["scene_id"])}: masked whole photograph</a>')
+                else:
+                    evidence.append(f'{e(ref["scene_id"])}: annotations only<br><code>{e(scene["source_archive"])} → {e(scene["source_image"])}</code>')
             else:
                 evidence.append(f'{e(ref["archive"])}<br><code>{e(ref["path"])}</code><br>SHA-256: <code>{ref["sha256"]}</code>')
         evidence_html = '<ul>' + ''.join(f'<li>{item}</li>' for item in evidence) + '</ul>' if evidence else '<p>No exact photo evidence linked yet.</p>'
@@ -60,7 +63,11 @@ def build():
         md += [f'### {row["name_en"]} / {row["name_zh"]}', '', row['note'], '', 'Aliases: ' + ', '.join(row['aliases']) + '.', '']
         for ref in row['photo_evidence']:
             if 'scene_id' in ref:
-                md.append(f'- [{ref["scene_id"]}](../release/huggingface/{scenes[ref["scene_id"]]["evidence_image"]}) — existing masked photograph.')
+                scene=scenes[ref['scene_id']]
+                if scene.get('evidence_image'):
+                    md.append(f'- [{ref["scene_id"]}](../release/huggingface/{scene["evidence_image"]}) — existing masked photograph.')
+                else:
+                    md.append(f'- {ref["scene_id"]}: annotations only; `{scene["source_archive"]}` → `{scene["source_image"]}`.')
             else:
                 md.append(f'- `{ref["archive"]}` → `{ref["path"]}`; SHA-256 `{ref["sha256"]}`. Exact CLS crop, not a whole-photo record.')
         md += [f'- [{sources[i]["title"]}]({sources[i]["url"]}) — {sources[i]["access"]}' for i in row['source_ids']]

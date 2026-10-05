@@ -11,6 +11,8 @@ from pathlib import Path
 from PIL import Image, ImageDraw
 
 ROOT = Path(__file__).resolve().parents[1]
+if (ROOT/'annotations/publication_policy.json').exists():
+    raise SystemExit('Legacy image release is frozen. Use metadata_batches.py for annotations-only continuation; no images regenerated.')
 PACK = ROOT / 'release/huggingface'
 OUT = PACK / 'scene_images'
 OUT.mkdir(parents=True, exist_ok=True)

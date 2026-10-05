@@ -68,12 +68,6 @@
       "access": "Official page read; Chinese/English names confirmed. Tourism page was separately blocked by HTTP 403."
     },
     {
-      "id": "breeze",
-      "title": "Breeze official website",
-      "url": "https://www.breeze.com.tw/",
-      "access": "Current official site read; the inspected branch list did not substantiate the historical Taipei Station name. Absence from this page does not prove closure or a change of operator."
-    },
-    {
       "id": "metro",
       "title": "Taipei Metro official website",
       "url": "https://english.metro.taipei/",
@@ -307,41 +301,6 @@
         "skm_front"
       ],
       "note": "Separate official branch identity from 臺北車站. An exact dataset photo match is pending."
-    },
-    {
-      "id": "breeze_taipei_station_candidate",
-      "category": "shopping",
-      "name_zh": "微風台北車站",
-      "name_en": "Breeze Taipei Station",
-      "aliases": [
-        "微風臺北車站",
-        "Breeze Taipei Main Station"
-      ],
-      "photo_status": "unresolved_candidate",
-      "photo_evidence": [],
-      "web_status": "historical_identity_unresolved",
-      "source_ids": [
-        "breeze"
-      ],
-      "note": "Historical-name review candidate only. Neither occurrence in these sampled photos nor dated operator history was established. No closure, replacement or present-day operation is asserted."
-    },
-    {
-      "id": "new_balance_photo",
-      "category": "shopping",
-      "name_zh": "new balance",
-      "name_en": "new balance",
-      "aliases": [
-        "New Balance"
-      ],
-      "photo_status": "readable_in_sample",
-      "photo_evidence": [
-        {
-          "scene_id": "tps-scene-019"
-        }
-      ],
-      "web_status": "not_checked",
-      "source_ids": [],
-      "note": "Readable English fascia on a visible shopfront in scene 019. No Chinese brand name is inferred. Exact branch identity, current tenancy and opening hours remain unverified."
     },
     {
       "id": "tra_bento_photo",
