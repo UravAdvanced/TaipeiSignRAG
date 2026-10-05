@@ -18,4 +18,10 @@ Each batch saved 19 records with zero failed or structurally incomplete records;
 
 Saved session configuration requests Azure GPT-6 Astra with medium reasoning. Actual serving-model identifiers, provider request counts, billed tokens and observed costs are unavailable. No metered cost or confirmed serving-model claim is made.
 
-Current total: 185 scenes plus two locker observations, covering 186 unique source images; 8,785 source entries remain. Next batch would be scenes 186–204. The requested three-batch measurement pilot is complete; decide the next scale from these qualified results. The publication ledger remains at 128 pushed scenes and 32 deployed scenes, with the next push milestone at 228 scenes. This pilot checkpoint has not been pushed or deployed.
+The three-batch pilot ended at 185 scenes plus two locker observations, covering 186 unique source images; 8,785 source entries remained at that checkpoint. It was subsequently pushed and deployed in commit 41296b7, together with the requested destination catalogue removals. These publication actions were outside the timings above.
+
+## Continuation after the pilot
+
+On 5 October 2026 the user resumed work. Batch 9 (scenes 186–204) took 547.268 s wall time (9 min 7 s), including tool round trips and a Windows write-permission wait. Local preparation took 3.384 s, the preparation-to-annotation gap 5.033 s, annotation/saving 527.982 s, and export/check scripts 10.459 s. This is another workflow observation, not isolated model latency. All 19 records saved and passed structural checks; human review remains pending.
+
+Current total: 204 scenes plus two locker observations, covering 205 unique originals; 8,766 source entries remain. All 128 retained scene images are unchanged. Next batch is 205–223. Publication remains at 185 pushed and deployed scenes; the next ordinary milestone is 285. Batch 9 is checked locally and has not been pushed or deployed.

@@ -12654,5 +12654,1520 @@
     "configured_model": "gpt-6-astra",
     "configured_provider": "azure",
     "configured_reasoning_effort": "medium"
+  },
+  {
+    "summary_en": "A nearly level overhead board indicates platforms and taxi straight ahead and Exit left. An open corridor extends beneath exposed pipes; a bright advertisement is mounted on the right wall and dark strips run along the floor.",
+    "summary_zh": "近水平的上方指標顯示月台與計程車朝上、出口朝左。外露管線下方為開放通道，右壁設有發光廣告，地面有深色條帶。",
+    "signs": [
+      {
+        "visible_zh": "月台",
+        "visible_en": "Platform",
+        "label_en": "platforms",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "台鐵",
+        "visible_en": null,
+        "label_en": "Taiwan Railways",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "高鐵",
+        "visible_en": null,
+        "label_en": "Taiwan High Speed Rail",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "桃園機場捷運",
+        "visible_en": null,
+        "label_en": "Taoyuan Airport MRT",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "臺北轉運站",
+        "visible_en": null,
+        "label_en": "Taipei Bus Station",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "出口",
+        "visible_en": "Exit",
+        "label_en": "exit",
+        "direction": "left",
+        "panel": "yellow panel"
+      },
+      {
+        "visible_zh": null,
+        "visible_en": "TAXI",
+        "label_en": "taxi",
+        "direction": "up",
+        "panel": "right grey panel",
+        "symbols": [
+          "taxi"
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated advertisement",
+        "label_zh": "發光廣告",
+        "region": "right wall"
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "small green exit markers",
+        "label_zh": "小型綠色出口標誌",
+        "region": "above corridor and advertisement"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "White destination panels have left and up arrows, but their small labels and the exit qualifier are not reliably readable.",
+      "Small subtitles, distant signs and advertisement wording are unresolved. No hotel or shop name is established.",
+      "Occluded and off-frame regions are unassessable. Printed arrows are image observations, not verified routes or current facility locations."
+    ],
+    "image_id": "tps-scene-186",
+    "review_date": "2026-10-05",
+    "visual_review_passes": 1,
+    "annotation_method": "single original-photograph annotation pass in Codex; saved configuration requests Azure GPT-6 Astra, medium reasoning, but actual serving model is not exposed; no local semantic model, masks or second visual review",
+    "configured_model": "gpt-6-astra",
+    "configured_provider": "azure",
+    "configured_reasoning_effort": "medium"
+  },
+  {
+    "summary_en": "The overhead direction board recedes toward the right above a broad grey wall. Platforms point up, Exit left and taxi up. A wall advertisement and a green exit marker flank the corridor opening at left.",
+    "summary_zh": "上方指標向右側延伸，後方為寬闊灰色牆面。月台朝上、出口朝左、計程車朝上。左側通道口旁有壁面廣告與綠色出口標誌。",
+    "signs": [
+      {
+        "visible_zh": "月台",
+        "visible_en": "Platform",
+        "label_en": "platforms",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "台鐵",
+        "visible_en": null,
+        "label_en": "Taiwan Railways",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "高鐵",
+        "visible_en": null,
+        "label_en": "Taiwan High Speed Rail",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "桃園機場捷運",
+        "visible_en": null,
+        "label_en": "Taoyuan Airport MRT",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "臺北轉運站",
+        "visible_en": null,
+        "label_en": "Taipei Bus Station",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "出口",
+        "visible_en": "Exit",
+        "label_en": "exit",
+        "direction": "left",
+        "panel": "yellow panel"
+      },
+      {
+        "visible_zh": null,
+        "visible_en": "TAXI",
+        "label_en": "taxi",
+        "direction": "up",
+        "panel": "right grey panel",
+        "symbols": [
+          "taxi"
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement",
+        "label_zh": "發光壁面廣告",
+        "region": "centre-right wall"
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green exit marker at opening",
+        "label_zh": "通道口綠色出口標誌",
+        "region": "left of centre above opening"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "Small destinations in the white panels and exit qualifier remain unresolved; their arrows point left and up.",
+      "Small subtitles, distant signs and advertisement wording are unresolved. No hotel or shop name is established.",
+      "Occluded and off-frame regions are unassessable. Printed arrows are image observations, not verified routes or current facility locations."
+    ],
+    "image_id": "tps-scene-187",
+    "review_date": "2026-10-05",
+    "visual_review_passes": 1,
+    "annotation_method": "single original-photograph annotation pass in Codex; saved configuration requests Azure GPT-6 Astra, medium reasoning, but actual serving model is not exposed; no local semantic model, masks or second visual review",
+    "configured_model": "gpt-6-astra",
+    "configured_provider": "azure",
+    "configured_reasoning_effort": "medium"
+  },
+  {
+    "summary_en": "An oblique overhead board shows platforms, railway references, Airport MRT and Taipei Bus Station on its left section. Exit points left and taxi points up. The right wall has an illuminated advertisement; the passage continues at lower left beneath exposed ceiling services.",
+    "summary_zh": "斜向的上方指標左段顯示月台、鐵路、桃園機場捷運與臺北轉運站資訊。出口朝左，計程車朝上。右壁有發光廣告，通道從左下方延伸，上方可見外露管線。",
+    "signs": [
+      {
+        "visible_zh": "月台",
+        "visible_en": "Platform",
+        "label_en": "platforms",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "台鐵",
+        "visible_en": null,
+        "label_en": "Taiwan Railways",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "高鐵",
+        "visible_en": null,
+        "label_en": "Taiwan High Speed Rail",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "桃園機場捷運",
+        "visible_en": null,
+        "label_en": "Taoyuan Airport MRT",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "臺北轉運站",
+        "visible_en": null,
+        "label_en": "Taipei Bus Station",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "出口",
+        "visible_en": "Exit",
+        "label_en": "exit",
+        "direction": "left",
+        "panel": "yellow panel"
+      },
+      {
+        "visible_zh": null,
+        "visible_en": "TAXI",
+        "label_en": "taxi",
+        "direction": "up",
+        "panel": "right grey panel",
+        "symbols": [
+          "taxi"
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated advertisement in wall recess",
+        "label_zh": "嵌入牆面的發光廣告",
+        "region": "right wall"
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green exit marker above opening",
+        "label_zh": "開口上方綠色出口標誌",
+        "region": "left of centre"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "White-panel destination labels, small exit qualifier and tall distant wall-unit functions are unresolved.",
+      "Small subtitles, distant signs and advertisement wording are unresolved. No hotel or shop name is established.",
+      "Occluded and off-frame regions are unassessable. Printed arrows are image observations, not verified routes or current facility locations."
+    ],
+    "image_id": "tps-scene-188",
+    "review_date": "2026-10-05",
+    "visual_review_passes": 1,
+    "annotation_method": "single original-photograph annotation pass in Codex; saved configuration requests Azure GPT-6 Astra, medium reasoning, but actual serving model is not exposed; no local semantic model, masks or second visual review",
+    "configured_model": "gpt-6-astra",
+    "configured_provider": "azure",
+    "configured_reasoning_effort": "medium"
+  },
+  {
+    "summary_en": "A wide overhead board spans two passage openings separated by a pale column. Platforms point up, Exit left and taxi up. A red fire extinguisher sits at the column base; the right-hand wall carries an illuminated advertisement.",
+    "summary_zh": "寬幅上方指標橫跨由淺色柱體分隔的兩個通道口。月台朝上、出口朝左、計程車朝上。柱腳有紅色滅火器，右壁設有發光廣告。",
+    "signs": [
+      {
+        "visible_zh": "月台",
+        "visible_en": "Platform",
+        "label_en": "platforms",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "台鐵",
+        "visible_en": null,
+        "label_en": "Taiwan Railways",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "高鐵",
+        "visible_en": null,
+        "label_en": "Taiwan High Speed Rail",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "桃園機場捷運",
+        "visible_en": null,
+        "label_en": "Taoyuan Airport MRT",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "臺北轉運站",
+        "visible_en": null,
+        "label_en": "Taipei Bus Station",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "出口",
+        "visible_en": "Exit",
+        "label_en": "exit",
+        "direction": "left",
+        "panel": "yellow panel"
+      },
+      {
+        "visible_zh": null,
+        "visible_en": "TAXI",
+        "label_en": "taxi",
+        "direction": "up",
+        "panel": "right grey panel",
+        "symbols": [
+          "taxi"
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "category": "fire_extinguisher",
+        "label_en": "red fire extinguisher at column base",
+        "label_zh": "柱腳紅色滅火器",
+        "region": "lower left of centre"
+      },
+      {
+        "category": "advertisement_panel",
+        "label_en": "partly visible illuminated advertisement",
+        "label_zh": "部分可見的發光廣告",
+        "region": "far right wall"
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green exit marker",
+        "label_zh": "綠色出口標誌",
+        "region": "above right passage edge"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "White-panel text and yellow-panel qualifier are too soft to transcribe reliably; background board text is unresolved.",
+      "Small subtitles, distant signs and advertisement wording are unresolved. No hotel or shop name is established.",
+      "Occluded and off-frame regions are unassessable. Printed arrows are image observations, not verified routes or current facility locations."
+    ],
+    "image_id": "tps-scene-189",
+    "review_date": "2026-10-05",
+    "visual_review_passes": 1,
+    "annotation_method": "single original-photograph annotation pass in Codex; saved configuration requests Azure GPT-6 Astra, medium reasoning, but actual serving model is not exposed; no local semantic model, masks or second visual review",
+    "configured_model": "gpt-6-astra",
+    "configured_provider": "azure",
+    "configured_reasoning_effort": "medium"
+  },
+  {
+    "summary_en": "The overhead board rises slightly to the right above a divided concourse. Platform and taxi arrows point up and Exit left. A magenta display appears through the left opening, with red extinguishers beside the central column and a partly visible advertisement at far right.",
+    "summary_zh": "上方指標略向右上傾斜，下方為分隔的大廳。月台與計程車箭頭朝上，出口朝左。左側開口後方有洋紅色展示面，中央柱旁有紅色滅火器，最右側部分可見廣告。",
+    "signs": [
+      {
+        "visible_zh": "月台",
+        "visible_en": "Platform",
+        "label_en": "platforms",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "出口",
+        "visible_en": "Exit",
+        "label_en": "exit",
+        "direction": "left",
+        "panel": "yellow panel"
+      },
+      {
+        "visible_zh": null,
+        "visible_en": "TAXI",
+        "label_en": "taxi",
+        "direction": "up",
+        "panel": "right grey panel",
+        "symbols": [
+          "taxi"
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "category": "fire_extinguisher",
+        "label_en": "red extinguishers beside column",
+        "label_zh": "柱旁紅色滅火器",
+        "region": "lower centre-left"
+      },
+      {
+        "category": "advertisement_panel",
+        "label_en": "magenta display panel; wording unknown",
+        "label_zh": "洋紅色展示板；文字不明",
+        "region": "left background"
+      },
+      {
+        "category": "advertisement_panel",
+        "label_en": "partly visible illuminated advertisement",
+        "label_zh": "部分可見的發光廣告",
+        "region": "far right"
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green markers above passage edges",
+        "label_zh": "通道邊緣上方綠色標誌",
+        "region": "left and right above openings"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "Small transport names, white-panel destinations and exit qualifier are not reliably transcribed. White-panel arrows point left and up.",
+      "Small subtitles, distant signs and advertisement wording are unresolved. No hotel or shop name is established.",
+      "Occluded and off-frame regions are unassessable. Printed arrows are image observations, not verified routes or current facility locations."
+    ],
+    "image_id": "tps-scene-190",
+    "review_date": "2026-10-05",
+    "visual_review_passes": 1,
+    "annotation_method": "single original-photograph annotation pass in Codex; saved configuration requests Azure GPT-6 Astra, medium reasoning, but actual serving model is not exposed; no local semantic model, masks or second visual review",
+    "configured_model": "gpt-6-astra",
+    "configured_provider": "azure",
+    "configured_reasoning_effort": "medium"
+  },
+  {
+    "summary_en": "The board fills the upper scene with the taxi stand panel closest at right. Its arrow points up, matching the platform arrow at far left, while Exit points left. Two passages open beneath the board with a pale dividing column and magenta background display.",
+    "summary_zh": "指標佔據畫面上部，右側計程車招呼站牌最近。該箭頭與最左側月台箭頭均朝上，出口朝左。下方有兩個通道口、淺色分隔柱與後方洋紅色展示面。",
+    "signs": [
+      {
+        "visible_zh": "月台",
+        "visible_en": "Platform",
+        "label_en": "platforms",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "出口",
+        "visible_en": "Exit",
+        "label_en": "exit",
+        "direction": "left",
+        "panel": "yellow panel"
+      },
+      {
+        "visible_zh": "計程車招呼站",
+        "visible_en": "Taxi Stand",
+        "label_en": "taxi",
+        "direction": "up",
+        "panel": "right grey panel",
+        "symbols": [
+          "taxi"
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "magenta display in background",
+        "label_zh": "後方洋紅色展示面",
+        "region": "left passage"
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green exit markers",
+        "label_zh": "綠色出口標誌",
+        "region": "above passage edges"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "Small transport and white-panel destination labels are blurred. White panels show left and up arrows; exact associations remain unresolved.",
+      "Small subtitles, distant signs and advertisement wording are unresolved. No hotel or shop name is established.",
+      "Occluded and off-frame regions are unassessable. Printed arrows are image observations, not verified routes or current facility locations."
+    ],
+    "image_id": "tps-scene-191",
+    "review_date": "2026-10-05",
+    "visual_review_passes": 1,
+    "annotation_method": "single original-photograph annotation pass in Codex; saved configuration requests Azure GPT-6 Astra, medium reasoning, but actual serving model is not exposed; no local semantic model, masks or second visual review",
+    "configured_model": "gpt-6-astra",
+    "configured_provider": "azure",
+    "configured_reasoning_effort": "medium"
+  },
+  {
+    "summary_en": "A nearly horizontal board displays platforms up, Exit left and Taxi Stand up. A pale column separates two openings below; red extinguishers are visible at its foot. The tiled floor has dark strips leading through the right opening, and a green exit marker hangs at its edge.",
+    "summary_zh": "近水平指標顯示月台朝上、出口朝左與計程車招呼站朝上。下方淺色柱體分隔兩個開口，柱腳可見紅色滅火器。磁磚地面深色條帶延伸穿過右側開口，邊緣上方有綠色出口標誌。",
+    "signs": [
+      {
+        "visible_zh": "月台",
+        "visible_en": "Platform",
+        "label_en": "platforms",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "台鐵",
+        "visible_en": null,
+        "label_en": "Taiwan Railways",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "高鐵",
+        "visible_en": null,
+        "label_en": "Taiwan High Speed Rail",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "桃園機場捷運",
+        "visible_en": null,
+        "label_en": "Taoyuan Airport MRT",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "臺北轉運站",
+        "visible_en": null,
+        "label_en": "Taipei Bus Station",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "出口",
+        "visible_en": "Exit",
+        "label_en": "exit",
+        "direction": "left",
+        "panel": "yellow panel"
+      },
+      {
+        "visible_zh": "計程車招呼站",
+        "visible_en": "Taxi Stand",
+        "label_en": "taxi",
+        "direction": "up",
+        "panel": "right grey panel",
+        "symbols": [
+          "taxi"
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "category": "fire_extinguisher",
+        "label_en": "red extinguishers at column base",
+        "label_zh": "柱腳紅色滅火器",
+        "region": "lower centre-left"
+      },
+      {
+        "category": "advertisement_panel",
+        "label_en": "magenta display panel",
+        "label_zh": "洋紅色展示板",
+        "region": "left background"
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green exit marker",
+        "label_zh": "綠色出口標誌",
+        "region": "above right opening"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "White-panel destinations and small exit qualifier remain unresolved despite visible left and up arrows.",
+      "Small subtitles, distant signs and advertisement wording are unresolved. No hotel or shop name is established.",
+      "Occluded and off-frame regions are unassessable. Printed arrows are image observations, not verified routes or current facility locations."
+    ],
+    "image_id": "tps-scene-192",
+    "review_date": "2026-10-05",
+    "visual_review_passes": 1,
+    "annotation_method": "single original-photograph annotation pass in Codex; saved configuration requests Azure GPT-6 Astra, medium reasoning, but actual serving model is not exposed; no local semantic model, masks or second visual review",
+    "configured_model": "gpt-6-astra",
+    "configured_provider": "azure",
+    "configured_reasoning_effort": "medium"
+  },
+  {
+    "summary_en": "An overhead board hangs beneath a bright rectangular ceiling lamp. Platforms and taxi point up and Exit points left. The corridor opens at lower left, with dark floor strips and a large illuminated advertisement on the right wall.",
+    "summary_zh": "上方指標懸掛在明亮長方形頂燈下。月台與計程車朝上，出口朝左。通道位於左下方，地面有深色條帶，右壁設大型發光廣告。",
+    "signs": [
+      {
+        "visible_zh": "月台",
+        "visible_en": "Platform",
+        "label_en": "platforms",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "台鐵",
+        "visible_en": null,
+        "label_en": "Taiwan Railways",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "高鐵",
+        "visible_en": null,
+        "label_en": "Taiwan High Speed Rail",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "桃園機場捷運",
+        "visible_en": null,
+        "label_en": "Taoyuan Airport MRT",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "臺北轉運站",
+        "visible_en": null,
+        "label_en": "Taipei Bus Station",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "出口",
+        "visible_en": "Exit",
+        "label_en": "exit",
+        "direction": "left",
+        "panel": "yellow panel"
+      },
+      {
+        "visible_zh": null,
+        "visible_en": "TAXI",
+        "label_en": "taxi",
+        "direction": "up",
+        "panel": "right grey panel",
+        "symbols": [
+          "taxi"
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement",
+        "label_zh": "發光壁面廣告",
+        "region": "right wall"
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green exit marker above opening",
+        "label_zh": "開口上方綠色出口標誌",
+        "region": "centre above passage edge"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "White-panel labels and small exit qualifier remain unresolved; left and up arrows are visible.",
+      "Small subtitles, distant signs and advertisement wording are unresolved. No hotel or shop name is established.",
+      "Occluded and off-frame regions are unassessable. Printed arrows are image observations, not verified routes or current facility locations."
+    ],
+    "image_id": "tps-scene-193",
+    "review_date": "2026-10-05",
+    "visual_review_passes": 1,
+    "annotation_method": "single original-photograph annotation pass in Codex; saved configuration requests Azure GPT-6 Astra, medium reasoning, but actual serving model is not exposed; no local semantic model, masks or second visual review",
+    "configured_model": "gpt-6-astra",
+    "configured_provider": "azure",
+    "configured_reasoning_effort": "medium"
+  },
+  {
+    "summary_en": "The slightly receding board shows a large Platform arrow up, yellow Exit arrow left and taxi arrow up. Exposed pipes and ceiling lights fill the upper view. A wide passage extends below and an advertisement occupies the right wall.",
+    "summary_zh": "略有透視縮小的指標顯示大型月台箭頭朝上、黃色出口箭頭朝左與計程車箭頭朝上。畫面上部為外露管線與頂燈，下方是寬通道，右壁有廣告。",
+    "signs": [
+      {
+        "visible_zh": "月台",
+        "visible_en": "Platform",
+        "label_en": "platforms",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "台鐵",
+        "visible_en": null,
+        "label_en": "Taiwan Railways",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "高鐵",
+        "visible_en": null,
+        "label_en": "Taiwan High Speed Rail",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "出口",
+        "visible_en": "Exit",
+        "label_en": "exit",
+        "direction": "left",
+        "panel": "yellow panel"
+      },
+      {
+        "visible_zh": null,
+        "visible_en": "TAXI",
+        "label_en": "taxi",
+        "direction": "up",
+        "panel": "right grey panel",
+        "symbols": [
+          "taxi"
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated advertisement",
+        "label_zh": "發光廣告",
+        "region": "right wall"
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green exit marker",
+        "label_zh": "綠色出口標誌",
+        "region": "above right edge of corridor"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "Small transport names beside the rail labels, white-panel text and exit qualifier are too blurred to transcribe reliably.",
+      "Small subtitles, distant signs and advertisement wording are unresolved. No hotel or shop name is established.",
+      "Occluded and off-frame regions are unassessable. Printed arrows are image observations, not verified routes or current facility locations."
+    ],
+    "image_id": "tps-scene-194",
+    "review_date": "2026-10-05",
+    "visual_review_passes": 1,
+    "annotation_method": "single original-photograph annotation pass in Codex; saved configuration requests Azure GPT-6 Astra, medium reasoning, but actual serving model is not exposed; no local semantic model, masks or second visual review",
+    "configured_model": "gpt-6-astra",
+    "configured_provider": "azure",
+    "configured_reasoning_effort": "medium"
+  },
+  {
+    "summary_en": "A frontal overhead board spans almost the entire image width. The left group lists platforms and transport destinations with an up arrow, Exit points left and taxi points up. A corridor, grey columns, a right-side illuminated advertisement and a green exit marker are visible below.",
+    "summary_zh": "正面的上方指標幾乎橫跨全幅。左組月台與交通目的地箭頭朝上，出口朝左，計程車朝上。下方可見通道、灰色柱體、右側發光廣告與綠色出口標誌。",
+    "signs": [
+      {
+        "visible_zh": "月台",
+        "visible_en": "Platform",
+        "label_en": "platforms",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "台鐵",
+        "visible_en": null,
+        "label_en": "Taiwan Railways",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "高鐵",
+        "visible_en": null,
+        "label_en": "Taiwan High Speed Rail",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "桃園機場捷運",
+        "visible_en": null,
+        "label_en": "Taoyuan Airport MRT",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "臺北轉運站",
+        "visible_en": null,
+        "label_en": "Taipei Bus Station",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "出口",
+        "visible_en": "Exit",
+        "label_en": "exit",
+        "direction": "left",
+        "panel": "yellow panel"
+      },
+      {
+        "visible_zh": null,
+        "visible_en": "TAXI",
+        "label_en": "taxi",
+        "direction": "up",
+        "panel": "right grey panel",
+        "symbols": [
+          "taxi"
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement",
+        "label_zh": "發光壁面廣告",
+        "region": "lower right"
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green exit marker",
+        "label_zh": "綠色出口標誌",
+        "region": "centre above opening"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "White-panel destination text and small subtitles remain unresolved despite clear left and up arrows.",
+      "Small subtitles, distant signs and advertisement wording are unresolved. No hotel or shop name is established.",
+      "Occluded and off-frame regions are unassessable. Printed arrows are image observations, not verified routes or current facility locations."
+    ],
+    "image_id": "tps-scene-195",
+    "review_date": "2026-10-05",
+    "visual_review_passes": 1,
+    "annotation_method": "single original-photograph annotation pass in Codex; saved configuration requests Azure GPT-6 Astra, medium reasoning, but actual serving model is not exposed; no local semantic model, masks or second visual review",
+    "configured_model": "gpt-6-astra",
+    "configured_provider": "azure",
+    "configured_reasoning_effort": "medium"
+  },
+  {
+    "summary_en": "The overhead board is close to level above the passage. Platform, railway, Airport MRT and Taipei Bus Station labels occupy the left group; Exit points left and taxi points up at right. A pale upright panel stands beside the corridor under a green exit marker, with a wall advertisement farther right.",
+    "summary_zh": "上方指標近水平地位於通道上方。左組有月台、鐵路、桃園機場捷運與臺北轉運站標示，出口朝左，右端計程車朝上。通道旁的淺色直立板上方有綠色出口標誌，更右側為壁面廣告。",
+    "signs": [
+      {
+        "visible_zh": "月台",
+        "visible_en": "Platform",
+        "label_en": "platforms",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "台鐵",
+        "visible_en": null,
+        "label_en": "Taiwan Railways",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "高鐵",
+        "visible_en": null,
+        "label_en": "Taiwan High Speed Rail",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "桃園機場捷運",
+        "visible_en": null,
+        "label_en": "Taoyuan Airport MRT",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "臺北轉運站",
+        "visible_en": null,
+        "label_en": "Taipei Bus Station",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "出口",
+        "visible_en": "Exit",
+        "label_en": "exit",
+        "direction": "left",
+        "panel": "yellow panel"
+      },
+      {
+        "visible_zh": null,
+        "visible_en": "TAXI",
+        "label_en": "taxi",
+        "direction": "up",
+        "panel": "right grey panel",
+        "symbols": [
+          "taxi"
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement",
+        "label_zh": "發光壁面廣告",
+        "region": "right wall"
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green exit marker above pale panel",
+        "label_zh": "淺色板上方綠色出口標誌",
+        "region": "centre-right"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "Small white-panel names and yellow-panel exit qualifier are unresolved. The pale upright panel has no verified equipment function.",
+      "Small subtitles, distant signs and advertisement wording are unresolved. No hotel or shop name is established.",
+      "Occluded and off-frame regions are unassessable. Printed arrows are image observations, not verified routes or current facility locations."
+    ],
+    "image_id": "tps-scene-196",
+    "review_date": "2026-10-05",
+    "visual_review_passes": 1,
+    "annotation_method": "single original-photograph annotation pass in Codex; saved configuration requests Azure GPT-6 Astra, medium reasoning, but actual serving model is not exposed; no local semantic model, masks or second visual review",
+    "configured_model": "gpt-6-astra",
+    "configured_provider": "azure",
+    "configured_reasoning_effort": "medium"
+  },
+  {
+    "summary_en": "A horizontal sign hangs below a large lamp and exposed ceiling pipes. Platforms and taxi point up and Exit left. A pale column borders the passage at left; a green exit marker and illuminated advertisement appear to the right of the opening.",
+    "summary_zh": "水平指標位於大型燈具與外露頂部管線下方。月台與計程車朝上，出口朝左。左侧淺色柱體界定通道，開口右側可見綠色出口標誌與發光廣告。",
+    "signs": [
+      {
+        "visible_zh": "月台",
+        "visible_en": "Platform",
+        "label_en": "platforms",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "台鐵",
+        "visible_en": null,
+        "label_en": "Taiwan Railways",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "高鐵",
+        "visible_en": null,
+        "label_en": "Taiwan High Speed Rail",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "出口",
+        "visible_en": "Exit",
+        "label_en": "exit",
+        "direction": "left",
+        "panel": "yellow panel"
+      },
+      {
+        "visible_zh": null,
+        "visible_en": "TAXI",
+        "label_en": "taxi",
+        "direction": "up",
+        "panel": "right grey panel",
+        "symbols": [
+          "taxi"
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement",
+        "label_zh": "發光壁面廣告",
+        "region": "lower right"
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green exit marker above passage edge",
+        "label_zh": "通道邊緣上方綠色出口標誌",
+        "region": "right of centre"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "Small transport destinations, white-panel text and exit qualifier are unresolved. Red markings on the left column do not establish a readable instruction.",
+      "Small subtitles, distant signs and advertisement wording are unresolved. No hotel or shop name is established.",
+      "Occluded and off-frame regions are unassessable. Printed arrows are image observations, not verified routes or current facility locations."
+    ],
+    "image_id": "tps-scene-197",
+    "review_date": "2026-10-05",
+    "visual_review_passes": 1,
+    "annotation_method": "single original-photograph annotation pass in Codex; saved configuration requests Azure GPT-6 Astra, medium reasoning, but actual serving model is not exposed; no local semantic model, masks or second visual review",
+    "configured_model": "gpt-6-astra",
+    "configured_provider": "azure",
+    "configured_reasoning_effort": "medium"
+  },
+  {
+    "summary_en": "A dark ceiling frames the overhead board, with Platform up, Exit left and taxi up. The open corridor has grey columns and dark floor strips; a green exit marker and a bright advertisement are on the right side.",
+    "summary_zh": "深色天花板環繞上方指標，月台朝上、出口朝左、計程車朝上。開放通道中有灰柱與深色地面條帶，右側可見綠色出口標誌與明亮廣告。",
+    "signs": [
+      {
+        "visible_zh": "月台",
+        "visible_en": "Platform",
+        "label_en": "platforms",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "台鐵",
+        "visible_en": null,
+        "label_en": "Taiwan Railways",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "高鐵",
+        "visible_en": null,
+        "label_en": "Taiwan High Speed Rail",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "出口",
+        "visible_en": "Exit",
+        "label_en": "exit",
+        "direction": "left",
+        "panel": "yellow panel"
+      },
+      {
+        "visible_zh": null,
+        "visible_en": "TAXI",
+        "label_en": "taxi",
+        "direction": "up",
+        "panel": "right grey panel",
+        "symbols": [
+          "taxi"
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement",
+        "label_zh": "發光壁面廣告",
+        "region": "right wall"
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green exit marker",
+        "label_zh": "綠色出口標誌",
+        "region": "above right passage edge"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "Smaller transport and destination names remain unresolved; the white panels have left and up arrows. Far-left red fixtures are cropped and cannot be fully assessed.",
+      "Small subtitles, distant signs and advertisement wording are unresolved. No hotel or shop name is established.",
+      "Occluded and off-frame regions are unassessable. Printed arrows are image observations, not verified routes or current facility locations."
+    ],
+    "image_id": "tps-scene-198",
+    "review_date": "2026-10-05",
+    "visual_review_passes": 1,
+    "annotation_method": "single original-photograph annotation pass in Codex; saved configuration requests Azure GPT-6 Astra, medium reasoning, but actual serving model is not exposed; no local semantic model, masks or second visual review",
+    "configured_model": "gpt-6-astra",
+    "configured_provider": "azure",
+    "configured_reasoning_effort": "medium"
+  },
+  {
+    "summary_en": "The full board is visible beneath a horizontal duct and lamp. Platform and taxi arrows point up and Exit left. Red fire extinguishers stand at the left column base, while a green exit marker and illuminated advertisement sit to the right of the passage.",
+    "summary_zh": "完整指標位於水平風管與燈具下方。月台與計程車箭頭朝上，出口朝左。左側柱腳有紅色滅火器，通道右側可見綠色出口標誌與發光廣告。",
+    "signs": [
+      {
+        "visible_zh": "月台",
+        "visible_en": "Platform",
+        "label_en": "platforms",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "台鐵",
+        "visible_en": null,
+        "label_en": "Taiwan Railways",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "高鐵",
+        "visible_en": null,
+        "label_en": "Taiwan High Speed Rail",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "桃園機場捷運",
+        "visible_en": null,
+        "label_en": "Taoyuan Airport MRT",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "臺北轉運站",
+        "visible_en": null,
+        "label_en": "Taipei Bus Station",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "出口",
+        "visible_en": "Exit",
+        "label_en": "exit",
+        "direction": "left",
+        "panel": "yellow panel"
+      },
+      {
+        "visible_zh": null,
+        "visible_en": "TAXI",
+        "label_en": "taxi",
+        "direction": "up",
+        "panel": "right grey panel",
+        "symbols": [
+          "taxi"
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "category": "fire_extinguisher",
+        "label_en": "red extinguishers at column base",
+        "label_zh": "柱腳紅色滅火器",
+        "region": "lower left"
+      },
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated wall advertisement",
+        "label_zh": "發光壁面廣告",
+        "region": "right wall"
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green exit marker",
+        "label_zh": "綠色出口標誌",
+        "region": "above right passage edge"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "White-panel destination labels and small subtitles are unresolved. The tiny inclined feature at far left is insufficient to establish stairs or an escalator.",
+      "Small subtitles, distant signs and advertisement wording are unresolved. No hotel or shop name is established.",
+      "Occluded and off-frame regions are unassessable. Printed arrows are image observations, not verified routes or current facility locations."
+    ],
+    "image_id": "tps-scene-199",
+    "review_date": "2026-10-05",
+    "visual_review_passes": 1,
+    "annotation_method": "single original-photograph annotation pass in Codex; saved configuration requests Azure GPT-6 Astra, medium reasoning, but actual serving model is not exposed; no local semantic model, masks or second visual review",
+    "configured_model": "gpt-6-astra",
+    "configured_provider": "azure",
+    "configured_reasoning_effort": "medium"
+  },
+  {
+    "summary_en": "An overhead board shows platforms up, Exit left and taxi up. A pale column with a posted sheet and red extinguishers divides the left-side opening from the main corridor. Dark floor strips lead through the central passage; an illuminated advertisement is partly visible at right.",
+    "summary_zh": "上方指標顯示月台朝上、出口朝左及計程車朝上。貼有紙張並設紅色滅火器的淺色柱體將左側開口與主通道分隔。深色地面條帶延伸穿過中央通道，右側部分可見發光廣告。",
+    "signs": [
+      {
+        "visible_zh": "月台",
+        "visible_en": "Platform",
+        "label_en": "platforms",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "台鐵",
+        "visible_en": null,
+        "label_en": "Taiwan Railways",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "高鐵",
+        "visible_en": null,
+        "label_en": "Taiwan High Speed Rail",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "出口",
+        "visible_en": "Exit",
+        "label_en": "exit",
+        "direction": "left",
+        "panel": "yellow panel"
+      },
+      {
+        "visible_zh": null,
+        "visible_en": "TAXI",
+        "label_en": "taxi",
+        "direction": "up",
+        "panel": "right grey panel",
+        "symbols": [
+          "taxi"
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "category": "fire_extinguisher",
+        "label_en": "red extinguishers beside pale column",
+        "label_zh": "淺色柱旁紅色滅火器",
+        "region": "lower left"
+      },
+      {
+        "category": "advertisement_panel",
+        "label_en": "partly visible wall advertisement",
+        "label_zh": "部分可見的壁面廣告",
+        "region": "right"
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green exit marker",
+        "label_zh": "綠色出口標誌",
+        "region": "above central opening at right"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "Small transport names, white-panel destinations and column notice are unreadable; the notice is not established as a map.",
+      "Small subtitles, distant signs and advertisement wording are unresolved. No hotel or shop name is established.",
+      "Occluded and off-frame regions are unassessable. Printed arrows are image observations, not verified routes or current facility locations."
+    ],
+    "image_id": "tps-scene-200",
+    "review_date": "2026-10-05",
+    "visual_review_passes": 1,
+    "annotation_method": "single original-photograph annotation pass in Codex; saved configuration requests Azure GPT-6 Astra, medium reasoning, but actual serving model is not exposed; no local semantic model, masks or second visual review",
+    "configured_model": "gpt-6-astra",
+    "configured_provider": "azure",
+    "configured_reasoning_effort": "medium"
+  },
+  {
+    "summary_en": "A level overhead board displays platforms and railway references on the left, Exit left in yellow and taxi up on the right. The column below carries a pale notice above red extinguishers. The passage has dark floor strips and grey columns, with an illuminated advertisement at right.",
+    "summary_zh": "水平上方指標左側顯示月台與鐵路資訊，黃色出口朝左，右側計程車朝上。下方柱體上有淺色公告，柱腳設紅色滅火器。通道中有深色地面條帶與灰色柱體，右側設發光廣告。",
+    "signs": [
+      {
+        "visible_zh": "月台",
+        "visible_en": "Platform",
+        "label_en": "platforms",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "台鐵",
+        "visible_en": null,
+        "label_en": "Taiwan Railways",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "高鐵",
+        "visible_en": null,
+        "label_en": "Taiwan High Speed Rail",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "桃園機場捷運",
+        "visible_en": null,
+        "label_en": "Taoyuan Airport MRT",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "臺北轉運站",
+        "visible_en": null,
+        "label_en": "Taipei Bus Station",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "出口",
+        "visible_en": "Exit",
+        "label_en": "exit",
+        "direction": "left",
+        "panel": "yellow panel"
+      },
+      {
+        "visible_zh": null,
+        "visible_en": "TAXI",
+        "label_en": "taxi",
+        "direction": "up",
+        "panel": "right grey panel",
+        "symbols": [
+          "taxi"
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "category": "fire_extinguisher",
+        "label_en": "red extinguishers at column base",
+        "label_zh": "柱腳紅色滅火器",
+        "region": "lower left"
+      },
+      {
+        "category": "advertisement_panel",
+        "label_en": "illuminated advertisement",
+        "label_zh": "發光廣告",
+        "region": "right wall"
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green exit marker",
+        "label_zh": "綠色出口標誌",
+        "region": "above right edge of opening"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "Column notice, white-panel names and exit qualifier remain unresolved. A posted sheet is not established as a station map.",
+      "Small subtitles, distant signs and advertisement wording are unresolved. No hotel or shop name is established.",
+      "Occluded and off-frame regions are unassessable. Printed arrows are image observations, not verified routes or current facility locations."
+    ],
+    "image_id": "tps-scene-201",
+    "review_date": "2026-10-05",
+    "visual_review_passes": 1,
+    "annotation_method": "single original-photograph annotation pass in Codex; saved configuration requests Azure GPT-6 Astra, medium reasoning, but actual serving model is not exposed; no local semantic model, masks or second visual review",
+    "configured_model": "gpt-6-astra",
+    "configured_provider": "azure",
+    "configured_reasoning_effort": "medium"
+  },
+  {
+    "summary_en": "A closer view cuts off the far-right edge of the taxi panel but leaves its up arrow visible. Platform points up and Exit left. The main corridor extends beneath the board beside a pale column with an unreadable notice; a green exit marker and partly visible advertisement are at right.",
+    "summary_zh": "較近的畫面裁切了計程車牌最右邊緣，但朝上箭頭仍可見。月台朝上，出口朝左。主通道位於指標下方，旁邊淺色柱上公告不可讀，右側有綠色出口標誌與部分可見廣告。",
+    "signs": [
+      {
+        "visible_zh": "月台",
+        "visible_en": "Platform",
+        "label_en": "platforms",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "台鐵",
+        "visible_en": null,
+        "label_en": "Taiwan Railways",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "高鐵",
+        "visible_en": null,
+        "label_en": "Taiwan High Speed Rail",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "桃園機場捷運",
+        "visible_en": null,
+        "label_en": "Taoyuan Airport MRT",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "臺北轉運站",
+        "visible_en": null,
+        "label_en": "Taipei Bus Station",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "出口",
+        "visible_en": "Exit",
+        "label_en": "exit",
+        "direction": "left",
+        "panel": "yellow panel"
+      },
+      {
+        "visible_zh": null,
+        "visible_en": "TAXI",
+        "label_en": "taxi",
+        "direction": "up",
+        "panel": "right grey panel",
+        "symbols": [
+          "taxi"
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "category": "advertisement_panel",
+        "label_en": "partly visible illuminated advertisement",
+        "label_zh": "部分可見的發光廣告",
+        "region": "far right"
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green exit marker",
+        "label_zh": "綠色出口標誌",
+        "region": "above right passage edge"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "White-panel destination labels, small exit qualifier and posted column notice are unresolved. Column-base fixtures are cut off at the lower frame.",
+      "Small subtitles, distant signs and advertisement wording are unresolved. No hotel or shop name is established.",
+      "Occluded and off-frame regions are unassessable. Printed arrows are image observations, not verified routes or current facility locations."
+    ],
+    "image_id": "tps-scene-202",
+    "review_date": "2026-10-05",
+    "visual_review_passes": 1,
+    "annotation_method": "single original-photograph annotation pass in Codex; saved configuration requests Azure GPT-6 Astra, medium reasoning, but actual serving model is not exposed; no local semantic model, masks or second visual review",
+    "configured_model": "gpt-6-astra",
+    "configured_provider": "azure",
+    "configured_reasoning_effort": "medium"
+  },
+  {
+    "summary_en": "The overhead board spans two passage openings with a pale column between them. Platforms and taxi point up, Exit left; the right white panel includes a Taipei City Mall reference. A magenta display is visible through the left opening, with red extinguishers near the column base and a green exit marker at the right opening.",
+    "summary_zh": "上方指標橫跨兩個由淺色柱分隔的通道口。月台與計程車朝上，出口朝左；右側白牌有台北地下街指示。左側開口後方可見洋紅色展示面，柱腳附近有紅色滅火器，右側開口有綠色出口標誌。",
+    "signs": [
+      {
+        "visible_zh": "月台",
+        "visible_en": "Platform",
+        "label_en": "platforms",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "出口",
+        "visible_en": "Exit",
+        "label_en": "exit",
+        "direction": "left",
+        "panel": "yellow panel"
+      },
+      {
+        "visible_zh": null,
+        "visible_en": "TAXI",
+        "label_en": "taxi",
+        "direction": "up",
+        "panel": "right grey panel",
+        "symbols": [
+          "taxi"
+        ]
+      },
+      {
+        "visible_zh": "台北地下街",
+        "visible_en": null,
+        "label_en": "Taipei City Mall",
+        "direction": "up",
+        "panel": "right white panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "fire_extinguisher",
+        "label_en": "partly visible red extinguishers",
+        "label_zh": "部分可見的紅色滅火器",
+        "region": "bottom beside dividing column"
+      },
+      {
+        "category": "advertisement_panel",
+        "label_en": "magenta display panel; wording unresolved",
+        "label_zh": "洋紅色展示板；文字未確認",
+        "region": "left background"
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green exit marker",
+        "label_zh": "綠色出口標誌",
+        "region": "above right opening"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "Small transport labels and other white-panel names are unresolved. Taipei City Mall is a sign reference; its entrance is not established.",
+      "Small subtitles, distant signs and advertisement wording are unresolved. No hotel or shop name is established.",
+      "Occluded and off-frame regions are unassessable. Printed arrows are image observations, not verified routes or current facility locations."
+    ],
+    "image_id": "tps-scene-203",
+    "review_date": "2026-10-05",
+    "visual_review_passes": 1,
+    "annotation_method": "single original-photograph annotation pass in Codex; saved configuration requests Azure GPT-6 Astra, medium reasoning, but actual serving model is not exposed; no local semantic model, masks or second visual review",
+    "configured_model": "gpt-6-astra",
+    "configured_provider": "azure",
+    "configured_reasoning_effort": "medium"
+  },
+  {
+    "summary_en": "The overhead board sits beneath exposed ceiling pipes and a fluorescent lamp. Platforms and taxi point up, Exit left, and the right white panel refers to Taipei City Mall. A pale column with a posted notice and red extinguishers divides the concourse below; a magenta panel is visible in the left background.",
+    "summary_zh": "上方指標位於外露頂部管線與日光燈下方。月台與計程車朝上，出口朝左，右側白牌指示台北地下街。下方貼有公告並設紅色滅火器的淺色柱體分隔大廳，左後方可見洋紅色展示面。",
+    "signs": [
+      {
+        "visible_zh": "月台",
+        "visible_en": "Platform",
+        "label_en": "platforms",
+        "direction": "up",
+        "panel": "left grey panel"
+      },
+      {
+        "visible_zh": "出口",
+        "visible_en": "Exit",
+        "label_en": "exit",
+        "direction": "left",
+        "panel": "yellow panel"
+      },
+      {
+        "visible_zh": null,
+        "visible_en": "TAXI",
+        "label_en": "taxi",
+        "direction": "up",
+        "panel": "right grey panel",
+        "symbols": [
+          "taxi"
+        ]
+      },
+      {
+        "visible_zh": "台北地下街",
+        "visible_en": null,
+        "label_en": "Taipei City Mall",
+        "direction": "up",
+        "panel": "right white panel"
+      }
+    ],
+    "objects": [
+      {
+        "category": "fire_extinguisher",
+        "label_en": "red extinguishers beside column",
+        "label_zh": "柱旁紅色滅火器",
+        "region": "lower left of centre"
+      },
+      {
+        "category": "advertisement_panel",
+        "label_en": "magenta display panel",
+        "label_zh": "洋紅色展示板",
+        "region": "left background"
+      },
+      {
+        "category": "emergency_exit_sign",
+        "label_en": "green exit marker",
+        "label_zh": "綠色出口標誌",
+        "region": "above right passage edge"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "Small transport labels, other white-panel destinations and posted column notice remain unresolved. Taipei City Mall is a sign reference, not a confirmed entrance.",
+      "Small subtitles, distant signs and advertisement wording are unresolved. No hotel or shop name is established.",
+      "Occluded and off-frame regions are unassessable. Printed arrows are image observations, not verified routes or current facility locations."
+    ],
+    "image_id": "tps-scene-204",
+    "review_date": "2026-10-05",
+    "visual_review_passes": 1,
+    "annotation_method": "single original-photograph annotation pass in Codex; saved configuration requests Azure GPT-6 Astra, medium reasoning, but actual serving model is not exposed; no local semantic model, masks or second visual review",
+    "configured_model": "gpt-6-astra",
+    "configured_provider": "azure",
+    "configured_reasoning_effort": "medium"
   }
 ]

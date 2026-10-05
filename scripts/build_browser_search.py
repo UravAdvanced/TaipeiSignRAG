@@ -2,12 +2,17 @@
 import json
 from scene_rag_demo import ROOT, ALIASES, TRANSPORT_ALIASES, DESTINATION_ALIASES, STOP, INSTRUCTIONS, records
 
+base_records=records()
+supplemental_path=ROOT/'demo/supplemental-records.json'
+if supplemental_path.exists():
+    base_records.extend(json.loads(supplemental_path.read_text(encoding='utf-8')))
+
 payload = {
     'schema_version':'0.1.0',
-    'records':records(),
+    'records':base_records,
     'progress':json.loads((ROOT/'annotations/progress.json').read_text(encoding='utf-8')),
     'config':{'aliases':ALIASES,'transport_aliases':TRANSPORT_ALIASES,'destination_aliases':DESTINATION_ALIASES,'stop_words':sorted(STOP)},
     'llm_instructions':INSTRUCTIONS,
 }
 (ROOT/'demo/search-data.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-print(f"Exported {len(payload['records'])} scene records for browser-side bilingual search.")
+print(f"Exported {len(payload['records'])} searchable records (core plus supplemental demos).")

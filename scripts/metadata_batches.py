@@ -157,7 +157,6 @@ else:
     ledger=read(LEDGER)
     assert not any(b['batch']==args.batch for b in ledger['batches'])
     ledger['batches'].append(result)
-    ledger['authorization']='From scene 129 publish dataset, filename and annotations only. Preserve existing images. One cloud annotation pass per original; no new masking or person descriptions. Measure three 19-photo batches before deciding scale.'
     ledger['last_documented_scene_count']=int(cp['selected'][-1]['image_id'].split('-')[-1])
     write(LEDGER,ledger)
     cp.update(status='checked',measurement=result);write(checkpoint,cp)

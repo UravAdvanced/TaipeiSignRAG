@@ -14,6 +14,8 @@ files = ['index.html','.nojekyll','demo/index.html','demo/app.js','demo/search.m
 import json
 records = [json.loads(line) for line in (ROOT/'release/huggingface/scene_annotations.jsonl').read_text(encoding='utf-8').splitlines()]
 files += ['release/huggingface/'+row['evidence_image'] for row in records if row.get('evidence_image')]
+supplemental = json.loads((ROOT/'demo/supplemental-records.json').read_text(encoding='utf-8'))
+files += ['demo/'+row['demo_image'] for row in supplemental]
 for name in files:
     destination = OUT / name
     destination.parent.mkdir(parents=True,exist_ok=True)

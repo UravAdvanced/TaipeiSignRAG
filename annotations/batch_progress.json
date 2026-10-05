@@ -1,12 +1,12 @@
 {
   "authorization_date": "2026-10-05",
-  "authorization": "From scene 129 publish dataset, filename and annotations only. Preserve existing images. One cloud annotation pass per original; no new masking or person descriptions. Measure three 19-photo batches before deciding scale.",
+  "authorization": "User resumed on 5 October 2026 after the three-batch pilot and publication through scene 185. Continue in 19-photo annotations-only batches: preserve existing images; one cloud annotation pass per exact original; no new masking or person descriptions. Save/check each batch and retain the standing publication interval of about 100 new photos.",
   "batch_size": 19,
   "push_interval_new_photos": 100,
   "starting_scene_count": 32,
-  "last_pushed_scene_count": 128,
-  "last_deployed_scene_count": 32,
-  "last_documented_scene_count": 185,
+  "last_pushed_scene_count": 185,
+  "last_deployed_scene_count": 185,
+  "last_documented_scene_count": 204,
   "batches": [
     {
       "batch": 1,
@@ -181,9 +181,46 @@
       "billed_token_usage": null,
       "actual_cost_usd": null,
       "validation": "375 search-parity cases, exact source hashes, 128 retained image hashes, no new image exports, annotations-only shape and static/API routes passed."
+    },
+    {
+      "batch": 9,
+      "date": "2026-10-05",
+      "first_scene_id": "tps-scene-186",
+      "last_scene_id": "tps-scene-204",
+      "photos": 19,
+      "status": "checked_locally",
+      "publication_mode": "annotations_only",
+      "timing": {
+        "started_at_utc": "2026-10-05T09:38:52.643838+00:00",
+        "finished_at_utc": "2026-10-05T09:47:59.911817+00:00",
+        "elapsed_seconds": 547.268,
+        "local_preparation_seconds": 3.384,
+        "interactive_annotation_and_save_seconds": 527.982,
+        "pre_annotation_gap_seconds": 5.033,
+        "elapsed_excluding_pre_annotation_gap_seconds": 542.235,
+        "local_export_and_check_seconds": {
+          "build_scene_records.py": 0.134,
+          "build_browser_search.py": 0.54,
+          "build_pages_site.py": 0.412,
+          "check_poc.py": 9.373
+        },
+        "scope": "wall time from local preparation through checked exports; includes tool round trips and waits; excludes one-time implementation, final documentation/publication; not isolated model latency"
+      },
+      "configured_model": {
+        "model": "gpt-6-astra",
+        "model_provider": "azure",
+        "model_reasoning_effort": "medium"
+      },
+      "actual_serving_model": null,
+      "failed_records": 0,
+      "incomplete_records": 0,
+      "provider_request_count": null,
+      "billed_token_usage": null,
+      "actual_cost_usd": null,
+      "validation": "375 search-parity cases, exact source hashes, 128 retained image hashes, no new image exports, annotations-only shape and static/API routes passed."
     }
   ],
-  "next_push_scene_count": 228,
+  "next_push_scene_count": 285,
   "pending_scene_ids": [],
   "visual_review_passes_per_new_image": 1,
   "single_pass_from_scene": "tps-scene-072",

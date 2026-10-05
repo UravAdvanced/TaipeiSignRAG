@@ -89,16 +89,23 @@
       "aliases": [
         "臺北天成大飯店",
         "天成飯店",
+        "天成旅店",
         "Cosmos Hotel"
       ],
-      "photo_status": "pending_photo_match",
-      "photo_evidence": [],
+      "photo_status": "readable_in_sample",
+      "photo_evidence": [
+        {
+          "archive": "User-supplied supplemental demo image (outside the TibaMe POC dataset)",
+          "path": "demo/supplemental_images/m3_cosmos_hotel.jpg",
+          "sha256": "8b8430310e7cef3cb00a6c89f03cc35e206c4a264f60dd85d7ef2d24e81e93e4"
+        }
+      ],
       "web_status": "secondary_and_official_search_listing",
       "source_ids": [
         "cosmos_official",
         "cosmos_secondary"
       ],
-      "note": "Priority user-recalled destination. No readable Cosmos label located in the inspected samples. The official indexed listing mentions M3, but this is not a photo annotation or a verified route."
+      "note": "The supplemental M3 photograph supplied for the browser demo reads 天成旅店 / Cosmos Hotel. It is outside the TibaMe POC dataset. This sign evidence does not verify a route or hotel entrance."
     },
     {
       "id": "caesar_park_taipei",

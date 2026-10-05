@@ -4,7 +4,7 @@
 
 From scene 129, inspect each exact original once in the cloud session and save dataset, filename, source hash and annotations. Do not generate or publish new masks, evidence images, thumbnails or crops. Omit person descriptions and identifying personal details. Preserve the existing 128 scene images and two locker observations. Originals still enter the cloud model context. Human review remains pending; local checks establish structural integrity, not semantic verification.
 
-Current local exports contain 185 scenes, including 57 annotations-only records, covering 186 unique originals together with the locker observations; 8,785 source entries remain. `release/huggingface/dataset_file_annotations.jsonl` provides the dataset/filename/annotations representation. The three 19-photo timing batches are complete; see `ANNOTATIONS_ONLY_TIMING.md`. Next batch would be scenes 186–204, after the pilot scale decision.
+The annotation POC is closed at 204 scenes, including 76 annotations-only records, plus two locker observations covering 205 unique source photos. These are photo observations, not unique physical signs. Human review remains pending. No further core annotation batches are planned in this POC. Three separately supplied demo photos are indexed by the browser example but are not part of the core dataset. App integration follows human verification.
 
 For metadata-only batches use `scripts/metadata_batches.py` to prepare, save and finish checkpoints. Preserve existing batch checkpoints and never re-inspect completed images merely to resume exports. The image-generation commands and masking details below describe the retained historical image workflow, which is superseded for new records by this policy.
 
@@ -14,7 +14,7 @@ The user explicitly requested the entire photograph, including surrounding visua
 
 - `annotations/scene_pilot_notes.json`: authored observations from interactive visual inspection; the source of semantic content.
 - `release/huggingface/scene_manifest.jsonl`: original-image hashes, supplied sign boxes and local privacy masks.
-- `release/huggingface/scene_annotations.jsonl`: 128 enriched whole-scene records.
+- `release/huggingface/scene_annotations.jsonl`: 204 enriched whole-scene records, including 76 annotations-only records.
 - `release/huggingface/scene_images/`: native-size full-frame views with conservative person masks.
 - `annotations/progress.json`: exact completed and remaining counts.
 - `scripts/build_scene_records.py`: combines notes and provenance; does not automatically invent annotations.

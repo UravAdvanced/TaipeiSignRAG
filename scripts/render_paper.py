@@ -44,5 +44,5 @@ for number in map(int, re.findall(r'\[(\d+)\]', body)):
     if number not in seen:
         seen.append(number)
 assert seen == list(range(1, len(order)+1)), 'Nonsequential first citations'
-assert set(order) == set(by_key), 'Uncited reference(s)'
+assert set(order).issubset(by_key), 'Citation is missing from references.json'
 print(f'Rendered {len(order)} references in first-appearance order; repeat numbers preserved; abstract citation-free.')

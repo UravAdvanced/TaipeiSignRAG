@@ -16,7 +16,7 @@ Visual scan of 380 existing CLS contact-sheet samples spanning 95 classes, the f
 
 | Name | Photo evidence | Online check |
 | --- | --- | --- |
-| Cosmos Hotel Taipei / 台北天成大飯店 | Photo match pending / 待照片對照 | Secondary page + official search listing; official page blocked |
+| Cosmos Hotel Taipei / 台北天成大飯店 | Readable in sampled image / 樣本可讀 | Secondary page + official search listing; official page blocked |
 | Caesar Park Hotel Taipei / 台北凱撒大飯店 | Photo match pending / 待照片對照 | Official page read |
 | Palais de Chine / 君品酒店 | Photo match pending / 待照片對照 | Official page read |
 | Taipei City Mall / 台北地下街 | Readable in sampled image / 樣本可讀 | Secondary page read; official check incomplete |
@@ -32,10 +32,11 @@ Visual scan of 380 existing CLS contact-sheet samples spanning 95 classes, the f
 
 ### Cosmos Hotel Taipei / 台北天成大飯店
 
-Priority user-recalled destination. No readable Cosmos label located in the inspected samples. The official indexed listing mentions M3, but this is not a photo annotation or a verified route.
+The supplemental M3 photograph supplied for the browser demo reads 天成旅店 / Cosmos Hotel. It is outside the TibaMe POC dataset. This sign evidence does not verify a route or hotel entrance.
 
-Aliases: 臺北天成大飯店, 天成飯店, Cosmos Hotel.
+Aliases: 臺北天成大飯店, 天成飯店, 天成旅店, Cosmos Hotel.
 
+- `User-supplied supplemental demo image (outside the TibaMe POC dataset)` → `demo/supplemental_images/m3_cosmos_hotel.jpg`; SHA-256 `8b8430310e7cef3cb00a6c89f03cc35e206c4a264f60dd85d7ef2d24e81e93e4`. Exact CLS crop, not a whole-photo record.
 - [Cosmos Hotel Taipei official website](https://www.cosmos-hotel.com.tw/) — Official listing found by exact-name Bing search; direct page returned HTTP 403. Listing names the hotel and M3; no route instruction inferred.
 - [Cosmos Hotel Taipei — Wikipedia](https://en.wikipedia.org/wiki/Cosmos_Hotel_Taipei) — Page read; secondary corroboration of English/Chinese hotel identity. Linked Taiwanstay registry timed out.
 
@@ -196,7 +197,7 @@ Category checklist only: some categories occur in existing scenes or online faci
 
 ## Coverage and continuation
 
-5 destination names are readable in sampled images; 6 candidates await photo matches, and 0 historical candidate remains unresolved. The annotation checkpoint is 185 whole-photo records covering 186 unique originals together with the locker pilot. 8,785 source entries remain without new annotations.
+6 destination names are readable in sampled images; 5 candidates await photo matches, and 0 historical candidate remains unresolved. The annotation checkpoint is 204 whole-photo records covering 205 unique originals together with the locker pilot. 8,766 source entries remain without new annotations.
 
 Continue full-photograph annotation batches including hotels, malls and other sites. Use this existing catalogue as a reference and add readable names during each photo annotation; repeating online research is not a prerequisite. Keep current online names and historical printed text separate. Preserve the three separate transport categories: airport buses, Taoyuan Airport MRT and Taipei Bus Station.
 

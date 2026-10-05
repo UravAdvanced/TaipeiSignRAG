@@ -1,0 +1,198 @@
+[
+  {
+    "image_id": "supp-demo-cosmos-m3",
+    "display_name": "Cosmos Hotel Taipei · M3 sign",
+    "supplemental_demo": true,
+    "record_collection": "supplemental_demo_not_core_poc",
+    "source_archive": "User-supplied supplemental demo image; separate from the TibaMe dataset",
+    "source_image": "m3_cosmos_hotel.jpg",
+    "source_sha256": "8b8430310e7cef3cb00a6c89f03cc35e206c4a264f60dd85d7ef2d24e81e93e4",
+    "source_image_size": [
+      1080,
+      810
+    ],
+    "filename_family": "Supplemental demo · M3",
+    "demo_image": "supplemental_images/m3_cosmos_hotel.jpg",
+    "privacy_masks_xyxy": [],
+    "privacy_method": "User-supplied image; no additional masking applied.",
+    "provided_sign_boxes_xywh": [],
+    "source_url": null,
+    "license": null,
+    "summary_en": "A close view of the M3 directional panel. The sign reads 天成旅店 / Cosmos Hotel and shows a yellow upper-left arrow. This is sign evidence for Cosmos Hotel Taipei, not confirmation of a hotel entrance or a verified route.",
+    "summary_zh": "M3 指標近照可讀到「天成旅店／Cosmos Hotel」，黃色箭頭朝畫面左上。這是旅館目的地的指標證據，並非旅館入口或已驗證路線。",
+    "signs": [
+      {
+        "visible_zh": "天成旅店",
+        "visible_en": "Cosmos Hotel",
+        "label_zh": "台北天成大飯店",
+        "label_en": "Cosmos Hotel Taipei",
+        "direction": "up_left",
+        "panel": "M3 directional panel",
+        "note": "The image arrow points upper-left. Physical hotel entrance and route are not established.",
+        "transport_id": null
+      }
+    ],
+    "objects": [],
+    "uncertain": [],
+    "unknowns": [
+      "The photograph shows a directional sign, not the hotel entrance or current operating status."
+    ],
+    "amenity_coverage": {},
+    "schema_version": "0.1.0",
+    "annotation_scope": "supplemental user-provided demo image; excluded from the 204-scene core POC dataset",
+    "review_status": "visually_checked_by_assistant",
+    "human_review_status": "pending",
+    "review_date": "2026-10-05",
+    "annotation_method": "manual visual annotation from supplied image; no OCR or model-generated annotation",
+    "physical_sign_id": null,
+    "station_map_coordinate": null,
+    "cloud_anchor_id": null,
+    "accessibility_verified": false,
+    "current_operational_status": null,
+    "privacy_review": "No additional mask applied; no person is apparent in the supplied crop. Independent review pending.",
+    "text_policy": "visible_zh/en record readable sign text; label fields provide a normalized destination name.",
+    "direction_policy": "Direction is relative to the image and is not a verified route.",
+    "capture_date_verified": null,
+    "related_observations": []
+  },
+  {
+    "image_id": "supp-demo-caesar-m6",
+    "display_name": "Caesar Park Hotel Taipei · M6 sign",
+    "supplemental_demo": true,
+    "record_collection": "supplemental_demo_not_core_poc",
+    "source_archive": "User-supplied supplemental demo image; separate from the TibaMe dataset",
+    "source_image": "M6_ceasar_park_hotel.jpg",
+    "source_sha256": "17e67d950fa932a0e177e76584683c79ba75ea843f6a531cd212420a7f4eca03",
+    "source_image_size": [
+      550,
+      412
+    ],
+    "filename_family": "Supplemental demo · M6",
+    "demo_image": "supplemental_images/M6_ceasar_park_hotel.jpg",
+    "privacy_masks_xyxy": [],
+    "privacy_method": "User-supplied image; no additional masking applied.",
+    "provided_sign_boxes_xywh": [],
+    "source_url": null,
+    "license": null,
+    "summary_en": "An M6 exit-information panel lists 台北凱撒飯店 / Caesar Park Hotel Taipei among nearby destinations. The photograph does not establish a precise hotel route or the arrow association for the hotel listing.",
+    "summary_zh": "M6 出口資訊牌列出「台北凱撒飯店／Caesar Park Hotel Taipei」。照片未證實通往旅館的精確路線，也不將其他方向箭頭套用到旅館名稱。",
+    "signs": [
+      {
+        "visible_zh": "台北凱撒飯店",
+        "visible_en": "Caesar Park Hotel Taipei",
+        "label_zh": "台北凱撒大飯店",
+        "label_en": "Caesar Park Hotel Taipei",
+        "direction": null,
+        "panel": "M6 exit-information panel",
+        "note": "The hotel name is listed under M6. The arrow-to-hotel association is not clear in this image.",
+        "transport_id": null
+      }
+    ],
+    "objects": [],
+    "uncertain": [],
+    "unknowns": [
+      "The image is a sign reference; it does not show the hotel entrance or verify a route."
+    ],
+    "amenity_coverage": {},
+    "schema_version": "0.1.0",
+    "annotation_scope": "supplemental user-provided demo image; excluded from the 204-scene core POC dataset",
+    "review_status": "visually_checked_by_assistant",
+    "human_review_status": "pending",
+    "review_date": "2026-10-05",
+    "annotation_method": "manual visual annotation from supplied image; no OCR or model-generated annotation",
+    "physical_sign_id": null,
+    "station_map_coordinate": null,
+    "cloud_anchor_id": null,
+    "accessibility_verified": false,
+    "current_operational_status": null,
+    "privacy_review": "No additional mask applied; no person is apparent in the supplied image. Independent review pending.",
+    "text_policy": "visible_zh/en record readable sign text; label fields provide a normalized destination name.",
+    "direction_policy": "Direction is relative to the image and is not a verified route.",
+    "capture_date_verified": null,
+    "related_observations": []
+  },
+  {
+    "image_id": "supp-demo-e5-exit",
+    "display_name": "E5 exit · Ximen Metro Mall and Zhongshan Hall",
+    "supplemental_demo": true,
+    "record_collection": "supplemental_demo_not_core_poc",
+    "source_archive": "User-supplied supplemental demo image; separate from the TibaMe dataset",
+    "source_image": "E5exit.png",
+    "source_sha256": "044367edaec86a30cd45ff270d10b8e854496cbdf81ae7336bd4a09703fe4e4e",
+    "source_image_size": [
+      1838,
+      921
+    ],
+    "filename_family": "Supplemental demo · E5",
+    "demo_image": "supplemental_images/E5exit.png",
+    "privacy_masks_xyxy": null,
+    "privacy_method": "Existing user-provided mask retained; no additional masking applied.",
+    "provided_sign_boxes_xywh": [],
+    "source_url": null,
+    "license": null,
+    "summary_en": "A wide station passage with signs for Ximen Metro Mall and Zhongshan Hall Exit 5. A separate green exit-direction panel is visible. The central masked region is not assessable; no route accessibility or current operating status is inferred.",
+    "summary_zh": "車站通道指標提及西門地下街及中山堂 5 號出口，旁有綠色出口方向標誌。中央已遮罩區域無法判讀；不據此推論無障礙路線或目前營運狀態。",
+    "signs": [
+      {
+        "visible_zh": "西門地下街",
+        "visible_en": "Ximen Metro Mall",
+        "label_zh": "西門地下街",
+        "label_en": "Ximen Metro Mall",
+        "direction": "up",
+        "panel": "overhead directional sign",
+        "note": "Arrow is recorded as printed in the image.",
+        "transport_id": null
+      },
+      {
+        "visible_zh": "中山堂 5",
+        "visible_en": "Zhongshan Hall · Exit 5",
+        "label_zh": "中山堂 5 號出口",
+        "label_en": "Zhongshan Hall (Exit 5)",
+        "direction": "right",
+        "panel": "overhead directional sign",
+        "note": "The photograph shows Exit 5 with a right-pointing arrow; this does not verify a step-free or accessible route.",
+        "transport_id": null
+      },
+      {
+        "visible_zh": "出口指示",
+        "visible_en": "Exit sign",
+        "label_zh": "出口指示",
+        "label_en": "Exit sign",
+        "direction": "right",
+        "panel": "green illuminated panel",
+        "note": "The masked scene is not used to infer who is present.",
+        "transport_id": null
+      }
+    ],
+    "objects": [
+      {
+        "category": "passage_entrance",
+        "label_en": "open indoor passage",
+        "label_zh": "室內通道",
+        "region": "center and background"
+      }
+    ],
+    "uncertain": [],
+    "unknowns": [
+      "The central masked region is not assessable.",
+      "No current route condition or accessible path is verified."
+    ],
+    "amenity_coverage": {},
+    "schema_version": "0.1.0",
+    "annotation_scope": "supplemental user-provided demo image; excluded from the 204-scene core POC dataset",
+    "review_status": "visually_checked_by_assistant",
+    "human_review_status": "pending",
+    "review_date": "2026-10-05",
+    "annotation_method": "manual visual annotation from supplied already-masked image; no OCR or model-generated annotation",
+    "physical_sign_id": null,
+    "station_map_coordinate": null,
+    "cloud_anchor_id": null,
+    "accessibility_verified": false,
+    "current_operational_status": null,
+    "privacy_review": "User states central person region was already masked; mask coordinates were not supplied and covered region was not inspected.",
+    "text_policy": "visible_zh/en record readable sign text; label fields provide normalized destination names.",
+    "direction_policy": "Direction is relative to the image and is not a verified route.",
+    "capture_date_verified": null,
+    "related_observations": []
+  }
+]
