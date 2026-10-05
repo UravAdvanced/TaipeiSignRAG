@@ -6,9 +6,9 @@
 
 The annotation POC is closed at **204 whole-scene records** and **two separate locker-evidence observations**, covering **205 unique source photographs**. The source archives contain 8,971 image entries; repeated views and crops mean these are not 8,971 independent signs or locations. The curated JSONL release contains the 204-scene checkpoint.
 
-The annotations were visually checked by the assistant. **Human-reviewed records: 0.** The POC demonstrates the annotation and retrieval workflow, but it is not a complete station inventory or an evaluated navigation system. Full-collection annotation is not planned in this POC.
+The POC demonstrates the annotation and retrieval workflow, but it is not a complete station inventory or an evaluated navigation system. Full-collection annotation is not planned in this POC.
 
-Different-angle photographs of the same apparent sign or area are retained as separate image observations, not collapsed by repeated exit text or filename family. This preserves angle-specific text and surroundings. RAG can retrieve complementary records with separate image provenance; after human verification and confirmed cross-view links, these views could provide view-diverse examples for model training. This POC trained no model and does not claim a measured benefit.
+Different-angle photographs of the same apparent sign or area are retained as separate image observations, not collapsed by repeated exit text or filename family. This preserves angle-specific text and surroundings. RAG can retrieve complementary records with separate image provenance; after human verification and confirmed cross-view links, these views could provide view-diverse examples for model training. 
 
 ## Why annotate the images?
 
@@ -55,7 +55,7 @@ At published GPT-6 Astra standard rates of USD 10 per million input tokens and U
 | Native 512×288 JPEG | 4,032 / 10,549 | 97.393 s | **USD 0.57** |
 | Resized 1536×864 PNG | 8,296 / 8,425 | 80.918 s | **USD 0.50** |
 
-Reasoning tokens are included in output usage. Azure's actual billed tariff and invoices were not available. The 204-record POC was completed interactively in Codex, for which per-request usage and marginal subscription cost were not recorded; these API trial estimates are not the cost of producing all 204 records. Earlier 19-photo planning scenarios of USD 0.80–3.20 are in [batch timing and cost notes](docs/ANNOTATIONS_ONLY_TIMING.md); they are assumed token budgets, not measured charges.
+Reasoning tokens are included in output usage. Azure's actual billed tariff and invoices were not available as a Microsoft Startup Hub sponsorship was used. The 204-record POC was completed interactively in Codex, for which per-request usage and marginal subscription cost were not recorded; these API trial estimates are not the cost of producing all 204 records. Earlier 19-photo planning scenarios of USD 0.80–3.20 are in [batch timing and cost notes](docs/ANNOTATIONS_ONLY_TIMING.md); they are assumed token budgets, not measured charges.
 
 ## Supplemental search examples
 
