@@ -4,7 +4,7 @@
 
 ## POC status
 
-The annotation POC is closed at **204 whole-scene records** and **two separate locker-evidence observations**, covering **205 unique source photographs**. The source archives contain 8,971 image entries; repeated views and crops mean these are not 8,971 independent signs or locations. The curated JSONL release contains the 204-scene checkpoint.
+The annotation POC is **complete and closed** at **204 whole-scene records** and **two separate locker-evidence observations**, covering **205 unique source photographs**. The source archives contain 8,971 image entries; repeated views and crops mean these are not 8,971 independent signs or locations. The curated JSONL release contains the 204-scene checkpoint.
 
 The POC demonstrates the annotation and retrieval workflow, but it is not a complete station inventory or an evaluated navigation system. Full-collection annotation is not planned in this POC.
 

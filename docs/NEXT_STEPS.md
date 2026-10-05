@@ -1,6 +1,6 @@
 # Next steps
 
-The annotation proof of concept is closed at 204 whole-scene records and two separate locker-evidence observations, covering 205 unique source photographs. The three additional hotel/exit photographs are supplemental browser-demo examples and do not change the core dataset count. No further annotation batches are planned for this POC.
+The annotation proof of concept is **complete and closed** at 204 whole-scene records and two separate locker-evidence observations, covering 205 unique source photographs. The three additional hotel/exit photographs are supplemental browser-demo examples and do not change the core dataset count. No further annotation batches are planned for this POC.
 
 1. Independently verify the Chinese and English transcripts, translations, destination-arrow associations, facility descriptions, unknowns, and privacy masks. Assistant visual checking is not human review.
 2. After that review, connect only reviewed semantic records to the 3rDi4All app and to separately confirmed mapped waypoints or anchors. Retrieval provides candidate evidence; it does not establish position, correct map drift, or verify an accessible route.

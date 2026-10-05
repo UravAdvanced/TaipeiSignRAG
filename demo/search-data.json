@@ -30812,6 +30812,8 @@
     }
   ],
   "progress": {
+    "poc_status": "complete",
+    "poc_completion_date": "2026-10-05",
     "total_source_entries": 8971,
     "scene_records": 204,
     "separate_amenity_pilot_records": 2,
@@ -30823,7 +30825,7 @@
     "full_dataset_annotation_complete": false,
     "records_with_published_images": 128,
     "annotations_only_records": 76,
-    "next_step": "Annotation POC closed at 204 full-scene records plus two locker-evidence observations. No further annotation batches planned in this POC. After independent human verification, proceed to 3rDi4All app integration and separately confirm map or anchor links."
+    "next_step": "POC complete and closed at 204 full-scene records plus two locker-evidence observations. No further annotation batches are planned in this POC. After independent human verification, proceed to 3rDi4All app integration and separately confirm map or anchor links."
   },
   "config": {
     "aliases": {

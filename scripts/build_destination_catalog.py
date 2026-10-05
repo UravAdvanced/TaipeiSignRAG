@@ -111,7 +111,7 @@ def build():
     page += f'''<header><div class="credit"><p><strong>{e(data['team'])}</strong></p><p>{e(data['project'])}</p><p>Urav Advanced Learning Systems Pvt Ltd.</p></div>
 <p><a href="./">← Whole-photograph annotations / 全景照片標註</a></p><h1>Destination inventory / 目的地名稱清單</h1>
 <p>Hotels, malls, shops and other sign names. Researched {data['review_date']}. {e(data['scope'])}</p></header>
-<div class="notice"><strong>POC · Expert review pending / 專家審核待完成</strong><p>{e(data['limitations'])}</p><p>{e(counts)}</p></div>
+<div class="notice"><strong>POC complete · expert review pending / 概念驗證完成 · 專家審核待完成</strong><p>{e(data['limitations'])}</p><p>{e(counts)}</p></div>
 <form id="filters" role="search"><input id="q" type="search" aria-label="Search hotel and mall names in Chinese or English" placeholder="Cosmos, 天成, 京站, 地下街…">
 <select id="category" aria-label="Destination category"><option value="">Hotels and shopping / 飯店與商店</option><option value="hotel">Hotels / 飯店</option><option value="shopping">Shopping / 購物</option></select>
 <select id="status" aria-label="Photo evidence"><option value="">All photo statuses / 全部</option><option value="readable_in_sample">Readable in sample / 樣本可讀</option><option value="pending_photo_match">Photo match pending / 待對照</option><option value="unresolved_candidate">Unresolved candidate / 待查</option></select></form>
